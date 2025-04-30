@@ -8,8 +8,8 @@ import org.springframework.stereotype.Controller;
 @Controller
 public class GameController {
 
-    @MessageMapping("/quiz")
-    @SendTo("/topic/quiz")
+    @MessageMapping("/chat")
+    @SendTo("/room")
     public GameMessage send(GameMessage message) {
         return message; // relaye à tous
     }
