@@ -10,7 +10,7 @@ import lombok.*;
 @ToString
 public class Message {
     private String senderName;
-    private String receiverName;
+    private String roomId;
     private String message;
     private Status status;
 
