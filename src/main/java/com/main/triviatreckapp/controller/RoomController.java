@@ -7,8 +7,6 @@ import com.main.triviatreckapp.entities.Message;
 import com.main.triviatreckapp.entities.Room;
 import com.main.triviatreckapp.service.ChatService;
 import com.main.triviatreckapp.service.RoomService;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
 import org.springframework.messaging.handler.annotation.DestinationVariable;
 import org.springframework.messaging.handler.annotation.MessageMapping;
 import org.springframework.messaging.handler.annotation.Payload;
@@ -20,10 +18,8 @@ import org.springframework.web.bind.annotation.*;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
-import java.util.Set;
 
 @Controller
-@RequestMapping("/rooms")
 @CrossOrigin(origins = "http://localhost:5173")
 public class RoomController {
     private final RoomService roomService;
@@ -31,7 +27,7 @@ public class RoomController {
     public RoomController(RoomService roomService, ChatService chatService) { this.roomService = roomService; this.chatService = chatService;}
 
     @MessageMapping("/join/{roomId}")
-    @SendTo("/room/{roomId}")
+    @SendTo("/chatroom/{roomId}")
     @Transactional
     public RoomDTO joinRoom(@DestinationVariable String roomId, @Payload String user) {
             Room room = roomService.getOrCreateRoom(roomId);
@@ -41,7 +37,7 @@ public class RoomController {
     }
 
     @MessageMapping("/sendMessage/{roomId}")
-    @SendTo("/room/{roomId}")
+    @SendTo("/chatroom/{roomId}")
     @Transactional
     public RoomDTO sendMessageToRoom(@DestinationVariable String roomId, @Payload Message chatMessage) {
         Optional<Room> room = roomService.getRoom(roomId);
@@ -57,7 +53,7 @@ public class RoomController {
     }
 
     @MessageMapping("/leave/{roomId}")
-    @SendTo("/room/{roomId}")
+    @SendTo("/chatroom/{roomId}")
     @Transactional
     public Optional<RoomDTO> leaveRoom(@DestinationVariable String roomId, @Payload String user) {
         roomService.removeParticipant(roomId, user);
