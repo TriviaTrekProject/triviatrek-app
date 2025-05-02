@@ -57,16 +57,14 @@ public class RoomController {
     @Transactional
     public Optional<RoomDTO> leaveRoom(@DestinationVariable String roomId, @Payload String user) {
         roomService.removeParticipant(roomId, user);
-        if(roomService.getRoom(roomId).isPresent() && roomService.getRoom(roomId).get().getParticipants().isEmpty()){
-            roomService.deleteRoom(roomId);
-        }
         Optional<Room> room = roomService.getRoom(roomId);
         if(room.isPresent()) {
-            return Optional.ofNullable(convertRoomToDTO(roomService.getRoom(roomId).get(), roomId));
+            if(room.get().getParticipants().isEmpty()) {
+                roomService.deleteRoom(roomId);
+            }
         }
-        else {
-            return Optional.empty();
-        }
+        return room.map(r -> convertRoomToDTO(r, roomId)).or(Optional::empty);
+
     }
 
     public RoomDTO convertRoomToDTO(Room room, String roomId) {
