@@ -2,6 +2,7 @@ package com.main.triviatreckapp.service;
 
 
 import com.main.triviatreckapp.dto.MessageDTO;
+import com.main.triviatreckapp.dto.RoomDTO;
 import com.main.triviatreckapp.entities.Message;
 import com.main.triviatreckapp.entities.Room;
 import com.main.triviatreckapp.repository.MessageRepository;
@@ -21,8 +22,6 @@ public class ChatService {
     }
 
     public Message saveMessage(String roomId, String sender, String content) {
-        System.out.println("save message");
-        System.out.println(roomId);
         Room room = roomRepo.findByRoomId(roomId).orElseThrow(() -> new IllegalArgumentException("Room not found: " + roomId));
 
         Message msg = new Message();
@@ -35,5 +34,9 @@ public class ChatService {
 
     public List<Message> getHistory(Long roomId) {
         return msgRepo.findByRoom_IdOrderByTimestampAsc(roomId);
+    }
+
+    public MessageDTO convertToDTO(Message message, String roomId) {
+        return new MessageDTO(roomId, message.getSender(), message.getContent());
     }
 }

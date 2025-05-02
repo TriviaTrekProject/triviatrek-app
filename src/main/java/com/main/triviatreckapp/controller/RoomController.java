@@ -1,6 +1,8 @@
 package com.main.triviatreckapp.controller;
 
 
+import com.main.triviatreckapp.dto.MessageDTO;
+import com.main.triviatreckapp.dto.RoomDTO;
 import com.main.triviatreckapp.entities.Message;
 import com.main.triviatreckapp.entities.Room;
 import com.main.triviatreckapp.service.ChatService;
@@ -9,12 +11,18 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.messaging.handler.annotation.DestinationVariable;
 import org.springframework.messaging.handler.annotation.MessageMapping;
+import org.springframework.messaging.handler.annotation.Payload;
 import org.springframework.messaging.handler.annotation.SendTo;
+import org.springframework.stereotype.Controller;
+import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Optional;
+import java.util.Set;
 
-@RestController
+@Controller
 @RequestMapping("/rooms")
 @CrossOrigin(origins = "http://localhost:5173")
 public class RoomController {
@@ -24,31 +32,25 @@ public class RoomController {
 
     @MessageMapping("/join/{roomId}")
     @SendTo("/room/{roomId}")
-    public Room joinRoom(@DestinationVariable String roomId, @RequestBody String user) {
-            System.out.println("joining.... : ");
+    @Transactional
+    public RoomDTO joinRoom(@DestinationVariable String roomId, @Payload String user) {
             Room room = roomService.getOrCreateRoom(roomId);
             roomService.addParticipant(roomId, user);
-            System.out.println("room created.... : ");
-            System.out.println(room.toString());
-
-            return room;
+        return convertRoomToDTO(room, roomId)
+                ;
     }
 
     @MessageMapping("/sendMessage/{roomId}")
     @SendTo("/room/{roomId}")
-    public Room sendMessageToRoom(@DestinationVariable String roomId, @RequestBody Message chatMessage) {
-        System.out.println("sending message.... : ");
-        System.out.println(chatMessage.toString());
-        System.out.println("room id : " + roomId);
+    @Transactional
+    public RoomDTO sendMessageToRoom(@DestinationVariable String roomId, @Payload Message chatMessage) {
         Optional<Room> room = roomService.getRoom(roomId);
-        System.out.println("room : " + (room.isPresent()));
-        room.ifPresent(r -> System.out.println("Participants : " + r.getParticipants()));
 
         if (room.isPresent()) {
             Message savedMessage = chatService.saveMessage(
                     roomId, chatMessage.getSender(), chatMessage.getContent());
             room.get().getMessages().add(savedMessage);
-            return roomService.saveRoom(room.get());
+            return convertRoomToDTO(roomService.saveRoom(room.get()), roomId);
         } else {
             throw new RuntimeException("room not found !!");
         }
@@ -56,12 +58,32 @@ public class RoomController {
 
     @MessageMapping("/leave/{roomId}")
     @SendTo("/room/{roomId}")
-    public Optional<Room> leaveRoom(@DestinationVariable String roomId, @RequestBody String user) {
+    @Transactional
+    public Optional<RoomDTO> leaveRoom(@DestinationVariable String roomId, @Payload String user) {
         roomService.removeParticipant(roomId, user);
         if(roomService.getRoom(roomId).isPresent() && roomService.getRoom(roomId).get().getParticipants().isEmpty()){
             roomService.deleteRoom(roomId);
         }
-        return roomService.getRoom(roomId);
+        Optional<Room> room = roomService.getRoom(roomId);
+        if(room.isPresent()) {
+            return Optional.ofNullable(convertRoomToDTO(roomService.getRoom(roomId).get(), roomId));
+        }
+        else {
+            return Optional.empty();
+        }
+    }
+
+    public RoomDTO convertRoomToDTO(Room room, String roomId) {
+        List<String> participantsDTO = new ArrayList<>(room.getParticipants());
+
+        List<MessageDTO> messagesDTO = room.getMessages().stream()
+                .map(message ->
+                        new MessageDTO(message.getRoomId(),
+                                message.getSender(),
+                                message.getContent()))
+                .toList();
+
+        return new RoomDTO(roomId, participantsDTO, messagesDTO);
     }
 }
 

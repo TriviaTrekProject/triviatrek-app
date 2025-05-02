@@ -1,9 +1,12 @@
 package com.main.triviatreckapp.service;
 
+import com.main.triviatreckapp.dto.MessageDTO;
+import com.main.triviatreckapp.dto.RoomDTO;
 import com.main.triviatreckapp.entities.Room;
 import com.main.triviatreckapp.repository.RoomRepository;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
 import java.util.Optional;
 
 @Service
@@ -22,7 +25,7 @@ public class RoomService {
     }
 
     public void deleteRoom(String roomId) {
-        roomRepo.deleteById(roomId);
+        roomRepo.deleteByRoomId(roomId);
     }
     public Room saveRoom(Room room) {
         return roomRepo.save(room);
@@ -54,4 +57,5 @@ public class RoomService {
         room.setRoomId(roomId);
         return roomRepo.save(room);
     }
+
 }

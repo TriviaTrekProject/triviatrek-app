@@ -26,7 +26,10 @@ public class Room {
     @Column(name = "roomId", nullable = false, unique = true)
     private String roomId;              // Identifiant métier unique
 
-    @Column(name = "participants", unique = true, nullable = false)
+    @ElementCollection
+    @CollectionTable(name = "room_participants",
+            joinColumns = @JoinColumn(name = "room_id"))
+    @Column(name = "participant")
     private Set<String> participants = new HashSet<>();
 
     @OneToMany(fetch = FetchType.EAGER, mappedBy = "room", cascade = CascadeType.ALL, orphanRemoval = true)
