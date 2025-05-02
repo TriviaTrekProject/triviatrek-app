@@ -1,4 +1,4 @@
-package com.main.triviatreckapp.model;
+package com.main.triviatreckapp.entities;
 
 public enum Status {
 JOIN, MESSAGE, LEAVE
