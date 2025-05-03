@@ -1,8 +1,5 @@
 package com.main.triviatreckapp.service;
 
-
-import com.main.triviatreckapp.dto.MessageDTO;
-import com.main.triviatreckapp.dto.RoomDTO;
 import com.main.triviatreckapp.entities.Message;
 import com.main.triviatreckapp.entities.Room;
 import com.main.triviatreckapp.repository.MessageRepository;
@@ -10,7 +7,6 @@ import com.main.triviatreckapp.repository.RoomRepository;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;
-import java.util.List;
 
 @Service
 public class ChatService {
@@ -32,11 +28,4 @@ public class ChatService {
         return msgRepo.save(msg);
     }
 
-    public List<Message> getHistory(Long roomId) {
-        return msgRepo.findByRoom_IdOrderByTimestampAsc(roomId);
-    }
-
-    public MessageDTO convertToDTO(Message message, String roomId) {
-        return new MessageDTO(roomId, message.getSender(), message.getContent());
-    }
 }

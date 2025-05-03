@@ -7,9 +7,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import java.util.ArrayList;
-import java.util.HashSet;
 import java.util.List;
-import java.util.Set;
 
 @Entity
 @Table(name = "rooms")
@@ -26,13 +24,13 @@ public class Room {
     @Column(name = "roomId", nullable = false, unique = true)
     private String roomId;              // Identifiant métier unique
 
-    @ElementCollection
-    @CollectionTable(name = "room_participants",
-            joinColumns = @JoinColumn(name = "room_id"))
     @Column(name = "participant")
-    private Set<String> participants = new HashSet<>();
+    private List<String> participants = new ArrayList<>();
 
     @OneToMany(fetch = FetchType.EAGER, mappedBy = "room", cascade = CascadeType.ALL, orphanRemoval = true)
-    private Set<Message> messages = new HashSet<>();
+    private List<Message> messages = new ArrayList<>();
 
+    public void addParticipant(String participant) {
+        participants.add(participant);
+    }
 }

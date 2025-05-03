@@ -1,18 +1,17 @@
 package com.main.triviatreckapp.service;
 
-import com.main.triviatreckapp.dto.MessageDTO;
-import com.main.triviatreckapp.dto.RoomDTO;
 import com.main.triviatreckapp.entities.Room;
 import com.main.triviatreckapp.repository.RoomRepository;
 import org.springframework.stereotype.Service;
 
-import java.util.List;
 import java.util.Optional;
 
 @Service
 public class RoomService {
     private final RoomRepository roomRepo;
-    public RoomService(RoomRepository roomRepo) { this.roomRepo = roomRepo; }
+
+    public RoomService(RoomRepository roomRepo) { this.roomRepo = roomRepo;
+    }
 
     public Optional<Room> getRoom(String roomId) {
         return roomRepo.findByRoomId(roomId);
@@ -33,7 +32,7 @@ public class RoomService {
 
     public void addParticipant(String roomId, String user) {
         Room room = getOrCreateRoom(roomId);
-        room.getParticipants().add(user);
+        room.addParticipant(user);
         roomRepo.save(room);
     }
 
@@ -41,12 +40,6 @@ public class RoomService {
         Room room = getRoom(roomId).orElseThrow(() -> new IllegalArgumentException("Room not found: " + roomId));
         room.getParticipants().remove(user);
         roomRepo.save(room);
-    }
-
-    public boolean isParticipant(String roomId, String user) {
-        return roomRepo.findByRoomId(roomId)
-                .map(r -> r.getParticipants().contains(user))
-                .orElse(false);
     }
 
     public Room createRoom(String roomId) {
