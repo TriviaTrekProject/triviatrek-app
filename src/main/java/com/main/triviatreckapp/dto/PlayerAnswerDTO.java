@@ -1,0 +1,13 @@
+package com.main.triviatreckapp.dto;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+public class PlayerAnswerDTO {
+    private String player;     // Identifiant du joueur
+    private int answerIndex;   // Index de la réponse choisie (0-based)
+}

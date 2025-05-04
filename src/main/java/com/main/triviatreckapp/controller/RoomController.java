@@ -30,6 +30,7 @@ public class RoomController {
     @SendTo("/chatroom/{roomId}")
     @Transactional
     public RoomDTO joinRoom(@DestinationVariable String roomId, @Payload String user) {
+        System.out.println("User " + user + " joining room " + roomId);
             Room room = roomService.getOrCreateRoom(roomId);
             roomService.addParticipant(roomId, user);
         return convertRoomToDTO(room, roomId)
