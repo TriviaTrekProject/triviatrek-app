@@ -1,5 +1,4 @@
-{
-"questions": [
+[
 {
 "difficulty": "hard",
 "category": "Histoire",
@@ -687,4 +686,4 @@
 "category": "Science",
 "question": "Quel satellite naturel orbite autour de... (questions jusqu’à 99) ..."
 }
-]}
+]

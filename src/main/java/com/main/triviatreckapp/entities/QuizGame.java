@@ -65,4 +65,12 @@ public class QuizGame {
     public void addScore(String player, int points) {
         scores.put(player, scores.getOrDefault(player, 0) + points);
     }
+
+    public void setRoom(Room room) {
+        this.room = room;
+        if (room != null && room.getQuizGame() != this) {
+            room.setQuizGame(this);
+        }
+    }
+
 }
