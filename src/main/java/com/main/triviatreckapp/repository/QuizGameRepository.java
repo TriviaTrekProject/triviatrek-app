@@ -13,5 +13,7 @@ public interface QuizGameRepository extends JpaRepository<QuizGame, Long> {
      * Récupère une partie par l'identifiant métier de la salle associée.
      */
     Optional<QuizGame> findByRoomRoomId(String roomId);
+
+    Optional<QuizGame> findByGameId(String gameId);
 }
 

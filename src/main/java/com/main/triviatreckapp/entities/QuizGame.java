@@ -22,6 +22,9 @@ public class QuizGame {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @Column(name = "gameId", nullable = false, unique = true)
+    private String gameId;              // Identifiant métier unique
+
     @OneToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "room_id", unique = true)
     private Room room;
@@ -40,6 +43,10 @@ public class QuizGame {
     @Column(name = "score")
     private Map<String, Integer> scores = new HashMap<>();
     private boolean finished = false;           // Indique si le jeu est terminé
+
+    @Column(name = "participant")
+    private List<String> participants = new ArrayList<>();
+
 
     // index dans la liste questions
     private int currentQuestionIndex = 0;
@@ -71,6 +78,10 @@ public class QuizGame {
         if (room != null && room.getQuizGame() != this) {
             room.setQuizGame(this);
         }
+    }
+
+    public void addParticipant(String participant) {
+        participants.add(participant);
     }
 
 }

@@ -12,7 +12,6 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
 import java.util.*;
-import java.util.concurrent.ConcurrentHashMap;
 
 @Service
 public class QuizGameService {
@@ -57,12 +56,12 @@ public class QuizGameService {
 
     /**
      * Traite la réponse d'un joueur à la question courante
-     * @param roomId identifiant de la salle
+     * @param gameId identifiant de la salle
      * @param playerAnswer DTO contenant l'identifiant du joueur et sa réponse
      * @return le jeu mis à jour
      */
-    public QuizGame processAnswer(String roomId, PlayerAnswerDTO playerAnswer) {
-        Optional<QuizGame> opt = gameRepository.findByRoomRoomId(roomId);
+    public QuizGame processAnswer(String gameId, PlayerAnswerDTO playerAnswer) {
+        Optional<QuizGame> opt = gameRepository.findByGameId(gameId);
         if (opt.isEmpty()) {
             return null;
         }
@@ -107,11 +106,13 @@ public class QuizGameService {
 
     /**
      * Récupère un jeu actif par son identifiant de salle
-     * @param roomId identifiant de la salle
+     * @param gameId identifiant de la salle
      * @return le jeu correspondant ou null s'il n'existe pas
      */
-    public QuizGame getGame(String roomId) {
-        return gameRepository.findByRoomRoomId(roomId).orElse(null);
+    public QuizGame getGame(String gameId) {
+        return gameRepository.findByGameId(gameId).orElseThrow(() ->
+                new NoSuchElementException("Partie introuvable : " + gameId)
+        );
     }
 
     /**
@@ -126,6 +127,27 @@ public class QuizGameService {
         }
         Collections.shuffle(all);
         return all.subList(0, count);
+    }
+
+    public QuizGame addParticipant(String gameId, String user) {
+        QuizGame game = gameRepository
+                .findByGameId((gameId)).orElseThrow(() ->
+                        new NoSuchElementException("Partie introuvable : " + gameId)
+                );
+        game.addParticipant(user);
+        return gameRepository.save(game);
+    }
+
+
+    public QuizGame removeParticipant(String gameId, String user) {
+        QuizGame game = gameRepository
+                .findByGameId(gameId)
+                .orElseThrow(() ->
+                        new NoSuchElementException("Partie introuvable : " + gameId)
+                );
+            game.getParticipants().remove(user);
+            return gameRepository.save(game);
+
     }
 
 }

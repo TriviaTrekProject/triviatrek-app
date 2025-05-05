@@ -33,8 +33,7 @@ public class RoomController {
         System.out.println("User " + user + " joining room " + roomId);
             Room room = roomService.getOrCreateRoom(roomId);
             roomService.addParticipant(roomId, user);
-        return convertRoomToDTO(room, roomId)
-                ;
+        return convertRoomToDTO(room, roomId);
     }
 
     @MessageMapping("/sendMessage/{roomId}")

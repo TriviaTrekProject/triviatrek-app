@@ -6,6 +6,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import java.util.List;
 import java.util.Map;
 
 @Getter
@@ -17,5 +18,8 @@ public class QuizGameDTO {
     private Question currentQuestion;
     private Map<String, Integer> scores;
     private boolean finished;
+    private List<String> participants;
+    private int currentQuestionIndex;
+
 }
 
