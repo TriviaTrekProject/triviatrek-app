@@ -30,8 +30,8 @@ public class QuizGame {
     private Room room;
 
     // ordre des questions sélectionnées pour cette partie
-    @ManyToMany(fetch = FetchType.EAGER)
-    @JoinTable(name = "quiz_game_questions",
+    @ManyToMany(cascade = { CascadeType.PERSIST, CascadeType.MERGE })
+    @JoinTable( name = "quiz_game_questions",
             joinColumns = @JoinColumn(name = "quiz_game_id"),
             inverseJoinColumns = @JoinColumn(name = "question_id"))
     private List<Question> questions = new ArrayList<>();

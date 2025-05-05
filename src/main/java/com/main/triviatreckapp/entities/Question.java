@@ -1,5 +1,6 @@
 package com.main.triviatreckapp.entities;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -26,9 +27,11 @@ public class Question {
     private String category;
 
     @Column(name = "correct_answer")
+    @JsonProperty("correct_answer")
     private String correctAnswer;
 
     @ElementCollection
+    @JsonProperty("incorrect_answers")
     @CollectionTable(name = "question_incorrect_answers", joinColumns = @JoinColumn(name = "question_id"))
     @Column(name = "incorrect_answer")
     private List<String> incorrectAnswers = new ArrayList<>();

@@ -7,13 +7,16 @@ import com.main.triviatreckapp.entities.Room;
 import com.main.triviatreckapp.service.QuizGameService;
 
 import com.main.triviatreckapp.service.RoomService;
+import org.springframework.messaging.Message;
 import org.springframework.messaging.handler.annotation.DestinationVariable;
 import org.springframework.messaging.handler.annotation.MessageMapping;
 import org.springframework.messaging.handler.annotation.Payload;
 import org.springframework.messaging.handler.annotation.SendTo;
+import org.springframework.messaging.simp.SimpMessagingTemplate;
 import org.springframework.stereotype.Controller;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.Optional;
 
@@ -22,21 +25,29 @@ import java.util.Optional;
 public class QuizGameController {
   private final QuizGameService gameService;
     private final RoomService roomService;
+    private final SimpMessagingTemplate messagingTemplate;
 
-    public QuizGameController(QuizGameService gameService, RoomService roomService) {
+    public QuizGameController(QuizGameService gameService, RoomService roomService, SimpMessagingTemplate messagingTemplate) {
       this.gameService = gameService;
         this.roomService = roomService;
+        this.messagingTemplate = messagingTemplate;
     }
 
   // Lancement d'une partie dans la room
-  @MessageMapping("/game/start/{roomId}")
-  @SendTo("/game/{gameId}")
-  public QuizGameDTO startGame(@DestinationVariable String roomId) {
-      QuizGame game = gameService.createOrRestartGame(roomId);
-      Optional<Room> room = roomService.getRoom(roomId);
-      room.ifPresent(rm -> rm.setQuizGame(game));
+  @MessageMapping("/game/start/{gameId}")
+  @Transactional
+  public void startGame(@DestinationVariable String gameId, @RequestParam String roomId, @RequestParam String user) {
+      System.out.println("launching game " + gameId + " in room " + roomId + "...");
+      Room room = roomService.getRoom(roomId).orElseThrow(() -> new IllegalArgumentException("Room not found: " + roomId));
+      QuizGame game = gameService.createGame(gameId, room);
+      gameService.addParticipant(gameId, user);
+      room.setQuizGame(game);
+      roomService.saveRoom(room);
 
-      return gameService.toDTO(game);
+      String destination = "/game/" + game.getGameId();
+      System.out.println("Sending game"+ game.getGameId() +" to " + destination);
+      messagingTemplate.convertAndSend(destination, gameService.toDTO(game));
+
   }
 
     @MessageMapping("/game/join/{gameId}")
@@ -77,4 +88,3 @@ public class QuizGameController {
   }
 
 }
-

@@ -1,5 +1,6 @@
 package com.main.triviatreckapp.service;
 
+import com.main.triviatreckapp.entities.QuizGame;
 import com.main.triviatreckapp.entities.Room;
 import com.main.triviatreckapp.repository.RoomRepository;
 import org.springframework.stereotype.Service;

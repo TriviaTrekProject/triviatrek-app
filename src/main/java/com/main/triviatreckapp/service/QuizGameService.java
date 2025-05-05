@@ -1,6 +1,7 @@
 package com.main.triviatreckapp.service;
 
 import com.main.triviatreckapp.dto.PlayerAnswerDTO;
+import com.main.triviatreckapp.dto.QuestionDTO;
 import com.main.triviatreckapp.dto.QuizGameDTO;
 import com.main.triviatreckapp.entities.Question;
 import com.main.triviatreckapp.entities.QuizGame;
@@ -10,10 +11,12 @@ import com.main.triviatreckapp.repository.QuizGameRepository;
 import com.main.triviatreckapp.repository.RoomRepository;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.*;
 
 @Service
+@Transactional
 public class QuizGameService {
     private final QuestionRepository questionRepository;
     private final RoomRepository roomRepository;
@@ -35,21 +38,20 @@ public class QuizGameService {
 
     /**
      * Crée ou redémarre une partie dans une salle
-     * @param roomId identifiant de la salle
+     * @param gameId identifiant de la salle
      * @return l'objet QuizGame créé
      */
-    public QuizGame createOrRestartGame(String roomId) {
+    public QuizGame createGame(String gameId, Room room) {
         // Sélectionner des questions aléatoires depuis la base de données
         List<Question> randomQuestions = getRandomQuestions(questionsPerGame);
-        Room room = roomRepository.findByRoomId(roomId).orElseThrow(() -> new IllegalArgumentException("Salle introuvable : " + roomId));
-        // Créer un nouveau jeu
-        QuizGame game = new QuizGame();
-        game.setRoom(room);
-        game.setQuestions(randomQuestions);
-        game.setCurrentQuestionIndex(0);
-        game.setScores(new HashMap<>());
-        game.setFinished(false);
-
+                // Créer un nouveau jeu
+            QuizGame game = new QuizGame();
+            game.setRoom(room);
+            game.setGameId(gameId);
+            game.setQuestions(questionRepository.findRandomQuestions(5));
+            game.setCurrentQuestionIndex(0);
+            game.setScores(new HashMap<>());
+            game.setFinished(false);
 
         return gameRepository.save(game);
     }
@@ -97,9 +99,13 @@ public class QuizGameService {
         }
         QuizGameDTO dto = new QuizGameDTO();
         dto.setRoomId(game.getRoom().getRoomId());
-        dto.setCurrentQuestion(game.getCurrentQuestion());
+        dto.setCurrentQuestion(QuestionDTO.fromEntity(game.getCurrentQuestion()));
+        dto.setQuestions(game.getQuestions().stream().map(QuestionDTO::fromEntity).toList());
         dto.setScores(game.getScores());
         dto.setFinished(game.isFinished());
+        dto.setGameId(game.getGameId());
+        dto.setParticipants(game.getParticipants());
+        dto.setCurrentQuestionIndex(game.getCurrentQuestionIndex());
         return dto;
     }
 
@@ -121,6 +127,7 @@ public class QuizGameService {
      * @return liste des questions sélectionnées
      */
     private List<Question> getRandomQuestions(int count) {
+
         List<Question> all = questionRepository.findAll();
         if (all.size() <= count) {
             return all;

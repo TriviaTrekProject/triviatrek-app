@@ -18,6 +18,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
+import java.util.UUID;
 
 @Controller
 @CrossOrigin(origins = "http://localhost:5173")
@@ -69,6 +70,7 @@ public class RoomController {
 
     public RoomDTO convertRoomToDTO(Room room, String roomId) {
         List<String> participantsDTO = new ArrayList<>(room.getParticipants());
+        String gameId = room.getQuizGame() != null ? room.getQuizGame().getGameId() : UUID.randomUUID().toString();
 
         List<MessageDTO> messagesDTO = room.getMessages().stream()
                 .map(message ->
@@ -76,8 +78,7 @@ public class RoomController {
                                 message.getSender(),
                                 message.getContent()))
                 .toList();
-
-        return new RoomDTO(roomId, participantsDTO, messagesDTO);
+        return new RoomDTO(roomId, participantsDTO, messagesDTO, gameId);
     }
 }
 
