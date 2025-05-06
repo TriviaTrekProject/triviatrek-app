@@ -80,8 +80,11 @@ public class QuizGameService {
             game.setFinished(true);
             return gameRepository.save(game);
         }
+        System.out.println("Player " + playerAnswer.getPlayer() + " answered " + playerAnswer.getAnswerIndex() + " for question " + current.getId());
+        System.out.println("Correct answer is " + current.getCorrectIndex());
 
-        if (playerAnswer.getAnswerIndex() + 1  == current.getCorrectIndex()) {
+
+        if (playerAnswer.getAnswerIndex()  == current.getCorrectIndex()) {
             game.addScore(playerAnswer.getPlayer(), correctAnswerPoints);
         }
 

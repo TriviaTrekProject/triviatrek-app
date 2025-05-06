@@ -58,6 +58,7 @@ public class Question {
             }
             // Mélange aléatoire des options pour éviter que la bonne réponse soit toujours à la même place
             Collections.shuffle(options);
+            setCorrectIndex(options.indexOf(correctAnswer));
         }
         return options;
     }
