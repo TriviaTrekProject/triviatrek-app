@@ -1,6 +1,7 @@
 package com.main.triviatreckapp.repository;
 
 import com.main.triviatreckapp.entities.QuizGame;
+import org.springframework.data.jpa.repository.EntityGraph;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
@@ -14,6 +15,7 @@ public interface QuizGameRepository extends JpaRepository<QuizGame, Long> {
      */
     Optional<QuizGame> findByRoomRoomId(String roomId);
 
+    @EntityGraph(attributePaths = {"room"})
     Optional<QuizGame> findByGameId(String gameId);
 }
 

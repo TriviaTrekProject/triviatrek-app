@@ -50,7 +50,7 @@ public class QuizGameService {
             QuizGame game = new QuizGame();
             game.setRoom(room);
             game.setGameId(gameId);
-            game.setQuestions(questionRepository.findRandomQuestions(5));
+            game.setQuestions(questionRepository.findRandomQuestions(10));
             game.setCurrentQuestionIndex(0);
             game.setScores(new HashMap<>());
             game.setFinished(false);
@@ -81,7 +81,7 @@ public class QuizGameService {
             return gameRepository.save(game);
         }
 
-        if (playerAnswer.getAnswerIndex() == current.getCorrectIndex()) {
+        if (playerAnswer.getAnswerIndex() + 1  == current.getCorrectIndex()) {
             game.addScore(playerAnswer.getPlayer(), correctAnswerPoints);
         }
 
@@ -95,7 +95,6 @@ public class QuizGameService {
      * @param game le jeu à convertir
      * @return DTO prêt à être envoyé
      */
-    @Transactional(readOnly = true)
     public QuizGameDTO toDTO(QuizGame game) {
         if (game == null) {
             return null;

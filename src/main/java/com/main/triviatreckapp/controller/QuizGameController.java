@@ -73,6 +73,7 @@ public class QuizGameController {
   // Réception d'une réponse d'un joueur
   @MessageMapping("/game/answer/{gameId}")
   @SendTo("/game/{gameId}")
+  @Transactional
   public QuizGameDTO processAnswer(@DestinationVariable String gameId,
                                   @Payload PlayerAnswerDTO playerAnswer) {
       QuizGame game = gameService.processAnswer(gameId, playerAnswer);
