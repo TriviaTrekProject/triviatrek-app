@@ -1,7 +1,9 @@
 package com.main.triviatreckapp.controller;
 
+import com.main.triviatreckapp.Request.StartGameRequest;
 import com.main.triviatreckapp.dto.PlayerAnswerDTO;
 import com.main.triviatreckapp.dto.QuizGameDTO;
+import com.main.triviatreckapp.dto.RoomDTO;
 import com.main.triviatreckapp.entities.QuizGame;
 import com.main.triviatreckapp.entities.Room;
 import com.main.triviatreckapp.service.QuizGameService;
@@ -36,11 +38,11 @@ public class QuizGameController {
   // Lancement d'une partie dans la room
   @MessageMapping("/game/start/{gameId}")
   @Transactional
-  public void startGame(@DestinationVariable String gameId, @RequestParam String roomId, @RequestParam String user) {
-      System.out.println("launching game " + gameId + " in room " + roomId + "...");
-      Room room = roomService.getRoom(roomId).orElseThrow(() -> new IllegalArgumentException("Room not found: " + roomId));
+  public void startGame(@DestinationVariable String gameId, @Payload StartGameRequest payload) {
+      System.out.println("launching game " + gameId + " in room " + payload.getRoomId() + "...");
+      Room room = roomService.getRoom(payload.getRoomId()).orElseThrow(() -> new IllegalArgumentException("Room not found: " + payload.getRoomId()));
       QuizGame game = gameService.createGame(gameId, room);
-      gameService.addParticipant(gameId, user);
+      gameService.addParticipant(gameId, payload.getUser());
       room.setQuizGame(game);
       roomService.saveRoom(room);
 
