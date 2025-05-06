@@ -3,6 +3,7 @@ package com.main.triviatreckapp.service;
 import com.main.triviatreckapp.dto.PlayerAnswerDTO;
 import com.main.triviatreckapp.dto.QuestionDTO;
 import com.main.triviatreckapp.dto.QuizGameDTO;
+import com.main.triviatreckapp.dto.ScoreDTO;
 import com.main.triviatreckapp.entities.Question;
 import com.main.triviatreckapp.entities.QuizGame;
 import com.main.triviatreckapp.entities.Room;
@@ -14,6 +15,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.*;
+import java.util.stream.Collectors;
 
 @Service
 @Transactional
@@ -93,15 +95,25 @@ public class QuizGameService {
      * @param game le jeu à convertir
      * @return DTO prêt à être envoyé
      */
+    @Transactional(readOnly = true)
     public QuizGameDTO toDTO(QuizGame game) {
         if (game == null) {
             return null;
         }
+
         QuizGameDTO dto = new QuizGameDTO();
+
+        List<ScoreDTO> scoreDTOs = game.getScores()
+                .entrySet()
+                .stream()
+                .map(e -> new ScoreDTO(e.getKey(), e.getValue()))
+                .collect(Collectors.toList());
+        dto.setScores(scoreDTOs);
+
         dto.setRoomId(game.getRoom().getRoomId());
         dto.setCurrentQuestion(QuestionDTO.fromEntity(game.getCurrentQuestion()));
         dto.setQuestions(game.getQuestions().stream().map(QuestionDTO::fromEntity).toList());
-        dto.setScores(game.getScores());
+        dto.setScores(scoreDTOs);
         dto.setFinished(game.isFinished());
         dto.setGameId(game.getGameId());
         dto.setParticipants(game.getParticipants());
@@ -115,6 +127,7 @@ public class QuizGameService {
      * @param gameId identifiant de la salle
      * @return le jeu correspondant ou null s'il n'existe pas
      */
+    @Transactional(readOnly = true)
     public QuizGame getGame(String gameId) {
         return gameRepository.findByGameId(gameId).orElseThrow(() ->
                 new NoSuchElementException("Partie introuvable : " + gameId)

@@ -18,7 +18,7 @@ public class QuizGameDTO {
     private String gameId;
     private QuestionDTO currentQuestion;
     private List<QuestionDTO> questions;
-    private Map<String, Integer> scores;
+    private List<ScoreDTO> scores;
     private boolean finished;
     private List<String> participants;
     private int currentQuestionIndex;
