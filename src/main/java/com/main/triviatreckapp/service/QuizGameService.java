@@ -133,7 +133,10 @@ public class QuizGameService {
             return all;
         }
         Collections.shuffle(all);
-        return all.subList(0, count);
+        return all.subList(0, count).stream().map(q -> questionRepository.findById(q.getId())
+                        .orElseThrow(() -> new NoSuchElementException("Question introuvable : " + q.getId())))
+                .toList();
+
     }
 
     public QuizGame addParticipant(String gameId, String user) {

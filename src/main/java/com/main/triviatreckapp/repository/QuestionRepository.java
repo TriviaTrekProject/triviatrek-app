@@ -8,9 +8,7 @@ import org.springframework.core.io.ClassPathResource;
 import org.springframework.stereotype.Repository;
 
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
+import java.util.*;
 
 @Repository
 public class QuestionRepository {
@@ -56,5 +54,10 @@ public class QuestionRepository {
         List<Question> copy = new ArrayList<>(questions);
         Collections.shuffle(copy);
         return copy.subList(0, limit);
+    }
+
+    public Optional<Question> findById(Long id) {
+        return questions.stream().filter(q -> Objects.equals(q.getId(), id))
+                .findFirst();
     }
 }

@@ -34,6 +34,7 @@ public class QuizGame {
     @JoinTable( name = "quiz_game_questions",
             joinColumns = @JoinColumn(name = "quiz_game_id"),
             inverseJoinColumns = @JoinColumn(name = "question_id"))
+    @OrderColumn(name = "question_order")
     private List<Question> questions = new ArrayList<>();
 
     // score par joueur (clé = nom ou id utilisateur)
@@ -45,6 +46,10 @@ public class QuizGame {
     private boolean finished = false;           // Indique si le jeu est terminé
 
     @Column(name = "participant")
+    @CollectionTable(
+            name = "quiz_game_participants",
+            joinColumns = @JoinColumn(name = "quiz_game_id")
+    )
     private List<String> participants = new ArrayList<>();
 
 
