@@ -680,5 +680,210 @@
 "Rate",
 "Rein"
 ]
-}
+},
+      {
+        "difficulty": "medium",
+        "category": "Histoire",
+        "question": "Quel empereur romain mit en œuvre la réforme monétaire connue sous le nom de \"Solidus\" en 309 ap. J.-C. ?",
+        "correct_answer": "Constantin Ier",
+        "incorrect_answers": [
+          "Dioclétien",
+          "Maxence",
+          "Licinius"
+        ]
+      },
+      {
+        "difficulty": "hard",
+        "category": "Histoire",
+        "question": "Quel traité de  Treaty of Karlowitz (1699) marqua la fin de la domination ottomane en Hongrie ?",
+        "correct_answer": "Traité de Karlowitz",
+        "incorrect_answers": [
+          "Traité de Passarowitz",
+          "Traité de Sèvres",
+          "Traité de Belgrade"
+        ]
+      },
+      {
+        "difficulty": "medium",
+        "category": "Histoire",
+        "question": "Quel célèbre explorateur français fonda la colonie de Québec en 1608 ?",
+        "correct_answer": "Samuel de Champlain",
+        "incorrect_answers": [
+          "Jacques Cartier",
+          "Étienne Brûlé",
+          "Jean Talon"
+        ]
+      },
+      {
+        "difficulty": "hard",
+        "category": "Histoire",
+        "question": "Quel général britannique remporta la bataille de Bunker Hill en 1775 ?",
+        "correct_answer": "William Howe",
+        "incorrect_answers": [
+          "Thomas Gage",
+          "Charles Cornwallis",
+          "Henry Clinton"
+        ]
+      },
+      {
+        "difficulty": "medium",
+        "category": "Histoire",
+        "question": "Quelle révolution de 1905 aboutit à la création d'une Douma en Russie tsariste ?",
+        "correct_answer": "Révolution russe de 1905",
+        "incorrect_answers": [
+          "Révolution de Février",
+          "Révolution d'Octobre",
+          "Guerre russo-japonaise"
+        ]
+      },
+      {
+        "difficulty": "hard",
+        "category": "Histoire",
+        "question": "Quel congrès de  Congress of Berlin (1878) redessina les frontières des Balkans après la guerre russo-turque ?",
+        "correct_answer": "Congrès de Berlin",
+        "incorrect_answers": [
+          "Congrès de Vienne",
+          "Congrès de Paris",
+          "Congrès de Prague"
+        ]
+      },
+      {
+        "difficulty": "medium",
+        "category": "Histoire",
+        "question": "Qui fut le premier chancelier de la République fédérale d'Allemagne en 1949 ?",
+        "correct_answer": "Konrad Adenauer",
+        "incorrect_answers": [
+          "Willy Brandt",
+          "Helmut Kohl",
+          "Ludwig Erhard"
+        ]
+      },
+      {
+        "difficulty": "hard",
+        "category": "Histoire",
+        "question": "Quel souverain égyptien antique est célèbre pour avoir expulsé les Hyksôs vers 1550 av. J.-C. ?",
+        "correct_answer": "Ahmôsis Ier",
+        "incorrect_answers": [
+          "Thoutmosis III",
+          "Ramsès II",
+          "Akhenaton"
+        ]
+      },
+      {
+        "difficulty": "medium",
+        "category": "Histoire",
+        "question": "Quel État hindou fondé par Chandragupta Maurya au IIIᵉ siècle av. J.-C. devint un des plus vastes empires de l’Inde ?",
+        "correct_answer": "Empire maurya",
+        "incorrect_answers": [
+          "Empire Gupta",
+          "Empire chola",
+          "Empire moghol"
+        ]
+      },
+      {
+        "difficulty": "hard",
+        "category": "Histoire",
+        "question": "Quelle bataille de 751 opposa les Francs aux Arabes et stoppa l’expansion musulmane en Europe ?",
+        "correct_answer": "Bataille de Poitiers",
+        "incorrect_answers": [
+          "Bataille de Toulouse",
+          "Bataille d’Andrinople",
+          "Bataille du Yarmouk"
+        ]
+      },
+      {
+        "difficulty": "medium",
+        "category": "Histoire",
+        "question": "Quel document de  Magna Carta, signé en 1215, limita le pouvoir du roi Jean d’Angleterre ?",
+        "correct_answer": "Grande Charte",
+        "incorrect_answers": [
+          "Bill of Rights",
+          "Treaty of Windsor",
+          "Pacte de Compostelle"
+        ]
+      },
+      {
+        "difficulty": "hard",
+        "category": "Histoire",
+        "question": "Quel Code législatif promulgué en 1791 en France établit la séparation des pouvoirs ?",
+        "correct_answer": "Constitution de 1791",
+        "incorrect_answers": [
+          "Code civil",
+          "Déclaration des Droits de l’Homme",
+          "Cahiers de doléances"
+        ]
+      },
+      {
+        "difficulty": "medium",
+        "category": "Histoire",
+        "question": "Quel traité de  Treaties of Tordesillas (1494) partagea le Nouveau Monde entre Espagne et Portugal ?",
+        "correct_answer": "Traité de Tordesillas",
+        "incorrect_answers": [
+          "Traité de Saragosse",
+          "Traité de Madrid",
+          "Traité de Paris"
+        ]
+      },
+      {
+        "difficulty": "hard",
+        "category": "Histoire",
+        "question": "Quel pape lança la première croisade en 1095 sous l’égide du Concile de Clermont ?",
+        "correct_answer": "Urbain II",
+        "incorrect_answers": [
+          "Calixte II",
+          "Innocent III",
+          "Grégoire VII"
+        ]
+      },
+      {
+        "difficulty": "medium",
+        "category": "Histoire",
+        "question": "Quel millénaire marque le début de l’ère mésoaméricaine Maya selon le compte long ?",
+        "correct_answer": "3114 av. J.-C.",
+        "incorrect_answers": [
+          "4000 av. J.-C.",
+          "2500 av. J.-C.",
+          "2000 av. J.-C."
+        ]
+      },
+      {
+        "difficulty": "hard",
+        "category": "Histoire",
+        "question": "Quel empire africain s'effondra après l'invasion des troupes coloniales allemandes en 1898 ?",
+        "correct_answer": "Empire mahdiste du Soudan",
+        "incorrect_answers": [
+          "Empire de Sokoto",
+          "Royaume du Buganda",
+          "Empire Ashanti"
+        ]
+      },
+      {
+        "difficulty": "medium",
+        "category": "Histoire",
+        "question": "Quel navigateur vénitien publia en 1298 un récit de ses voyages en Asie ?",
+        "correct_answer": "Rustichello de Pise",
+        "incorrect_answers": [
+          "Niccolò de’ Conti",
+          "Marco Polo",
+          "Adèles de Guarino"
+        ]
+      },
+      {
+        "difficulty": "hard",
+        "category": "Histoire",
+        "question": "Quelle révolte indienne de 1857 est souvent considérée comme la première guerre d’indépendance ?",
+        "correct_answer": "Révolte des Cipayes",
+        "incorrect_answers": [
+          "Révolte des Taiping",
+          "Rébellion des Boxers",
+          "Révolte Mau Mau"
+        ]
+      }
+
+
+
+
+
+
+
 ]

@@ -15,6 +15,8 @@ import org.springframework.messaging.simp.SimpMessagingTemplate;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.CrossOrigin;
 
+import java.util.Optional;
+
 
 @Controller
 @CrossOrigin
@@ -41,9 +43,9 @@ public class QuizGameController {
       return gameService.enterQuizGame(gameId, user);
     }
 
-  @MessageMapping("/game/leave/{gameId}")
+    @MessageMapping("/game/leave/{gameId}")
     @SendTo("/game/{gameId}")
-    public QuizGameDTO leaveGame(@DestinationVariable String gameId, @Payload String user) {
+    public Optional<QuizGameDTO> leaveGame(@DestinationVariable String gameId, @Payload String user) {
         return gameService.removeParticipantFromGame(gameId, user);
 
     }

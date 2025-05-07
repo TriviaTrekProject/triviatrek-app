@@ -185,13 +185,20 @@ public class QuizGameService {
     }
 
     @Transactional
-    public QuizGameDTO removeParticipantFromGame(String gameId, String user) {
+    public Optional<QuizGameDTO> removeParticipantFromGame(String gameId, String user) {
         QuizGame updated = removeParticipant(gameId, user);
-        return toDTO(updated);
+        if (updated.getParticipants().isEmpty()) {
+            gameRepository.deleteByGameId(gameId);
+        }
+        else {
+            return Optional.ofNullable(toDTO(updated));
+        }
+        return Optional.empty();
     }
     @Transactional
     public QuizGameDTO enterQuizGame(String gameId, String user) {
         QuizGame updated = addParticipant(gameId, user);
         return toDTO(updated);
     }
+
 }

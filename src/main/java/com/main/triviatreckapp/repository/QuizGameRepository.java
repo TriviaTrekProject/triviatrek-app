@@ -17,5 +17,7 @@ public interface QuizGameRepository extends JpaRepository<QuizGame, Long> {
 
     @EntityGraph(attributePaths = {"room"})
     Optional<QuizGame> findByGameId(String gameId);
+
+    void deleteByGameId(String gameId);
 }
 
