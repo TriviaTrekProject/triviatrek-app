@@ -1,5 +1,6 @@
 package com.main.triviatreckapp.service;
 
+import com.main.triviatreckapp.Request.StartGameRequest;
 import com.main.triviatreckapp.dto.PlayerAnswerDTO;
 import com.main.triviatreckapp.dto.QuestionDTO;
 import com.main.triviatreckapp.dto.QuizGameDTO;
@@ -18,10 +19,10 @@ import java.util.*;
 import java.util.stream.Collectors;
 
 @Service
-@Transactional
 public class QuizGameService {
     private final QuestionRepository questionRepository;
     private final QuizGameRepository gameRepository;
+    private final RoomService roomService;
 
     @Value("${quiz.questions-per-game:10}")
     private int questionsPerGame;
@@ -30,10 +31,10 @@ public class QuizGameService {
     private int correctAnswerPoints;
 
     public QuizGameService(QuestionRepository questionRepository,
-                           RoomRepository roomRepository,
-                           QuizGameRepository gameRepository) {
+                           QuizGameRepository gameRepository, RoomService roomService) {
         this.questionRepository = questionRepository;
         this.gameRepository = gameRepository;
+        this.roomService = roomService;
     }
 
     /**
@@ -41,12 +42,25 @@ public class QuizGameService {
      * @param gameId identifiant de la salle
      * @return l'objet QuizGame créé
      */
+    @Transactional
     public QuizGame createGame(String gameId, Room room) {
+
+        QuizGame game = new QuizGame();
+
+
+        List<Question> all = questionRepository.findAll();
+        Collections.shuffle(all);
+        if (all.size() <= 20) {
+             all.forEach(game::addQuestion);
+        }
+        else {
+            all.subList(0, 20).forEach(game::addQuestion);
+    }
+
+
         // Créer un nouveau jeu
-            QuizGame game = new QuizGame();
             game.setRoom(room);
             game.setGameId(gameId);
-            game.setQuestions(questionRepository.findRandomQuestions(10));
             game.setCurrentQuestionIndex(0);
             game.setScores(new HashMap<>());
             game.setFinished(false);
@@ -60,21 +74,23 @@ public class QuizGameService {
      * @param playerAnswer DTO contenant l'identifiant du joueur et sa réponse
      * @return le jeu mis à jour
      */
-    public QuizGame processAnswer(String gameId, PlayerAnswerDTO playerAnswer) {
+    @Transactional
+    public QuizGameDTO processAnswerDTO(String gameId, PlayerAnswerDTO playerAnswer) {
         Optional<QuizGame> opt = gameRepository.findByGameId(gameId);
+
         if (opt.isEmpty()) {
             return null;
         }
 
         QuizGame game = opt.get();
         if (game.isFinished()) {
-            return game;
+            return toDTO(game);
         }
 
         Question current = game.getCurrentQuestion();
         if (current == null) {
             game.setFinished(true);
-            return gameRepository.save(game);
+            return toDTO(gameRepository.save(game));
         }
 
 
@@ -83,7 +99,7 @@ public class QuizGameService {
         }
 
         game.nextQuestion();
-        return gameRepository.save(game);
+        return toDTO(gameRepository.save(game));
     }
 
 
@@ -92,11 +108,11 @@ public class QuizGameService {
      * @param game le jeu à convertir
      * @return DTO prêt à être envoyé
      */
+
     public QuizGameDTO toDTO(QuizGame game) {
         if (game == null) {
             return null;
         }
-
         QuizGameDTO dto = new QuizGameDTO();
 
         List<ScoreDTO> scoreDTOs = game.getScores()
@@ -108,7 +124,8 @@ public class QuizGameService {
 
         dto.setRoomId(game.getRoom().getRoomId());
         dto.setCurrentQuestion(QuestionDTO.fromEntity(game.getCurrentQuestion()));
-        dto.setQuestions(game.getQuestions().stream().map(QuestionDTO::fromEntity).toList());
+        dto.setQuestions(game.getQuestions().stream().filter(Objects::nonNull)
+                .map(QuestionDTO::fromEntity).toList());
         dto.setScores(scoreDTOs);
         dto.setFinished(game.isFinished());
         dto.setGameId(game.getGameId());
@@ -130,24 +147,8 @@ public class QuizGameService {
         );
     }
 
-    /**
-     * Sélectionne aléatoirement un nombre spécifié de questions depuis la base de données
-     * @param count nombre de questions à sélectionner
-     * @return liste des questions sélectionnées
-     */
-    private List<Question> getRandomQuestions(int count) {
 
-        List<Question> all = questionRepository.findAll();
-        if (all.size() <= count) {
-            return all;
-        }
-        Collections.shuffle(all);
-        return all.subList(0, count).stream().map(q -> questionRepository.findById(q.getId())
-                        .orElseThrow(() -> new NoSuchElementException("Question introuvable : " + q.getId())))
-                .toList();
-
-    }
-
+    @Transactional
     public QuizGame addParticipant(String gameId, String user) {
         QuizGame game = gameRepository
                 .findByGameId((gameId)).orElseThrow(() ->
@@ -157,7 +158,7 @@ public class QuizGameService {
         return gameRepository.save(game);
     }
 
-
+    @Transactional
     public QuizGame removeParticipant(String gameId, String user) {
         QuizGame game = gameRepository
                 .findByGameId(gameId)
@@ -169,4 +170,28 @@ public class QuizGameService {
 
     }
 
+
+    @Transactional
+    public QuizGameDTO getQuizGameDTO(String gameId, StartGameRequest payload) {
+        Room room = roomService.getRoom(payload.getRoomId()).orElseThrow(() -> new IllegalArgumentException("Room not found: " + payload.getRoomId()));
+        QuizGame game = createGame(gameId, room);
+        addParticipant(gameId, payload.getUser());
+        room.setQuizGame(game);
+        roomService.saveRoom(room);
+
+        String destination = "/game/" + game.getGameId();
+        System.out.println("Sending game"+ game.getGameId() +" to " + destination);
+        return (toDTO(game));
+    }
+
+    @Transactional
+    public QuizGameDTO removeParticipantFromGame(String gameId, String user) {
+        QuizGame updated = removeParticipant(gameId, user);
+        return toDTO(updated);
+    }
+    @Transactional
+    public QuizGameDTO enterQuizGame(String gameId, String user) {
+        QuizGame updated = addParticipant(gameId, user);
+        return toDTO(updated);
+    }
 }

@@ -22,6 +22,10 @@ public class QuestionDTO {
     private List<String> options;
 
     public static QuestionDTO fromEntity(Question q) {
+        if (q == null) {
+            return null;
+        }
+
         return new QuestionDTO(
                 q.getId(),
                 q.getQuestion(),

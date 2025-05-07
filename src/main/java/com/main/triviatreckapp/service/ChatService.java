@@ -5,6 +5,7 @@ import com.main.triviatreckapp.entities.Room;
 import com.main.triviatreckapp.repository.MessageRepository;
 import com.main.triviatreckapp.repository.RoomRepository;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.time.LocalDateTime;
 
@@ -17,6 +18,7 @@ public class ChatService {
         this.roomRepo = roomRepo;
     }
 
+    @Transactional
     public Message saveMessage(String roomId, String sender, String content) {
         Room room = roomRepo.findByRoomId(roomId).orElseThrow(() -> new IllegalArgumentException("Room not found: " + roomId));
 

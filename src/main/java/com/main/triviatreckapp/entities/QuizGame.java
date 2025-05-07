@@ -29,12 +29,12 @@ public class QuizGame {
     @JoinColumn(name = "room_id", unique = true)
     private Room room;
 
-    // ordre des questions sélectionnées pour cette partie
     @ManyToMany(cascade = { CascadeType.PERSIST, CascadeType.MERGE })
-    @JoinTable( name = "quiz_game_questions",
+    @JoinTable(
+            name = "question_quiz_game",
             joinColumns = @JoinColumn(name = "quiz_game_id"),
-            inverseJoinColumns = @JoinColumn(name = "question_id"))
-    @OrderColumn(name = "question_order")
+            inverseJoinColumns = @JoinColumn(name = "question_id")
+    )
     private List<Question> questions = new ArrayList<>();
 
     // score par joueur (clé = nom ou id utilisateur)
@@ -88,5 +88,10 @@ public class QuizGame {
     public void addParticipant(String participant) {
         participants.add(participant);
     }
+
+    public void addQuestion(Question q) {
+        this.questions.add(q);
+    }
+
 
 }
