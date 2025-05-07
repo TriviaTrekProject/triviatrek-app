@@ -21,7 +21,6 @@ import java.util.stream.Collectors;
 @Transactional
 public class QuizGameService {
     private final QuestionRepository questionRepository;
-    private final RoomRepository roomRepository;
     private final QuizGameRepository gameRepository;
 
     @Value("${quiz.questions-per-game:10}")
@@ -34,7 +33,6 @@ public class QuizGameService {
                            RoomRepository roomRepository,
                            QuizGameRepository gameRepository) {
         this.questionRepository = questionRepository;
-        this.roomRepository = roomRepository;
         this.gameRepository = gameRepository;
     }
 
@@ -44,9 +42,7 @@ public class QuizGameService {
      * @return l'objet QuizGame créé
      */
     public QuizGame createGame(String gameId, Room room) {
-        // Sélectionner des questions aléatoires depuis la base de données
-        List<Question> randomQuestions = getRandomQuestions(questionsPerGame);
-                // Créer un nouveau jeu
+        // Créer un nouveau jeu
             QuizGame game = new QuizGame();
             game.setRoom(room);
             game.setGameId(gameId);
@@ -80,11 +76,9 @@ public class QuizGameService {
             game.setFinished(true);
             return gameRepository.save(game);
         }
-        System.out.println("Player " + playerAnswer.getPlayer() + " answered " + playerAnswer.getAnswerIndex() + " for question " + current.getId());
-        System.out.println("Correct answer is " + current.getCorrectIndex());
 
 
-        if (playerAnswer.getAnswerIndex()  == current.getCorrectIndex()) {
+        if (Objects.equals(playerAnswer.getAnswer(), current.getCorrectAnswer())) {
             game.addScore(playerAnswer.getPlayer(), correctAnswerPoints);
         }
 

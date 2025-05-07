@@ -9,5 +9,5 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class PlayerAnswerDTO {
     private String player;     // Identifiant du joueur
-    private int answerIndex;   // Index de la réponse choisie (0-based)
+    private String answer;   // Index de la réponse choisie (0-based)
 }

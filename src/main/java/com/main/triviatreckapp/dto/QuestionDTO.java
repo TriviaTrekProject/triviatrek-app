@@ -5,6 +5,8 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 @Data
@@ -18,7 +20,6 @@ public class QuestionDTO {
     private String correctAnswer;
     private List<String> incorrectAnswers;
     private List<String> options;
-    private int correctIndex;
 
     public static QuestionDTO fromEntity(Question q) {
         return new QuestionDTO(
@@ -28,12 +29,24 @@ public class QuestionDTO {
                 q.getCategory(),
                 q.getCorrectAnswer(),
                 q.getIncorrectAnswers(),
-                q.getOptions(),
-                q.getCorrectIndex()
+                generateOptions(q)
         );
     }
 
+    public static List<String> generateOptions(Question q) {
+        List<String> options = new ArrayList<>();
+        if (q.getCorrectAnswer() != null) {
+            options.add(q.getCorrectAnswer());
+        }
+        if (q.getIncorrectAnswers() != null) {
+            options.addAll(q.getIncorrectAnswers());
+        }
+        // Mélange aléatoire des options pour éviter que la bonne réponse soit toujours à la même place
+        Collections.shuffle(options);
+        return options;
+    }
 }
+
 
 
 
