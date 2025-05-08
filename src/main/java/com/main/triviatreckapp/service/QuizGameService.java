@@ -65,7 +65,7 @@ public class QuizGameService {
             game.setScores(new HashMap<>());
             game.setFinished(false);
 
-        return gameRepository.save(game);
+        return gameRepository.saveAndFlush(game);
     }
 
     /**

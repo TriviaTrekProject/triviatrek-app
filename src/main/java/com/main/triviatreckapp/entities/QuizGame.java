@@ -29,7 +29,7 @@ public class QuizGame {
     @JoinColumn(name = "room_id", unique = true)
     private Room room;
 
-    @ManyToMany(cascade = { CascadeType.PERSIST, CascadeType.MERGE })
+    @ManyToMany(fetch = FetchType.LAZY)
     @JoinTable(
             name = "question_quiz_game",
             joinColumns = @JoinColumn(name = "quiz_game_id"),
