@@ -1,0 +1,889 @@
+[
+{
+"difficulty": "hard",
+"category": "Histoire",
+"question": "Quel édit promulgué en 1562 accorda une forme de tolérance aux protestants en France ?",
+"correct_answer": "Édit de Saint-Germain",
+"incorrect_answers": [
+"Édit de Nantes",
+"Édit de Fontainebleau",
+"Édit de Beaulieu"
+]
+},
+{
+"difficulty": "medium",
+"category": "Histoire",
+"question": "Quelle civilisation construisit le site cérémoniel de Teotihuacán entre 100 et 750 apr. J.-C. ?",
+"correct_answer": "Une société mésoaméricaine pré-aztèque",
+"incorrect_answers": [
+"Les Mayas",
+"Les Aztèques",
+"Les Olmèques"
+]
+},
+{
+"difficulty": "medium",
+"category": "Histoire",
+"question": "Quel général romain fut vainqueur de Vercingétorix à Alésia en 52 av. J.-C. ?",
+"correct_answer": "Jules César",
+"incorrect_answers": [
+"Marc Antoine",
+"Auguste",
+"Scipion l’Africain"
+]
+},
+{
+"difficulty": "hard",
+"category": "Histoire",
+"question": "Quel texte de l’Antiquité grecque est considéré comme le plus ancien traité de géographie ?",
+"correct_answer": "Géographie d’Ératosthène",
+"incorrect_answers": [
+"Les Histoires d’Hérodote",
+"Géographie de Strabon",
+"Théogonie d’Hésiode"
+]
+},
+{
+"difficulty": "medium",
+"category": "Histoire",
+"question": "En quelle année la dynastie Qing prit-elle le contrôle total de la Chine ?",
+"correct_answer": "1644",
+"incorrect_answers": [
+"1616",
+"1683",
+"1720"
+]
+},
+{
+"difficulty": "hard",
+"category": "Histoire",
+"question": "Quel empire sud-américain possédait un réseau routier de plus de 25 000 km ?",
+"correct_answer": "Empire inca",
+"incorrect_answers": [
+"Empire maya",
+"Empire aztèque",
+"Empire muisca"
+]
+},
+{
+"difficulty": "medium",
+"category": "Histoire",
+"question": "Quel traité de 1815 redessina une grande partie de l’Europe après la chute de Napoléon ?",
+"correct_answer": "Congrès de Vienne",
+"incorrect_answers": [
+"Traité de Paris",
+"Traité de Tilsit",
+"Traité de Campo Formio"
+]
+},
+{
+"difficulty": "medium",
+"category": "Histoire",
+"question": "Quel explorateur portugais contournant l’Afrique atteignit l’Inde en 1498 ?",
+"correct_answer": "Vasco de Gama",
+"incorrect_answers": [
+"Bartolomeu Dias",
+"Ferdinand Magellan",
+"Pedro Álvares Cabral"
+]
+},
+{
+"difficulty": "hard",
+"category": "Histoire",
+"question": "Quelle bataille navale de 1805 consacra la suprématie britannique en mer ?",
+"correct_answer": "Trafalgar",
+"incorrect_answers": [
+"Aboukir",
+"Leipzig",
+"La Hougue"
+]
+},
+{
+"difficulty": "medium",
+"category": "Histoire",
+"question": "Quel souverain médiéval fit construire l’abbaye de Westminster au XIᵉ siècle ?",
+"correct_answer": "Édouard le Confesseur",
+"incorrect_answers": [
+"Guillaume le Conquérant",
+"Henri II Plantagenêt",
+"Richard Cœur de Lion"
+]
+},
+{
+"difficulty": "hard",
+"category": "Histoire",
+"question": "Quel chef carthaginois emmena des éléphants lors de la traversée des Alpes ?",
+"correct_answer": "Hannibal Barca",
+"incorrect_answers": [
+"Hasdrubal Barca",
+"Hamilcar Barca",
+"Mago Barca"
+]
+},
+{
+"difficulty": "medium",
+"category": "Histoire",
+"question": "Quel concile œcuménique de 451 fixa la doctrine de la double nature du Christ ?",
+"correct_answer": "Concile de Chalcédoine",
+"incorrect_answers": [
+"Concile de Nicée",
+"Concile de Trente",
+"Concile de Constantinople"
+]
+},
+{
+"difficulty": "medium",
+"category": "Histoire",
+"question": "En quelle année la Tour Eiffel fut-elle inaugurée lors de l’Exposition universelle de Paris ?",
+"correct_answer": "1889",
+"incorrect_answers": [
+"1878",
+"1900",
+"1867"
+]
+},
+{
+"difficulty": "hard",
+"category": "Histoire",
+"question": "Quel roi français signa l’Édit de Fontainebleau en 1685, révoquant la tolérance protestante ?",
+"correct_answer": "Louis XIV",
+"incorrect_answers": [
+"Louis XIII",
+"Louis XV",
+"Louis XVI"
+]
+},
+{
+"difficulty": "medium",
+"category": "Histoire",
+"question": "Quel traité de 1919 imposa de sévères réparations à l’Allemagne ?",
+"correct_answer": "Traité de Versailles",
+"incorrect_answers": [
+"Traité de Saint-Germain-en-Laye",
+"Traité de Trianon",
+"Traité de Sèvres"
+]
+},
+{
+"difficulty": "hard",
+"category": "Histoire",
+"question": "Quelle opération alliée de 1944 fut la plus vaste invasion amphibie de l’Histoire ?",
+"correct_answer": "Overlord (Débarquement en Normandie)",
+"incorrect_answers": [
+"Husky (Sicile)",
+"Torch (Afrique du Nord)",
+"Market Garden"
+]
+},
+{
+"difficulty": "medium",
+"category": "Histoire",
+"question": "En 1969, qui posa le premier le pied sur la Lune ?",
+"correct_answer": "Neil Armstrong",
+"incorrect_answers": [
+"Buzz Aldrin",
+"Yuri Gagarin",
+"Michael Collins"
+]
+},
+{
+"difficulty": "hard",
+"category": "Histoire",
+"question": "Quel traité de 1975 reconnut l’indépendance du Cambodge ?",
+"correct_answer": "Accords de Paris",
+"incorrect_answers": [
+"Traité de Saïgon",
+"Traité de Phnom Penh",
+"Accords de Genève"
+]
+},
+{
+"difficulty": "medium",
+"category": "Histoire",
+"question": "Quel pays fut le premier à accorder le droit de vote aux femmes en 1906 ?",
+"correct_answer": "Finlande",
+"incorrect_answers": [
+"Nouvelle-Zélande",
+"États-Unis",
+"Royaume-Uni"
+]
+},
+{
+"difficulty": "medium",
+"category": "Histoire",
+"question": "Qui fut le dernier empereur romain d’Occident, déposé en 476 ?",
+"correct_answer": "Romulus Augustule",
+"incorrect_answers": [
+"Justinian Ier",
+"Charles le Chauve",
+"Honorius"
+]
+},
+{
+"difficulty": "hard",
+"category": "Histoire",
+"question": "Quelle dynastie gouverna durant le Nouvel Empire égyptien ?",
+"correct_answer": "XVIIIᵉ dynastie",
+"incorrect_answers": [
+"XIXᵉ dynastie",
+"XVIIᵉ dynastie",
+"XXᵉ dynastie"
+]
+},
+{
+"difficulty": "medium",
+"category": "Histoire",
+"question": "Quel explorateur vénitien atteignit la cour de Kubilaï Khan en 1275 ?",
+"correct_answer": "Marco Polo",
+"incorrect_answers": [
+"John Cabot",
+"Christophe Colomb",
+"Vasco Núñez de Balboa"
+]
+},
+{
+"difficulty": "hard",
+"category": "Histoire",
+"question": "Quel siège de 1453 marqua la chute de Constantinople ?",
+"correct_answer": "Prise par Mehmed II",
+"incorrect_answers": [
+"Prise par Timour",
+"Prise par Richard Cœur de Lion",
+"Prise par Charlemagne"
+]
+},
+{
+"difficulty": "medium",
+"category": "Histoire",
+"question": "Quel empire du XVIIᵉ siècle s’étendait de l’Indus au Bosphore ?",
+"correct_answer": "Empire moghol",
+"incorrect_answers": [
+"Empire ottoman",
+"Empire timuride",
+"État des Marathas"
+]
+},
+{
+"difficulty": "medium",
+"category": "Histoire",
+"question": "Qui signa la capitulation allemande le 8 mai 1945 ?",
+"correct_answer": "Alfred Jodl",
+"incorrect_answers": [
+"Heinrich Himmler",
+"Wilhelm Keitel",
+"Albert Kesselring"
+]
+},
+{
+"difficulty": "hard",
+"category": "Histoire",
+"question": "Quelle bataille de 1066 détermina la conquête normande de l’Angleterre ?",
+"correct_answer": "Hastings",
+"incorrect_answers": [
+"Stanford Bridge",
+"Crécy",
+"Agincourt"
+]
+},
+{
+"difficulty": "medium",
+"category": "Histoire",
+"question": "Quel traité de paix de 1648 institua le système des États-nations ?",
+"correct_answer": "Paix de Westphalie",
+"incorrect_answers": [
+"Paix d’Utrecht",
+"Traité de Tilsit",
+"Traité de Cateau-Cambrésis"
+]
+},
+{
+"difficulty": "hard",
+"category": "Histoire",
+"question": "Quel roi carolingien fut couronné empereur à Rome en 800 ?",
+"correct_answer": "Charlemagne",
+"incorrect_answers": [
+"Louis le Pieux",
+"Charles le Chauve",
+"Lothaire Ier"
+]
+},
+{
+"difficulty": "medium",
+"category": "Histoire",
+"question": "Quel oppidum gaulois résista à Jules César avant de tomber en 52 av. J.-C. ?",
+"correct_answer": "Alésia",
+"incorrect_answers": [
+"Bibracte",
+"Avaricum",
+"Gergovie"
+]
+},
+{
+"difficulty": "medium",
+"category": "Culture générale",
+"question": "Dans la mythologie égyptienne, quel dieu pèse le cœur des défunts ?",
+"correct_answer": "Anubis",
+"incorrect_answers": [
+"Osiris",
+"Rê",
+"Thot"
+]
+},
+{
+"difficulty": "hard",
+"category": "Culture générale",
+"question": "Quel roman de la Renaissance décrit le voyage utopique sur l’île d’Utopie ?",
+"correct_answer": "Utopie de Thomas More",
+"incorrect_answers": [
+"La Cité du Soleil",
+"Gargantua et Pantagruel",
+"La Princesse de Clèves"
+]
+},
+{
+"difficulty": "medium",
+"category": "Culture générale",
+"question": "Quel peintre réaliste bordelais peignit « Les Glaneuses » en 1857 ?",
+"correct_answer": "Jean-François Millet",
+"incorrect_answers": [
+"Gustave Courbet",
+"Édouard Manet",
+"Camille Corot"
+]
+},
+{
+"difficulty": "medium",
+"category": "Culture générale",
+"question": "Quel auteur argentin publia « Le Tunnel » en 1948 ?",
+"correct_answer": "Ernesto Sabato",
+"incorrect_answers": [
+"Jorge Luis Borges",
+"Julio Cortázar",
+"Adolfo Bioy Casares"
+]
+},
+{
+"difficulty": "hard",
+"category": "Culture générale",
+"question": "Quelle symphonie de Gustav Mahler comporte un « Adagietto » célèbre ?",
+"correct_answer": "Symphonie no 5",
+"incorrect_answers": [
+"Symphonie no 2",
+"Symphonie no 3",
+"Symphonie no 9"
+]
+},
+{
+"difficulty": "medium",
+"category": "Culture générale",
+"question": "Quel poète français composa « Les Illuminations » ?",
+"correct_answer": "Arthur Rimbaud",
+"incorrect_answers": [
+"Paul Verlaine",
+"Charles Baudelaire",
+"Stéphane Mallarmé"
+]
+},
+{
+"difficulty": "hard",
+"category": "Culture générale",
+"question": "Quel monument romain, connu pour son arc unique, se trouve à Orange ?",
+"correct_answer": "Arc d’Orange",
+"incorrect_answers": [
+"Arc de Constantin",
+"Arc de Triomphe du Carrousel",
+"Arc de Titus"
+]
+},
+{
+"difficulty": "medium",
+"category": "Culture générale",
+"question": "Quelle est la langue officielle de l’Union africaine ?",
+"correct_answer": "Arabe",
+"incorrect_answers": [
+"Anglais",
+"Français",
+"Swahili"
+]
+},
+{
+"difficulty": "medium",
+"category": "Culture générale",
+"question": "Quel film muet de 1920 révolutionna le jeu d’ombres expressives ?",
+"correct_answer": "Le Cabinet du docteur Caligari",
+"incorrect_answers": [
+"Nosferatu",
+"Metropolis",
+"Intolerance"
+]
+},
+{
+"difficulty": "hard",
+"category": "Culture générale",
+"question": "Quel poème épique anglo-saxon est attribué au barde aveugle Caedmon ?",
+"correct_answer": "Beowulf",
+"incorrect_answers": [
+"The Wanderer",
+"Dream of the Rood",
+"The Seafarer"
+]
+},
+{
+"difficulty": "medium",
+"category": "Culture générale",
+"question": "Qui écrivit la tragédie grecque « Antigone » ?",
+"correct_answer": "Sophocle",
+"incorrect_answers": [
+"Euripide",
+"Eschyle",
+"Aristophane"
+]
+},
+{
+"difficulty": "hard",
+"category": "Culture générale",
+"question": "Quel compositeur italien du XIXᵉ siècle est connu pour l’opéra « La Traviata » ?",
+"correct_answer": "Giuseppe Verdi",
+"incorrect_answers": [
+"Giacomo Puccini",
+"Gaetano Donizetti",
+"Vincenzo Bellini"
+]
+},
+{
+"difficulty": "medium",
+"category": "Culture générale",
+"question": "Quel philosophe chinois est l’auteur des « Entretiens » ?",
+"correct_answer": "Confucius",
+"incorrect_answers": [
+"Lao Tseu",
+"Mozi",
+"Mencius"
+]
+},
+{
+"difficulty": "medium",
+"category": "Culture générale",
+"question": "Quel écrivain russe écrivit « Guerre et Paix » ?",
+"correct_answer": "Léon Tolstoï",
+"incorrect_answers": [
+"Fiodor Dostoïevski",
+"Ivan Tourgueniev",
+"Nicolas Gogol"
+]
+},
+{
+"difficulty": "hard",
+"category": "Culture générale",
+"question": "Quel tableau de Léonard de Vinci était conservé à la Cour de France avant d’être volé en 1911 ?",
+"correct_answer": "La Joconde",
+"incorrect_answers": [
+"La Vierge aux rochers",
+"Le Charpentier",
+"Saint Jean Baptiste"
+]
+},
+{
+"difficulty": "medium",
+"category": "Culture générale",
+"question": "Quelle cité antique est célèbre pour ses colonnes doriques sur l’Acropole ?",
+"correct_answer": "Athènes",
+"incorrect_answers": [
+"Corinthe",
+"Thèbes",
+"Éphèse"
+]
+},
+{
+"difficulty": "hard",
+"category": "Culture générale",
+"question": "Quel poète crea le mouvement surréaliste avec le « Manifeste du surréalisme » (1924) ?",
+"correct_answer": "André Breton",
+"incorrect_answers": [
+"Paul Éluard",
+"Salvador Dalí",
+"Max Ernst"
+]
+},
+{
+"difficulty": "medium",
+"category": "Culture générale",
+"question": "Quel est le nom originel de New York à sa fondation en 1624 ?",
+"correct_answer": "New Amsterdam",
+"incorrect_answers": [
+"Fort Orange",
+"Nieuw Rotterdam",
+"New Utrecht"
+]
+},
+{
+"difficulty": "medium",
+"category": "Science",
+"question": "Quel physicien proposa la relativité restreinte en 1905 ?",
+"correct_answer": "Albert Einstein",
+"incorrect_answers": [
+"Hendrik Lorentz",
+"Henri Poincaré",
+"Max Planck"
+]
+},
+{
+"difficulty": "hard",
+"category": "Science",
+"question": "Quel est l’élément chimique de numéro atomique 43, surnommé le métal perdu ?",
+"correct_answer": "Technétium",
+"incorrect_answers": [
+"Protactinium",
+"Rhénium",
+"Prométhium"
+]
+},
+{
+"difficulty": "medium",
+"category": "Science",
+"question": "Quel est le seul métal liquide à température ambiante ?",
+"correct_answer": "Mercure",
+"incorrect_answers": [
+"Gallium",
+"Brome",
+"Césium"
+]
+},
+{
+"difficulty": "hard",
+"category": "Science",
+"question": "Quel astronome découvrit les quatre plus grands satellites de Jupiter en 1610 ?",
+"correct_answer": "Galilée",
+"incorrect_answers": [
+"Johannes Kepler",
+"Christiaan Huygens",
+"Isaac Newton"
+]
+},
+{
+"difficulty": "medium",
+"category": "Science",
+"question": "Quelle loi exprime que la pression d’un gaz est inversement proportionnelle à son volume ?",
+"correct_answer": "Loi de Boyle-Mariotte",
+"incorrect_answers": [
+"Loi de Charles",
+"Loi d’Avogadro",
+"Loi de Dalton"
+]
+},
+{
+"difficulty": "hard",
+"category": "Science",
+"question": "Quel scientifique découvrit la circulation sanguine en 1628 ?",
+"correct_answer": "William Harvey",
+"incorrect_answers": [
+"Andreas Vesalius",
+"Marcello Malpighi",
+"Hippocrate"
+]
+},
+{
+"difficulty": "medium",
+"category": "Science",
+"question": "Quelle est la vitesse exacte de la lumière dans le vide (en m/s) ?",
+"correct_answer": "299 792 458",
+"incorrect_answers": [
+"300 000 000",
+"299 792 000",
+"299 792 458 000"
+]
+},
+{
+"difficulty": "hard",
+"category": "Science",
+"question": "Quel principe stipule que l’énergie ne peut être ni créée ni détruite ?",
+"correct_answer": "Conservation de l’énergie",
+"incorrect_answers": [
+"Principe d’incertitude",
+"Principe d’équivalence",
+"Principe d’exclusion"
+]
+},
+{
+"difficulty": "medium",
+"category": "Science",
+"question": "Quel est le pH normal du sang humain ?",
+"correct_answer": "7,4",
+"incorrect_answers": [
+"7,0",
+"6,8",
+"8,1"
+]
+},
+{
+"difficulty": "hard",
+"category": "Science",
+"question": "Quelle molécule transporte l’oxygène dans le sang ?",
+"correct_answer": "Hémoglobine",
+"incorrect_answers": [
+"Myoglobine",
+"Hémocyanine",
+"Albumine"
+]
+},
+{
+"difficulty": "medium",
+"category": "Science",
+"question": "Quel est le symbole chimique du sodium ?",
+"correct_answer": "Na",
+"incorrect_answers": [
+"S",
+"So",
+"Sd"
+]
+},
+{
+"difficulty": "hard",
+"category": "Science",
+"question": "Quel modèle atomique proposa la structure planétaire de l’atome ?",
+"correct_answer": "Modèle de Bohr",
+"incorrect_answers": [
+"Modèle de Thomson",
+"Modèle de Rutherford",
+"Modèle quantique"
+]
+},
+{
+"difficulty": "medium",
+"category": "Science",
+"question": "Quel gaz est majoritaire dans l’atmosphère terrestre ?",
+"correct_answer": "Azote",
+"incorrect_answers": [
+"Oxygène",
+"Argon",
+"Dioxyde de carbone"
+]
+},
+{
+"difficulty": "hard",
+"category": "Science",
+"question": "Quel physicien est à l’origine de la mécanique quantique, introduisant le principe d’incertitude ?",
+"correct_answer": "Werner Heisenberg",
+"incorrect_answers": [
+"Niels Bohr",
+"Erwin Schrödinger",
+"Paul Dirac"
+]
+},
+{
+"difficulty": "medium",
+"category": "Science",
+"question": "Quel organe produit l’insuline dans le corps humain ?",
+"correct_answer": "Pancréas",
+"incorrect_answers": [
+"Foie",
+"Rate",
+"Rein"
+]
+},
+      {
+        "difficulty": "medium",
+        "category": "Histoire",
+        "question": "Quel empereur romain mit en œuvre la réforme monétaire connue sous le nom de \"Solidus\" en 309 ap. J.-C. ?",
+        "correct_answer": "Constantin Ier",
+        "incorrect_answers": [
+          "Dioclétien",
+          "Maxence",
+          "Licinius"
+        ]
+      },
+      {
+        "difficulty": "hard",
+        "category": "Histoire",
+        "question": "Quel traité de  Treaty of Karlowitz (1699) marqua la fin de la domination ottomane en Hongrie ?",
+        "correct_answer": "Traité de Karlowitz",
+        "incorrect_answers": [
+          "Traité de Passarowitz",
+          "Traité de Sèvres",
+          "Traité de Belgrade"
+        ]
+      },
+      {
+        "difficulty": "medium",
+        "category": "Histoire",
+        "question": "Quel célèbre explorateur français fonda la colonie de Québec en 1608 ?",
+        "correct_answer": "Samuel de Champlain",
+        "incorrect_answers": [
+          "Jacques Cartier",
+          "Étienne Brûlé",
+          "Jean Talon"
+        ]
+      },
+      {
+        "difficulty": "hard",
+        "category": "Histoire",
+        "question": "Quel général britannique remporta la bataille de Bunker Hill en 1775 ?",
+        "correct_answer": "William Howe",
+        "incorrect_answers": [
+          "Thomas Gage",
+          "Charles Cornwallis",
+          "Henry Clinton"
+        ]
+      },
+      {
+        "difficulty": "medium",
+        "category": "Histoire",
+        "question": "Quelle révolution de 1905 aboutit à la création d'une Douma en Russie tsariste ?",
+        "correct_answer": "Révolution russe de 1905",
+        "incorrect_answers": [
+          "Révolution de Février",
+          "Révolution d'Octobre",
+          "Guerre russo-japonaise"
+        ]
+      },
+      {
+        "difficulty": "hard",
+        "category": "Histoire",
+        "question": "Quel congrès de  Congress of Berlin (1878) redessina les frontières des Balkans après la guerre russo-turque ?",
+        "correct_answer": "Congrès de Berlin",
+        "incorrect_answers": [
+          "Congrès de Vienne",
+          "Congrès de Paris",
+          "Congrès de Prague"
+        ]
+      },
+      {
+        "difficulty": "medium",
+        "category": "Histoire",
+        "question": "Qui fut le premier chancelier de la République fédérale d'Allemagne en 1949 ?",
+        "correct_answer": "Konrad Adenauer",
+        "incorrect_answers": [
+          "Willy Brandt",
+          "Helmut Kohl",
+          "Ludwig Erhard"
+        ]
+      },
+      {
+        "difficulty": "hard",
+        "category": "Histoire",
+        "question": "Quel souverain égyptien antique est célèbre pour avoir expulsé les Hyksôs vers 1550 av. J.-C. ?",
+        "correct_answer": "Ahmôsis Ier",
+        "incorrect_answers": [
+          "Thoutmosis III",
+          "Ramsès II",
+          "Akhenaton"
+        ]
+      },
+      {
+        "difficulty": "medium",
+        "category": "Histoire",
+        "question": "Quel État hindou fondé par Chandragupta Maurya au IIIᵉ siècle av. J.-C. devint un des plus vastes empires de l’Inde ?",
+        "correct_answer": "Empire maurya",
+        "incorrect_answers": [
+          "Empire Gupta",
+          "Empire chola",
+          "Empire moghol"
+        ]
+      },
+      {
+        "difficulty": "hard",
+        "category": "Histoire",
+        "question": "Quelle bataille de 751 opposa les Francs aux Arabes et stoppa l’expansion musulmane en Europe ?",
+        "correct_answer": "Bataille de Poitiers",
+        "incorrect_answers": [
+          "Bataille de Toulouse",
+          "Bataille d’Andrinople",
+          "Bataille du Yarmouk"
+        ]
+      },
+      {
+        "difficulty": "medium",
+        "category": "Histoire",
+        "question": "Quel document de  Magna Carta, signé en 1215, limita le pouvoir du roi Jean d’Angleterre ?",
+        "correct_answer": "Grande Charte",
+        "incorrect_answers": [
+          "Bill of Rights",
+          "Treaty of Windsor",
+          "Pacte de Compostelle"
+        ]
+      },
+      {
+        "difficulty": "hard",
+        "category": "Histoire",
+        "question": "Quel Code législatif promulgué en 1791 en France établit la séparation des pouvoirs ?",
+        "correct_answer": "Constitution de 1791",
+        "incorrect_answers": [
+          "Code civil",
+          "Déclaration des Droits de l’Homme",
+          "Cahiers de doléances"
+        ]
+      },
+      {
+        "difficulty": "medium",
+        "category": "Histoire",
+        "question": "Quel traité de  Treaties of Tordesillas (1494) partagea le Nouveau Monde entre Espagne et Portugal ?",
+        "correct_answer": "Traité de Tordesillas",
+        "incorrect_answers": [
+          "Traité de Saragosse",
+          "Traité de Madrid",
+          "Traité de Paris"
+        ]
+      },
+      {
+        "difficulty": "hard",
+        "category": "Histoire",
+        "question": "Quel pape lança la première croisade en 1095 sous l’égide du Concile de Clermont ?",
+        "correct_answer": "Urbain II",
+        "incorrect_answers": [
+          "Calixte II",
+          "Innocent III",
+          "Grégoire VII"
+        ]
+      },
+      {
+        "difficulty": "medium",
+        "category": "Histoire",
+        "question": "Quel millénaire marque le début de l’ère mésoaméricaine Maya selon le compte long ?",
+        "correct_answer": "3114 av. J.-C.",
+        "incorrect_answers": [
+          "4000 av. J.-C.",
+          "2500 av. J.-C.",
+          "2000 av. J.-C."
+        ]
+      },
+      {
+        "difficulty": "hard",
+        "category": "Histoire",
+        "question": "Quel empire africain s'effondra après l'invasion des troupes coloniales allemandes en 1898 ?",
+        "correct_answer": "Empire mahdiste du Soudan",
+        "incorrect_answers": [
+          "Empire de Sokoto",
+          "Royaume du Buganda",
+          "Empire Ashanti"
+        ]
+      },
+      {
+        "difficulty": "medium",
+        "category": "Histoire",
+        "question": "Quel navigateur vénitien publia en 1298 un récit de ses voyages en Asie ?",
+        "correct_answer": "Rustichello de Pise",
+        "incorrect_answers": [
+          "Niccolò de’ Conti",
+          "Marco Polo",
+          "Adèles de Guarino"
+        ]
+      },
+      {
+        "difficulty": "hard",
+        "category": "Histoire",
+        "question": "Quelle révolte indienne de 1857 est souvent considérée comme la première guerre d’indépendance ?",
+        "correct_answer": "Révolte des Cipayes",
+        "incorrect_answers": [
+          "Révolte des Taiping",
+          "Rébellion des Boxers",
+          "Révolte Mau Mau"
+        ]
+      }
+
+
+
+
+
+
+
+]

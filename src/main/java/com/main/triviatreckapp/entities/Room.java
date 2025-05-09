@@ -30,7 +30,18 @@ public class Room {
     @OneToMany(fetch = FetchType.EAGER, mappedBy = "room", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<Message> messages = new ArrayList<>();
 
+    @OneToOne(fetch = FetchType.EAGER, mappedBy = "room", cascade = CascadeType.ALL, orphanRemoval = true)
+    private QuizGame quizGame;
+
     public void addParticipant(String participant) {
         participants.add(participant);
     }
+
+    public void setQuizGame(QuizGame game) {
+        this.quizGame = game;
+        if (game != null && game.getRoom() != this) {
+            game.setRoom(this);
+        }
+    }
+
 }
