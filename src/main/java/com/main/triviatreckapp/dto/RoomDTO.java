@@ -16,5 +16,6 @@ public class RoomDTO {
     public List<String> participants;
     public List<MessageDTO> messages;
     public String gameId;
+    public boolean activeGame;
 
 }

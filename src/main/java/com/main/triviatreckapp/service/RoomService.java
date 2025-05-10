@@ -77,7 +77,7 @@ public class RoomService {
                                 message.getSender(),
                                 message.getContent()))
                 .toList();
-        return new RoomDTO(roomId, participantsDTO, messagesDTO, gameId);
+        return new RoomDTO(roomId, participantsDTO, messagesDTO, gameId, room.isActiveGame());
     }
 
     @Transactional

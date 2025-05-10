@@ -33,6 +33,9 @@ public class Room {
     @OneToOne(fetch = FetchType.EAGER, mappedBy = "room", cascade = CascadeType.ALL, orphanRemoval = true)
     private QuizGame quizGame;
 
+    @Column(name = "activeGame")
+    private boolean activeGame = false;
+
     public void addParticipant(String participant) {
         participants.add(participant);
     }
