@@ -177,6 +177,7 @@ public class QuizGameService {
         QuizGame game = createGame(gameId, room);
         addParticipant(gameId, payload.getUser());
         room.setQuizGame(game);
+        room.setActiveGame(true);
         roomService.saveRoom(room);
 
         String destination = "/game/" + game.getGameId();
@@ -189,6 +190,8 @@ public class QuizGameService {
         QuizGame updated = removeParticipant(gameId, user);
         if (updated.getParticipants().isEmpty()) {
             gameRepository.deleteByGameId(gameId);
+            updated.getRoom().setActiveGame(false);
+            roomService.saveRoom(updated.getRoom());
         }
         else {
             return Optional.ofNullable(toDTO(updated));

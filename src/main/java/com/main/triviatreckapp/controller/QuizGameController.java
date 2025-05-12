@@ -3,7 +3,6 @@ package com.main.triviatreckapp.controller;
 import com.main.triviatreckapp.Request.StartGameRequest;
 import com.main.triviatreckapp.dto.PlayerAnswerDTO;
 import com.main.triviatreckapp.dto.QuizGameDTO;
-import com.main.triviatreckapp.entities.QuizGame;
 import com.main.triviatreckapp.service.QuizGameService;
 
 import com.main.triviatreckapp.service.RoomService;
@@ -29,9 +28,9 @@ public class QuizGameController {
 
 
     // Lancement d'une partie dans la room
-  @MessageMapping("/game/start/{gameId}")
+  @MessageMapping("/game/startQuiz/{gameId}")
   @SendTo("/game/{gameId}")
-  public QuizGameDTO startGame(@DestinationVariable String gameId, @Payload StartGameRequest payload) {
+  public QuizGameDTO startQuizGame(@DestinationVariable String gameId, @Payload StartGameRequest payload) {
       return gameService.getQuizGameDTO(gameId, payload);
 
   }

@@ -37,6 +37,12 @@ public class RoomController {
         return roomService.removeParticipantAndCheckRoomStatus(roomId, user);
 
     }
+    @GetMapping("/games/")
+    public String[] getGames() {
+        return new String[]{"quiz"};
+    }
+
+
 
 }
 
