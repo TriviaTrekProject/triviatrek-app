@@ -20,7 +20,6 @@ import java.util.Optional;
 @Controller
 public class QuizGameController {
   private final QuizGameService gameService;
-
     public QuizGameController(QuizGameService gameService, RoomService roomService, SimpMessagingTemplate messagingTemplate) {
       this.gameService = gameService;
     }
