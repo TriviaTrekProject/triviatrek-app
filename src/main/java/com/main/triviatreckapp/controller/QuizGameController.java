@@ -16,7 +16,6 @@ import org.springframework.web.bind.annotation.CrossOrigin;
 
 import java.util.Optional;
 
-@CrossOrigin(origins = "https://triviatrek.onrender.com")
 @Controller
 public class QuizGameController {
   private final QuizGameService gameService;
