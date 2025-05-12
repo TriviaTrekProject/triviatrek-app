@@ -46,7 +46,7 @@ public class TriviatreckAppApplication {
         return new WebMvcConfigurer() {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
-                registry.addMapping("/**").allowedOrigins("https://triviatrek.onrender.com");
+                registry.addMapping("/**").allowedOrigins("http://triviatrek.onrender.com");
             }
         };
     }
