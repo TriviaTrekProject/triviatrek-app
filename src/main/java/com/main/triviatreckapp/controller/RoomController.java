@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.Optional;
 
-@CrossOrigin
+@CrossOrigin(origins = "https://triviatrek-back:8080")
 @Controller
 public class RoomController {
     private final RoomService roomService;
