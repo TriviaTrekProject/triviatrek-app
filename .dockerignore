@@ -1,0 +1,9 @@
+# Exclude environment files
+.env.prod
+.env
+
+# Maven /
+target/
+
+# Fichiers IDE
+.idea/
