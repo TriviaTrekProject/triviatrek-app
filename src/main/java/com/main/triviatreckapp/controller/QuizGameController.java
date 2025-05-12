@@ -18,7 +18,7 @@ import java.util.Optional;
 
 
 @Controller
-@CrossOrigin
+@CrossOrigin(origins = "https://triviatrek.onrender.com:5173")
 public class QuizGameController {
   private final QuizGameService gameService;
 
