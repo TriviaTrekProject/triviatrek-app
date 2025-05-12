@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.CrossOrigin;
 
 import java.util.Optional;
 
-
+@CrossOrigin
 @Controller
 public class QuizGameController {
   private final QuizGameService gameService;
