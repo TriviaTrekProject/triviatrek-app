@@ -50,6 +50,7 @@ public class QuizGameController {
     // Réception d'une réponse d'un joueur
   @MessageMapping("/game/answer/{gameId}")
   @SendTo("/game/{gameId}")
+  @CrossOrigin(origins = "https://triviatrek.onrender.com")
   public QuizGameDTO processAnswer(@DestinationVariable String gameId,
                                   @Payload PlayerAnswerDTO playerAnswer) {
       return gameService.processAnswerDTO(gameId, playerAnswer);
