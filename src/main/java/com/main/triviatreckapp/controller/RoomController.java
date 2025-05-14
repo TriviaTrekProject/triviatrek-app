@@ -11,7 +11,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.Optional;
-@CrossOrigin(origins = "https://triviatrek.onrender.com")
+@CrossOrigin(origins = "https://triviatrek.onrender.com", maxAge = 3600)
 @Controller
 public class RoomController {
     private final RoomService roomService;
@@ -36,6 +36,8 @@ public class RoomController {
         return roomService.removeParticipantAndCheckRoomStatus(roomId, user);
 
     }
+
+    @CrossOrigin(origins = "https://triviatrek.onrender.com", maxAge = 3600)
     @GetMapping("/games/")
     public String[] getGames() {
         return new String[]{"quiz"};
