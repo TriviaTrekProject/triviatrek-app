@@ -2,12 +2,17 @@ package com.main.triviatreckapp.service;
 
 import com.main.triviatreckapp.dto.LoginUserDTO;
 import com.main.triviatreckapp.dto.RegisterUserDTO;
+import com.main.triviatreckapp.entities.Role;
+import com.main.triviatreckapp.entities.RoleEnum;
 import com.main.triviatreckapp.entities.User;
+import com.main.triviatreckapp.repository.RoleRepository;
 import com.main.triviatreckapp.repository.UserRepository;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
+
+import java.util.Optional;
 
 @Service
 public class AuthenticationService {
@@ -16,22 +21,31 @@ public class AuthenticationService {
     private final PasswordEncoder passwordEncoder;
 
     private final AuthenticationManager authenticationManager;
+    private final RoleRepository roleRepository;
 
     public AuthenticationService(
             UserRepository userRepository,
             AuthenticationManager authenticationManager,
-            PasswordEncoder passwordEncoder
-    ) {
+            PasswordEncoder passwordEncoder,
+            RoleRepository roleRepository) {
         this.authenticationManager = authenticationManager;
         this.userRepository = userRepository;
         this.passwordEncoder = passwordEncoder;
+        this.roleRepository = roleRepository;
     }
 
     public User signup(RegisterUserDTO input) {
-        User user = new User()
+        Optional<Role> optionalRole = roleRepository.findByName(RoleEnum.USER);
+
+        if (optionalRole.isEmpty()) {
+            return null;
+        }
+
+        var user = new User()
                 .setFullName(input.getFullName())
                 .setEmail(input.getEmail())
-                .setPassword(passwordEncoder.encode(input.getPassword()));
+                .setPassword(passwordEncoder.encode(input.getPassword()))
+                .setRole(optionalRole.get());
 
         return userRepository.save(user);
     }
