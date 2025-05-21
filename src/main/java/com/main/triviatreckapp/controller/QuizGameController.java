@@ -16,7 +16,6 @@ import org.springframework.web.bind.annotation.CrossOrigin;
 
 import java.util.Optional;
 
-@CrossOrigin(origins = "https://triviatrek.onrender.com", maxAge = 3600)
 @Controller
 public class QuizGameController {
   private final QuizGameService gameService;
@@ -50,7 +49,6 @@ public class QuizGameController {
     // Réception d'une réponse d'un joueur
   @MessageMapping("/game/answer/{gameId}")
   @SendTo("/game/{gameId}")
-  @CrossOrigin(origins = "https://triviatrek.onrender.com", maxAge = 3600)
   public QuizGameDTO processAnswer(@DestinationVariable String gameId,
                                   @Payload PlayerAnswerDTO playerAnswer) {
       return gameService.processAnswerDTO(gameId, playerAnswer);
