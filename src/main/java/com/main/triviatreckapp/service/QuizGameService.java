@@ -10,7 +10,6 @@ import com.main.triviatreckapp.entities.QuizGame;
 import com.main.triviatreckapp.entities.Room;
 import com.main.triviatreckapp.repository.QuestionRepository;
 import com.main.triviatreckapp.repository.QuizGameRepository;
-import com.main.triviatreckapp.repository.RoomRepository;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -141,10 +140,8 @@ public class QuizGameService {
      * @return le jeu correspondant ou null s'il n'existe pas
      */
     @Transactional(readOnly = true)
-    public QuizGame getGame(String gameId) {
-        return gameRepository.findByGameId(gameId).orElseThrow(() ->
-                new NoSuchElementException("Partie introuvable : " + gameId)
-        );
+    public Optional<QuizGame> getGame(String gameId) {
+        return gameRepository.findByGameId(gameId);
     }
 
 
@@ -172,7 +169,7 @@ public class QuizGameService {
 
 
     @Transactional
-    public QuizGameDTO getQuizGameDTO(String gameId, StartGameRequest payload) {
+    public QuizGameDTO startQuizGameDTO(String gameId, StartGameRequest payload) {
         Room room = roomService.getRoom(payload.getRoomId()).orElseThrow(() -> new IllegalArgumentException("Room not found: " + payload.getRoomId()));
         QuizGame game = createGame(gameId, room);
         addParticipant(gameId, payload.getUser());
@@ -202,6 +199,11 @@ public class QuizGameService {
     public QuizGameDTO enterQuizGame(String gameId, String user) {
         QuizGame updated = addParticipant(gameId, user);
         return toDTO(updated);
+    }
+
+    @Transactional
+    public QuizGameDTO getQuizGameDTO(String gameId) {
+            return toDTO(getGame(gameId).orElseThrow(() -> new IllegalArgumentException("Game not found: " + gameId)));
     }
 
 }

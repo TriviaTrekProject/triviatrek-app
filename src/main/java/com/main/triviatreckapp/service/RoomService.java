@@ -3,7 +3,6 @@ package com.main.triviatreckapp.service;
 import com.main.triviatreckapp.dto.MessageDTO;
 import com.main.triviatreckapp.dto.RoomDTO;
 import com.main.triviatreckapp.entities.Message;
-import com.main.triviatreckapp.entities.QuizGame;
 import com.main.triviatreckapp.entities.Room;
 import com.main.triviatreckapp.repository.RoomRepository;
 import org.springframework.stereotype.Service;
@@ -111,6 +110,10 @@ public class RoomService {
             }
         }
         return room.map(r -> convertRoomToDTO(r, roomId)).or(Optional::empty);
+    }
+    @Transactional
+    public RoomDTO getRoomDTO(String roomId) {
+        return getRoom(roomId).map(room -> convertRoomToDTO(room, roomId)).orElseThrow(() -> new IllegalArgumentException("Room not found: " + roomId));
     }
 
 }

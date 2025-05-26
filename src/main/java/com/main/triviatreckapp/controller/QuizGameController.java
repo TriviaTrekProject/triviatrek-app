@@ -5,22 +5,21 @@ import com.main.triviatreckapp.dto.PlayerAnswerDTO;
 import com.main.triviatreckapp.dto.QuizGameDTO;
 import com.main.triviatreckapp.service.QuizGameService;
 
-import com.main.triviatreckapp.service.RoomService;
 import org.springframework.messaging.handler.annotation.DestinationVariable;
 import org.springframework.messaging.handler.annotation.MessageMapping;
 import org.springframework.messaging.handler.annotation.Payload;
 import org.springframework.messaging.handler.annotation.SendTo;
-import org.springframework.messaging.simp.SimpMessagingTemplate;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import java.util.Optional;
 
-@CrossOrigin(origins = "https://triviatrek.onrender.com", maxAge = 3600)
 @Controller
 public class QuizGameController {
   private final QuizGameService gameService;
-    public QuizGameController(QuizGameService gameService, RoomService roomService, SimpMessagingTemplate messagingTemplate) {
+    public QuizGameController(QuizGameService gameService) {
       this.gameService = gameService;
     }
 
@@ -29,7 +28,7 @@ public class QuizGameController {
   @MessageMapping("/game/startQuiz/{gameId}")
   @SendTo("/game/{gameId}")
   public QuizGameDTO startQuizGame(@DestinationVariable String gameId, @Payload StartGameRequest payload) {
-      return gameService.getQuizGameDTO(gameId, payload);
+      return gameService.startQuizGameDTO(gameId, payload);
 
   }
 
@@ -50,10 +49,15 @@ public class QuizGameController {
     // Réception d'une réponse d'un joueur
   @MessageMapping("/game/answer/{gameId}")
   @SendTo("/game/{gameId}")
-  @CrossOrigin(origins = "https://triviatrek.onrender.com", maxAge = 3600)
   public QuizGameDTO processAnswer(@DestinationVariable String gameId,
                                   @Payload PlayerAnswerDTO playerAnswer) {
       return gameService.processAnswerDTO(gameId, playerAnswer);
+  }
+
+  @GetMapping("/games/{gameId}")
+  @ResponseBody
+  public QuizGameDTO getQuizGame(@PathVariable String gameId) {
+      return gameService.getQuizGameDTO(gameId);
   }
 
 }

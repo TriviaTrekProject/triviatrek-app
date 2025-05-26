@@ -11,7 +11,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.Optional;
-@CrossOrigin(origins = "https://triviatrek.onrender.com", maxAge = 3600)
+
 @Controller
 public class RoomController {
     private final RoomService roomService;
@@ -37,7 +37,13 @@ public class RoomController {
 
     }
 
-    @CrossOrigin(origins = "https://triviatrek.onrender.com", maxAge = 3600)
+    @GetMapping("/rooms/{roomId}")
+    @ResponseBody
+    public RoomDTO getRoom(@PathVariable String roomId) {
+        return roomService.getRoomDTO(roomId);
+    }
+
+
     @GetMapping("/games/")
     public String[] getGames() {
         return new String[]{"quiz"};
@@ -46,4 +52,3 @@ public class RoomController {
 
 
 }
-
