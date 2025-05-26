@@ -37,6 +37,13 @@ public class RoomController {
 
     }
 
+    @GetMapping("/rooms/{roomId}")
+    @ResponseBody
+    public RoomDTO getRoom(@PathVariable String roomId) {
+        return roomService.getRoomDTO(roomId);
+    }
+
+
     @GetMapping("/games/")
     public String[] getGames() {
         return new String[]{"quiz"};
@@ -45,4 +52,3 @@ public class RoomController {
 
 
 }
-
