@@ -20,7 +20,12 @@ RUN mvn dependency:go-offline -B
 
 # Copier le code et compiler
 COPY src ./src
+COPY secret.properties ./secret.properties
 RUN mvn clean package -DskipTests
+# Vérifier que le JAR a été créé
+RUN ls -la target/ || echo "Target directory is empty or doesn't exist"
+# Renommer le JAR pour faciliter la copie
+RUN find target -name "*.jar" -exec cp {} target/app.jar \;
 
 # --------------------------------
 # Étape 2 : runtime avec JRE 24
@@ -32,7 +37,8 @@ WORKDIR /app
 RUN mkdir -p /etc/secrets
 
 # Récupérer le JAR issu du build
-COPY --from=builder /app/target/*.jar app.jar
+# Copier le JAR spécifique depuis le builder
+COPY --from=builder /app/target/app.jar app.jar
 
 EXPOSE 8080
 
