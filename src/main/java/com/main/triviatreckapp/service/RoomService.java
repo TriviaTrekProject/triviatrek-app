@@ -42,12 +42,6 @@ public class RoomService {
         return roomRepo.save(room);
     }
 
-    @Transactional
-    public void addParticipant(String roomId, String user) {
-        Room room = getOrCreateRoom(roomId);
-        room.addParticipant(user);
-        roomRepo.save(room);
-    }
 
     @Transactional
     public void removeParticipant(String roomId, String user) {
@@ -88,6 +82,12 @@ public class RoomService {
 
         // 2) Idempotence : on n’ajoute que si nécessaire
         if (!room.getParticipants().contains(user)) {
+            Message sysMsg = chatService.saveMessage(
+                    roomId,
+                    "SYSTEM",                       // expéditeur technique
+                     user + " a rejoint la room");
+
+            room.getMessages().add(sysMsg);
             room.addParticipant(user);
             roomRepo.save(room);
         }
@@ -112,14 +112,27 @@ public class RoomService {
 
     @Transactional
     public Optional<RoomDTO> removeParticipantAndCheckRoomStatus(String roomId, String user) {
-        removeParticipant(roomId, user);
-        Optional<Room> room = getRoom(roomId);
-        if(room.isPresent()) {
-            if(room.get().getParticipants().isEmpty()) {
-                deleteRoom(roomId);
-            }
+        // 1) Verrou pessimiste pour éviter les accès concurrents
+        Room room = roomRepo.findByRoomIdForUpdate(roomId)
+                .orElseThrow(() -> new IllegalArgumentException("Room not found: " + roomId));
+
+        if(room.getParticipants().contains(user))
+        {
+            removeParticipant(roomId, user);
+            room.getParticipants().remove(user);
+            Message sysMsg = chatService.saveMessage(
+                    roomId,
+                    "SYSTEM",
+                    user + " a quitté la room");
+            room.getMessages().add(sysMsg);
+
         }
-        return room.map(r -> convertRoomToDTO(r, roomId)).or(Optional::empty);
+
+        if(room.getParticipants().isEmpty()) {
+                deleteRoom(roomId);
+        }
+        roomRepo.save(room);
+        return Optional.ofNullable(convertRoomToDTO(room, roomId));
     }
     @Transactional
     public RoomDTO getRoomDTO(String roomId) {
