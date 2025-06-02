@@ -81,8 +81,18 @@ public class RoomService {
 
     @Transactional
     public RoomDTO addUserToRoom(String roomId, String user) {
-        Room room = getOrCreateRoom(roomId);
-        addParticipant(roomId, user);
+
+        // 1) Récupération de la room avec verrou d’écriture
+        Room room = roomRepo.findByRoomIdForUpdate(roomId)
+                .orElseGet(() -> createRoom(roomId));
+
+        // 2) Idempotence : on n’ajoute que si nécessaire
+        if (!room.getParticipants().contains(user)) {
+            room.addParticipant(user);
+            roomRepo.save(room);
+        }
+
+        // 3) Conversion du résultat
         return convertRoomToDTO(room, roomId);
     }
 
