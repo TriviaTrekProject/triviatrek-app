@@ -24,8 +24,8 @@ public class WebSocketConfig implements WebSocketMessageBrokerConfigurer {
     @Override
     public void configureMessageBroker(MessageBrokerRegistry config) {
         config.enableSimpleBroker("/chatroom", "/game", "/user")
-                // le serveur attend un beat du client toutes les 30 s
-                .setHeartbeatValue(new long[] {0, 30_000})
+                // le serveur attend un beat du client toutes les 10 s
+                .setHeartbeatValue(new long[] {10_000, 10_000})
                 // nécessaire pour déclencher le contrôle de heart-beat
                 .setTaskScheduler(heartBeatScheduler());
         config.setApplicationDestinationPrefixes("/app");
