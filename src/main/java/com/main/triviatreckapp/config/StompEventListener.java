@@ -12,6 +12,7 @@ import org.springframework.web.socket.messaging.SessionDisconnectEvent;
 import org.springframework.web.socket.messaging.SessionSubscribeEvent;
 
 import java.util.Map;
+import java.util.Objects;
 
 @Slf4j
 @Component
@@ -46,7 +47,28 @@ public class StompEventListener {
     @EventListener
     public void onSubscribe(SessionSubscribeEvent event) {
         StompHeaderAccessor sha = StompHeaderAccessor.wrap(event.getMessage());
-        sha.getSessionId();
+        if (Objects.requireNonNull(sha.getDestination()).startsWith("/chatroom/")) {
+            String roomId = extractId(sha.getDestination());
+            if (roomId != null && roomService.getRoom(roomId).isPresent()) {
+                try {
+                    // Get room data
+                    RoomDTO roomDTO = roomService.getRoomDTO(roomId);
+
+                    // Send room data to the subscriber
+                    messagingTemplate.convertAndSend(sha.getDestination(), roomDTO);
+                } catch (Exception e) {
+                    // Log error but don't block subscription
+                    System.err.println("Error sending room data on subscription: " + e.getMessage());
+                }
+            }
+        }
+    }
+
+    private String extractId(String destination) {
+        if (destination.startsWith("/chatroom/")) {
+            return destination.substring("/chatroom/".length());
+        }
+        return null;
     }
 }
 
