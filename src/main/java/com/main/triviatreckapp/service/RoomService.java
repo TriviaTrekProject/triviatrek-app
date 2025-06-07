@@ -112,28 +112,32 @@ public class RoomService {
 
     @Transactional
     public Optional<RoomDTO> removeParticipantAndCheckRoomStatus(String roomId, String user) {
-        // 1) Verrou pessimiste pour éviter les accès concurrents
-        Room room = roomRepo.findByRoomIdForUpdate(roomId)
-                .orElseThrow(() -> new IllegalArgumentException("Room not found: " + roomId));
+        // Utilisation d’un verrou pessimiste pour éviter les accès concurrents
+        Optional<Room> optionalRoom = roomRepo.findByRoomIdForUpdate(roomId);
+        if (optionalRoom.isEmpty()) {
+            System.err.println("Room not found: " + roomId + ". Aucun participant à supprimer.");
+            return Optional.empty();
+        }
+        Room room = optionalRoom.get();
 
-        if(room.getParticipants().contains(user))
-        {
-            removeParticipant(roomId, user);
+        if (room.getParticipants().contains(user)) {
             room.getParticipants().remove(user);
             Message sysMsg = chatService.saveMessage(
                     roomId,
                     "SYSTEM",
                     user + " a quitté la room");
             room.getMessages().add(sysMsg);
-
         }
 
-        if(room.getParticipants().isEmpty()) {
-                deleteRoom(roomId);
+        if (room.getParticipants().isEmpty()) {
+            deleteRoom(roomId);
+            return Optional.empty();
+        } else {
+            roomRepo.save(room);
+            return Optional.ofNullable(convertRoomToDTO(room, roomId));
         }
-        roomRepo.save(room);
-        return Optional.ofNullable(convertRoomToDTO(room, roomId));
     }
+
     @Transactional
     public RoomDTO getRoomDTO(String roomId) {
         return getRoom(roomId).map(room -> convertRoomToDTO(room, roomId)).orElseThrow(() -> new IllegalArgumentException("Room not found: " + roomId));

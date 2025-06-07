@@ -30,10 +30,12 @@ public class StompEventListener {
         if (sessionAttributes != null && sessionAttributes.containsKey("roomId") && sessionAttributes.containsKey("username")) {
             String roomId = (String) sessionAttributes.get("roomId");
             String username = (String) sessionAttributes.get("username");
-            roomService.removeParticipantAndCheckRoomStatus(roomId, username);
 
-            if (roomId != null && roomService.getRoom(roomId).isPresent()) {
+            if (roomId != null && roomService.getRoom(roomId)
+                    .filter(room -> !room.getParticipants().isEmpty())
+                    .isPresent()) {
                 try {
+                    roomService.removeParticipantAndCheckRoomStatus(roomId, username);
                     RoomDTO roomDTO = roomService.getRoomDTO(roomId);
                     messagingTemplate.convertAndSend("/chatroom/" + roomId, roomDTO);
                 } catch (Exception e) {
