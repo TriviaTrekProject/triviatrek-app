@@ -96,6 +96,9 @@ public class QuizGameService {
         if (Objects.equals(playerAnswer.getAnswer(), current.getCorrectAnswer())) {
             game.addScore(playerAnswer.getPlayer(), correctAnswerPoints);
         }
+        else {
+            game.addScore(playerAnswer.getPlayer(), -2*correctAnswerPoints);
+        }
 
         game.nextQuestion();
         return toDTO(gameRepository.save(game));
