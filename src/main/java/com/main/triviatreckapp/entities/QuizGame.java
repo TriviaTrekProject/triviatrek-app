@@ -75,7 +75,9 @@ public class QuizGame {
 
     // Ajouter un score à un joueur
     public void addScore(String player, int points) {
-        scores.put(player, scores.getOrDefault(player, 0) + points);
+        int newScore = scores.getOrDefault(player, 0) + points;
+        newScore = Math.max(newScore, 0);
+        scores.put(player, newScore);
     }
 
     public void setRoom(Room room) {
