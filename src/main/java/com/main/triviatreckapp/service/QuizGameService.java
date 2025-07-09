@@ -5,16 +5,20 @@ import com.main.triviatreckapp.dto.PlayerAnswerDTO;
 import com.main.triviatreckapp.dto.QuestionDTO;
 import com.main.triviatreckapp.dto.QuizGameDTO;
 import com.main.triviatreckapp.dto.ScoreDTO;
+import com.main.triviatreckapp.entities.Message;
 import com.main.triviatreckapp.entities.Question;
 import com.main.triviatreckapp.entities.QuizGame;
 import com.main.triviatreckapp.entities.Room;
 import com.main.triviatreckapp.repository.QuestionRepository;
 import com.main.triviatreckapp.repository.QuizGameRepository;
+import com.main.triviatreckapp.repository.RoomRepository;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.messaging.simp.SimpMessagingTemplate;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.*;
+import java.util.concurrent.ConcurrentHashMap;
 import java.util.stream.Collectors;
 
 @Service
@@ -22,6 +26,10 @@ public class QuizGameService {
     private final QuestionRepository questionRepository;
     private final QuizGameRepository gameRepository;
     private final RoomService roomService;
+    private final ChatService chatService;
+    private final SimpMessagingTemplate messagingTemplate;
+    private final RoomRepository roomRepository;
+
 
     @Value("${quiz.questions-per-game:10}")
     private int questionsPerGame;
@@ -29,11 +37,19 @@ public class QuizGameService {
     @Value("${quiz.correct-answer-points:1}")
     private int correctAnswerPoints;
 
+    // Carte de verrouillage pour éviter le traitement concurrent de réponses
+    private final ConcurrentHashMap<String, Boolean> processingAnswers = new ConcurrentHashMap<>();
+
+
     public QuizGameService(QuestionRepository questionRepository,
-                           QuizGameRepository gameRepository, RoomService roomService) {
+                           QuizGameRepository gameRepository, RoomService roomService, ChatService chatService, SimpMessagingTemplate messagingTemplate,
+                           RoomRepository roomRepository) {
         this.questionRepository = questionRepository;
         this.gameRepository = gameRepository;
         this.roomService = roomService;
+        this.chatService = chatService;
+        this.messagingTemplate = messagingTemplate;
+        this.roomRepository = roomRepository;
     }
 
     /**
@@ -75,6 +91,14 @@ public class QuizGameService {
      */
     @Transactional
     public QuizGameDTO processAnswerDTO(String gameId, PlayerAnswerDTO playerAnswer) {
+        // Tente d'acquérir le verrou; si déjà en traitement, ignorer la nouvelle réponse.
+        if (processingAnswers.putIfAbsent(gameId, Boolean.TRUE) != null) {
+            Optional<QuizGame> optExisting = gameRepository.findByGameId(gameId);
+            return optExisting.map(this::toDTO).orElse(null);
+        }
+
+        try {
+
         Optional<QuizGame> opt = gameRepository.findByGameId(gameId);
 
         if (opt.isEmpty()) {
@@ -92,16 +116,31 @@ public class QuizGameService {
             return toDTO(gameRepository.save(game));
         }
 
+        String messageSystem = playerAnswer.getPlayer();
 
         if (Objects.equals(playerAnswer.getAnswer(), current.getCorrectAnswer())) {
             game.addScore(playerAnswer.getPlayer(), correctAnswerPoints);
+            messageSystem = messageSystem.concat(" a répondu correctement !");
         }
         else {
             game.addScore(playerAnswer.getPlayer(), -2*correctAnswerPoints);
+            messageSystem = messageSystem.concat(" a répondu faux !");
         }
 
-        game.nextQuestion();
-        return toDTO(gameRepository.save(game));
+            String destination = "/chatroom/" + game.getRoom().getRoomId();
+            Message message = chatService.saveMessage(game.getRoom().getRoomId(), "GAME_SYSTEM", messageSystem);
+            game.getRoom().getMessages().add(message);
+            roomRepository.save(game.getRoom());
+            messagingTemplate.convertAndSend(destination, Optional.ofNullable(roomService.convertRoomToDTO(roomRepository.save(game.getRoom()), game.getRoom().getRoomId())));
+
+            game.nextQuestion();
+
+            return toDTO(gameRepository.save(game));
+
+        } finally {
+            processingAnswers.remove(gameId);
+        }
+
     }
 
 
