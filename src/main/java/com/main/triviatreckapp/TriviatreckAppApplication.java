@@ -27,9 +27,10 @@ public class TriviatreckAppApplication {
     @Bean
     CommandLineRunner runner(QuestionService questionService) {
         return args -> {
+            // Delete all existing questions
+            questionService.deleteAll();
 
             ObjectMapper mapper = new ObjectMapper();
-
 
             var resource = new ClassPathResource("static/Questions.json");
             List<Question> questions = mapper.readValue(

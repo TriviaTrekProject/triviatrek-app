@@ -878,12 +878,2205 @@
           "Rébellion des Boxers",
           "Révolte Mau Mau"
         ]
-      }
-
-
-
-
-
-
-
+      },
+  {
+    "difficulty": "hard",
+    "category": "Histoire",
+    "question": "En quelle année la Magna Carta fut signée ?",
+    "correct_answer": "1215",
+    "incorrect_answers": [
+      "1205",
+      "1210",
+      "1220"
+    ]
+  },
+  {
+    "difficulty": "hard",
+    "category": "Histoire",
+    "question": "En quelle année la guerre de Cent Ans commença ?",
+    "correct_answer": "1337",
+    "incorrect_answers": [
+      "1327",
+      "1332",
+      "1342"
+    ]
+  },
+  {
+    "difficulty": "hard",
+    "category": "Histoire",
+    "question": "En quelle année Constantinople tomba face aux Ottomans ?",
+    "correct_answer": "1453",
+    "incorrect_answers": [
+      "1443",
+      "1448",
+      "1458"
+    ]
+  },
+  {
+    "difficulty": "hard",
+    "category": "Histoire",
+    "question": "En quelle année Christophe Colomb atteignit le Nouveau Monde ?",
+    "correct_answer": "1492",
+    "incorrect_answers": [
+      "1482",
+      "1487",
+      "1497"
+    ]
+  },
+  {
+    "difficulty": "hard",
+    "category": "Histoire",
+    "question": "En quelle année Martin Luther publia ses 95 thèses ?",
+    "correct_answer": "1517",
+    "incorrect_answers": [
+      "1507",
+      "1512",
+      "1522"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Histoire",
+    "question": "En quelle année l'Invincible Armada fut vaincue ?",
+    "correct_answer": "1588",
+    "incorrect_answers": [
+      "1578",
+      "1583",
+      "1593"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Histoire",
+    "question": "En quelle année la guerre de Trente Ans débuta ?",
+    "correct_answer": "1618",
+    "incorrect_answers": [
+      "1608",
+      "1613",
+      "1623"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Histoire",
+    "question": "En quelle année Louis XIV fut sacré roi de France ?",
+    "correct_answer": "1654",
+    "incorrect_answers": [
+      "1644",
+      "1649",
+      "1659"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Histoire",
+    "question": "En quelle année la Glorieuse Révolution se produisit en Angleterre ?",
+    "correct_answer": "1688",
+    "incorrect_answers": [
+      "1678",
+      "1683",
+      "1693"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Histoire",
+    "question": "En quelle année le traité d'Utrecht fut signé ?",
+    "correct_answer": "1713",
+    "incorrect_answers": [
+      "1703",
+      "1708",
+      "1718"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Histoire",
+    "question": "En quelle année la Bastille fut prise ?",
+    "correct_answer": "1789",
+    "incorrect_answers": [
+      "1779",
+      "1784",
+      "1794"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Histoire",
+    "question": "En quelle année Napoléon fut couronné empereur ?",
+    "correct_answer": "1804",
+    "incorrect_answers": [
+      "1794",
+      "1799",
+      "1809"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Histoire",
+    "question": "En quelle année la bataille de Waterloo eut lieu ?",
+    "correct_answer": "1815",
+    "incorrect_answers": [
+      "1805",
+      "1810",
+      "1820"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Histoire",
+    "question": "En quelle année la Grèce obtint son indépendance ?",
+    "correct_answer": "1830",
+    "incorrect_answers": [
+      "1820",
+      "1825",
+      "1835"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Histoire",
+    "question": "En quelle année le « Manifeste du parti communiste » fut publié ?",
+    "correct_answer": "1848",
+    "incorrect_answers": [
+      "1838",
+      "1843",
+      "1853"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Histoire",
+    "question": "En quelle année l'Italie fut unifiée ?",
+    "correct_answer": "1861",
+    "incorrect_answers": [
+      "1851",
+      "1856",
+      "1866"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Histoire",
+    "question": "En quelle année l'Empire allemand fut proclamé ?",
+    "correct_answer": "1871",
+    "incorrect_answers": [
+      "1861",
+      "1866",
+      "1876"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Histoire",
+    "question": "En quelle année l'archiduc François‑Ferdinand fut assassiné ?",
+    "correct_answer": "1914",
+    "incorrect_answers": [
+      "1904",
+      "1909",
+      "1919"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Histoire",
+    "question": "En quelle année le traité de Versailles fut signé ?",
+    "correct_answer": "1919",
+    "incorrect_answers": [
+      "1909",
+      "1914",
+      "1924"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Histoire",
+    "question": "En quelle année la crise boursière de Wall Street éclata ?",
+    "correct_answer": "1929",
+    "incorrect_answers": [
+      "1919",
+      "1924",
+      "1934"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Histoire",
+    "question": "En quelle année le débarquement de Normandie eut lieu ?",
+    "correct_answer": "1944",
+    "incorrect_answers": [
+      "1934",
+      "1939",
+      "1949"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Histoire",
+    "question": "En quelle année l'Organisation des Nations unies fut créée ?",
+    "correct_answer": "1945",
+    "incorrect_answers": [
+      "1935",
+      "1940",
+      "1950"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Histoire",
+    "question": "En quelle année l'Inde devint indépendante ?",
+    "correct_answer": "1947",
+    "incorrect_answers": [
+      "1937",
+      "1942",
+      "1952"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Histoire",
+    "question": "En quelle année la République populaire de Chine fut proclamée ?",
+    "correct_answer": "1949",
+    "incorrect_answers": [
+      "1939",
+      "1944",
+      "1954"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Histoire",
+    "question": "En quelle année Spoutnik 1 fut lancé ?",
+    "correct_answer": "1957",
+    "incorrect_answers": [
+      "1947",
+      "1952",
+      "1962"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Histoire",
+    "question": "En quelle année le mur de Berlin fut érigé ?",
+    "correct_answer": "1961",
+    "incorrect_answers": [
+      "1951",
+      "1956",
+      "1966"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Histoire",
+    "question": "En quelle année John F. Kennedy fut assassiné ?",
+    "correct_answer": "1963",
+    "incorrect_answers": [
+      "1953",
+      "1958",
+      "1968"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Histoire",
+    "question": "En quelle année Neil Armstrong posa le pied sur la Lune ?",
+    "correct_answer": "1969",
+    "incorrect_answers": [
+      "1959",
+      "1964",
+      "1974"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Histoire",
+    "question": "En quelle année le mur de Berlin tomba ?",
+    "correct_answer": "1989",
+    "incorrect_answers": [
+      "1979",
+      "1984",
+      "1994"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Histoire",
+    "question": "En quelle année l'Union soviétique fut dissoute ?",
+    "correct_answer": "1991",
+    "incorrect_answers": [
+      "1981",
+      "1986",
+      "1996"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Histoire",
+    "question": "En quelle année le traité de Maastricht fut signé ?",
+    "correct_answer": "1992",
+    "incorrect_answers": [
+      "1982",
+      "1987",
+      "1997"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Histoire",
+    "question": "En quelle année les attentats du 11 septembre eurent lieu ?",
+    "correct_answer": "2001",
+    "incorrect_answers": [
+      "1991",
+      "1996",
+      "2006"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Histoire",
+    "question": "En quelle année Pluton fut déclassé en planète naine ?",
+    "correct_answer": "2006",
+    "incorrect_answers": [
+      "1996",
+      "2001",
+      "2011"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Histoire",
+    "question": "En quelle année le Printemps arabe débuta ?",
+    "correct_answer": "2010",
+    "incorrect_answers": [
+      "2000",
+      "2005",
+      "2015"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Histoire",
+    "question": "En quelle année la pandémie de COVID‑19 fut déclarée ?",
+    "correct_answer": "2020",
+    "incorrect_answers": [
+      "2010",
+      "2015",
+      "2025"
+    ]
+  },
+  {
+    "difficulty": "hard",
+    "category": "Histoire",
+    "question": "En quelle année la chute de l'Empire romain d'Occident se produisit ?",
+    "correct_answer": "476",
+    "incorrect_answers": [
+      "466",
+      "471",
+      "481"
+    ]
+  },
+  {
+    "difficulty": "hard",
+    "category": "Histoire",
+    "question": "En quelle année la première croisade fut prêchée ?",
+    "correct_answer": "1095",
+    "incorrect_answers": [
+      "1085",
+      "1090",
+      "1100"
+    ]
+  },
+  {
+    "difficulty": "hard",
+    "category": "Histoire",
+    "question": "En quelle année Gengis Khan fonda l'Empire mongol ?",
+    "correct_answer": "1206",
+    "incorrect_answers": [
+      "1196",
+      "1201",
+      "1211"
+    ]
+  },
+  {
+    "difficulty": "hard",
+    "category": "Histoire",
+    "question": "En quelle année la peste noire atteignit l'Europe ?",
+    "correct_answer": "1347",
+    "incorrect_answers": [
+      "1337",
+      "1342",
+      "1352"
+    ]
+  },
+  {
+    "difficulty": "hard",
+    "category": "Histoire",
+    "question": "En quelle année Gutenberg inventa l'imprimerie à caractères mobiles ?",
+    "correct_answer": "1450",
+    "incorrect_answers": [
+      "1440",
+      "1445",
+      "1455"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Histoire",
+    "question": "En quelle année l'Acte d'Union créa le Royaume‑Uni de Grande‑Bretagne ?",
+    "correct_answer": "1707",
+    "incorrect_answers": [
+      "1697",
+      "1702",
+      "1712"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Histoire",
+    "question": "En quelle année la Révolution américaine commença ?",
+    "correct_answer": "1775",
+    "incorrect_answers": [
+      "1765",
+      "1770",
+      "1780"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Histoire",
+    "question": "En quelle année Simón Bolívar libéra la Grande‑Colombie ?",
+    "correct_answer": "1819",
+    "incorrect_answers": [
+      "1809",
+      "1814",
+      "1824"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Histoire",
+    "question": "En quelle année la guerre de Sécession débuta ?",
+    "correct_answer": "1861",
+    "incorrect_answers": [
+      "1851",
+      "1856",
+      "1866"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Histoire",
+    "question": "En quelle année l'abolition de l'esclavage aux États‑Unis fut proclamée ?",
+    "correct_answer": "1865",
+    "incorrect_answers": [
+      "1855",
+      "1860",
+      "1870"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Histoire",
+    "question": "En quelle année la conférence de Berlin divisa l'Afrique ?",
+    "correct_answer": "1885",
+    "incorrect_answers": [
+      "1875",
+      "1880",
+      "1890"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Histoire",
+    "question": "En quelle année la Révolution mexicaine éclata ?",
+    "correct_answer": "1910",
+    "incorrect_answers": [
+      "1900",
+      "1905",
+      "1915"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Histoire",
+    "question": "En quelle année la bataille de Stalingrad commença ?",
+    "correct_answer": "1942",
+    "incorrect_answers": [
+      "1932",
+      "1937",
+      "1947"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Histoire",
+    "question": "En quelle année le premier vol commercial du Concorde eut lieu ?",
+    "correct_answer": "1976",
+    "incorrect_answers": [
+      "1966",
+      "1971",
+      "1981"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Histoire",
+    "question": "En quelle année Tchernobyl connut son accident nucléaire ?",
+    "correct_answer": "1986",
+    "incorrect_answers": [
+      "1976",
+      "1981",
+      "1991"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Histoire",
+    "question": "En quelle année Nelson Mandela fut libéré ?",
+    "correct_answer": "1990",
+    "incorrect_answers": [
+      "1980",
+      "1985",
+      "1995"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Histoire",
+    "question": "En quelle année l'euro devint monnaie fiduciaire ?",
+    "correct_answer": "2002",
+    "incorrect_answers": [
+      "1992",
+      "1997",
+      "2007"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Histoire",
+    "question": "En quelle année la guerre de Crimée débuta ?",
+    "correct_answer": "1853",
+    "incorrect_answers": [
+      "1843",
+      "1848",
+      "1858"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Histoire",
+    "question": "En quelle année la déclaration Balfour fut publiée ?",
+    "correct_answer": "1917",
+    "incorrect_answers": [
+      "1907",
+      "1912",
+      "1922"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Histoire",
+    "question": "En quelle année la chute de Saïgon mit fin à la guerre du Viêt Nam ?",
+    "correct_answer": "1975",
+    "incorrect_answers": [
+      "1965",
+      "1970",
+      "1980"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Histoire",
+    "question": "En quelle année l'accord de Camp David fut signé ?",
+    "correct_answer": "1978",
+    "incorrect_answers": [
+      "1968",
+      "1973",
+      "1983"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Histoire",
+    "question": "En quelle année le tsunami de l'océan Indien se produisit ?",
+    "correct_answer": "2004",
+    "incorrect_answers": [
+      "1994",
+      "1999",
+      "2009"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Histoire",
+    "question": "En quelle année Barack Obama devint président des États‑Unis ?",
+    "correct_answer": "2009",
+    "incorrect_answers": [
+      "1999",
+      "2004",
+      "2014"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Histoire",
+    "question": "En quelle année le Brexit fut voté ?",
+    "correct_answer": "2016",
+    "incorrect_answers": [
+      "2006",
+      "2011",
+      "2021"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Histoire",
+    "question": "En quelle année l'incendie de Notre‑Dame de Paris survint ?",
+    "correct_answer": "2019",
+    "incorrect_answers": [
+      "2009",
+      "2014",
+      "2024"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Histoire",
+    "question": "En quelle année la révolution russe d'Octobre ?",
+    "correct_answer": "1917",
+    "incorrect_answers": [
+      "1907",
+      "1912",
+      "1922"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Histoire",
+    "question": "En quelle année le traité de Westphalie mit fin à la guerre de Trente Ans ?",
+    "correct_answer": "1648",
+    "incorrect_answers": [
+      "1638",
+      "1643",
+      "1653"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Histoire",
+    "question": "En quelle année la déclaration d'indépendance des États‑Unis fut adoptée ?",
+    "correct_answer": "1776",
+    "incorrect_answers": [
+      "1766",
+      "1771",
+      "1781"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Histoire",
+    "question": "En quelle année la découverte de l'Amérique par Amundsen du pôle Sud ?",
+    "correct_answer": "1911",
+    "incorrect_answers": [
+      "1901",
+      "1906",
+      "1916"
+    ]
+  },
+  {
+    "difficulty": "hard",
+    "category": "Histoire",
+    "question": "En quelle année la bataille de Salamine se déroula ?",
+    "correct_answer": "480 av. J.-C.",
+    "incorrect_answers": [
+      "470",
+      "475",
+      "485"
+    ]
+  },
+  {
+    "difficulty": "hard",
+    "category": "Histoire",
+    "question": "En quelle année Hammurabi promulgua son code ?",
+    "correct_answer": "1754 av. J.-C.",
+    "incorrect_answers": [
+      "1744",
+      "1749",
+      "1759"
+    ]
+  },
+  {
+    "difficulty": "hard",
+    "category": "Histoire",
+    "question": "En quelle année Cléopâtre VII mourut ?",
+    "correct_answer": "30 av. J.-C.",
+    "incorrect_answers": [
+      "20",
+      "25",
+      "35"
+    ]
+  },
+  {
+    "difficulty": "hard",
+    "category": "Histoire",
+    "question": "En quelle année Mahomet effectua l'Hégire ?",
+    "correct_answer": "622",
+    "incorrect_answers": [
+      "612",
+      "617",
+      "627"
+    ]
+  },
+  {
+    "difficulty": "hard",
+    "category": "Histoire",
+    "question": "En quelle année Charlemagne fut couronné empereur d'Occident ?",
+    "correct_answer": "800",
+    "incorrect_answers": [
+      "790",
+      "795",
+      "805"
+    ]
+  },
+  {
+    "difficulty": "hard",
+    "category": "Histoire",
+    "question": "En quelle année la bataille de Crécy eut lieu ?",
+    "correct_answer": "1346",
+    "incorrect_answers": [
+      "1336",
+      "1341",
+      "1351"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Histoire",
+    "question": "En quelle année le Boston Tea Party eu lieu ?",
+    "correct_answer": "1773",
+    "incorrect_answers": [
+      "1763",
+      "1768",
+      "1778"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Histoire",
+    "question": "En quelle année le canal de Suez fut inauguré ?",
+    "correct_answer": "1869",
+    "incorrect_answers": [
+      "1859",
+      "1864",
+      "1874"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Histoire",
+    "question": "En quelle année la conférence de Yalta se tint ?",
+    "correct_answer": "1945",
+    "incorrect_answers": [
+      "1935",
+      "1940",
+      "1950"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Histoire",
+    "question": "En quelle année la mission Apollo 13 connut son incident ?",
+    "correct_answer": "1970",
+    "incorrect_answers": [
+      "1960",
+      "1965",
+      "1975"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Histoire",
+    "question": "En quelle année le premier iPhone fut présenté ?",
+    "correct_answer": "2007",
+    "incorrect_answers": [
+      "1997",
+      "2002",
+      "2012"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Culture générale",
+    "question": "Qui est l'auteur de « Les Misérables » ?",
+    "correct_answer": "Victor Hugo",
+    "incorrect_answers": [
+      "James Joyce",
+      "Emily Brontë",
+      "William Shakespeare"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Culture générale",
+    "question": "Qui est l'auteur de « Guerre et Paix » ?",
+    "correct_answer": "Léon Tolstoï",
+    "incorrect_answers": [
+      "Umberto Eco",
+      "Oscar Wilde",
+      "Primo Levi"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Culture générale",
+    "question": "Qui est l'auteur de « Don Quichotte » ?",
+    "correct_answer": "Miguel de Cervantes",
+    "incorrect_answers": [
+      "Stendhal",
+      "Victor Hugo",
+      "J.R.R. Tolkien"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Culture générale",
+    "question": "Qui est l'auteur de « Moby Dick » ?",
+    "correct_answer": "Herman Melville",
+    "incorrect_answers": [
+      "Stendhal",
+      "Gabriel García Márquez",
+      "Patrick Süskind"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Culture générale",
+    "question": "Qui est l'auteur de « Faust » ?",
+    "correct_answer": "Johann Wolfgang von Goethe",
+    "incorrect_answers": [
+      "Jane Austen",
+      "Marcel Proust",
+      "Italo Calvino"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Culture générale",
+    "question": "Qui est l'auteur de « 1984 » ?",
+    "correct_answer": "George Orwell",
+    "incorrect_answers": [
+      "Mikhaïl Boulgakov",
+      "Aldous Huxley",
+      "Madame de La Fayette"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Culture générale",
+    "question": "Qui est l'auteur de « Le Comte de Monte‑Cristo » ?",
+    "correct_answer": "Alexandre Dumas",
+    "incorrect_answers": [
+      "Voltaire",
+      "Dante Alighieri",
+      "Umberto Eco"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Culture générale",
+    "question": "Qui est l'auteur de « La Divine Comédie » ?",
+    "correct_answer": "Dante Alighieri",
+    "incorrect_answers": [
+      "Eugène Ionesco",
+      "Jean Racine",
+      "Italo Calvino"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Culture générale",
+    "question": "Qui est l'auteur de « Hamlet » ?",
+    "correct_answer": "William Shakespeare",
+    "incorrect_answers": [
+      "Marcel Proust",
+      "Jean‑Paul Sartre",
+      "Victor Hugo"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Culture générale",
+    "question": "Qui est l'auteur de « Orgueil et Préjugés » ?",
+    "correct_answer": "Jane Austen",
+    "incorrect_answers": [
+      "Rudyard Kipling",
+      "Giuseppe Tomasi di Lampedusa",
+      "Cormac McCarthy"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Culture générale",
+    "question": "Qui est l'auteur de « Crime et Châtiment » ?",
+    "correct_answer": "Fiodor Dostoïevski",
+    "incorrect_answers": [
+      "William Shakespeare",
+      "Italo Calvino",
+      "Mary Shelley"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Culture générale",
+    "question": "Qui est l'auteur de « L'Odyssée » ?",
+    "correct_answer": "Homère",
+    "incorrect_answers": [
+      "Voltaire",
+      "Marcel Proust",
+      "Irène Frain"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Culture générale",
+    "question": "Qui est l'auteur de « Le Vieil Homme et la mer » ?",
+    "correct_answer": "Ernest Hemingway",
+    "incorrect_answers": [
+      "Paulo Coelho",
+      "C.S. Lewis",
+      "Gaston Leroux"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Culture générale",
+    "question": "Qui est l'auteur de « Cent ans de solitude » ?",
+    "correct_answer": "Gabriel García Márquez",
+    "incorrect_answers": [
+      "Primo Levi",
+      "Jean Racine",
+      "Victor Hugo"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Culture générale",
+    "question": "Qui est l'auteur de « Le Petit Prince » ?",
+    "correct_answer": "Antoine de Saint‑Exupéry",
+    "incorrect_answers": [
+      "George Orwell",
+      "Thomas Harris",
+      "Aldous Huxley"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Culture générale",
+    "question": "Qui est l'auteur de « Les Fleurs du mal » ?",
+    "correct_answer": "Charles Baudelaire",
+    "incorrect_answers": [
+      "Victor Hugo",
+      "Elie Wiesel",
+      "François Rabelais"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Culture générale",
+    "question": "Qui est l'auteur de « Ulysse » ?",
+    "correct_answer": "James Joyce",
+    "incorrect_answers": [
+      "Simone de Beauvoir",
+      "Frank Herbert",
+      "Oscar Wilde"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Culture générale",
+    "question": "Qui est l'auteur de « À la recherche du temps perdu » ?",
+    "correct_answer": "Marcel Proust",
+    "incorrect_answers": [
+      "Günter Grass",
+      "William Shakespeare",
+      "Hermann Hesse"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Culture générale",
+    "question": "Qui est l'auteur de « Le Nom de la rose » ?",
+    "correct_answer": "Umberto Eco",
+    "incorrect_answers": [
+      "William Shakespeare",
+      "Victor Hugo",
+      "John Steinbeck"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Culture générale",
+    "question": "Qui est l'auteur de « Le Seigneur des anneaux » ?",
+    "correct_answer": "J.R.R. Tolkien",
+    "incorrect_answers": [
+      "Gabriel García Márquez",
+      "George Orwell",
+      "Antoine de Saint‑Exupéry"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Culture générale",
+    "question": "Qui est l'auteur de « Dracula » ?",
+    "correct_answer": "Bram Stoker",
+    "incorrect_answers": [
+      "Aldous Huxley",
+      "John Steinbeck",
+      "Léon Tolstoï"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Culture générale",
+    "question": "Qui est l'auteur de « Frankenstein » ?",
+    "correct_answer": "Mary Shelley",
+    "incorrect_answers": [
+      "Guy de Maupassant",
+      "Bram Stoker",
+      "Elie Wiesel"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Culture générale",
+    "question": "Qui est l'auteur de « L'Étranger » ?",
+    "correct_answer": "Albert Camus",
+    "incorrect_answers": [
+      "Victor Hugo",
+      "Bram Stoker",
+      "Choderlos de Laclos"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Culture générale",
+    "question": "Qui est l'auteur de « Lolita » ?",
+    "correct_answer": "Vladimir Nabokov",
+    "incorrect_answers": [
+      "Johann Wolfgang von Goethe",
+      "Mary Shelley",
+      "Oscar Wilde"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Culture générale",
+    "question": "Qui est l'auteur de « Le Rouge et le Noir » ?",
+    "correct_answer": "Stendhal",
+    "incorrect_answers": [
+      "William Shakespeare",
+      "J.R.R. Tolkien",
+      "Oscar Wilde"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Culture générale",
+    "question": "Qui est l'auteur de « Bel‑Ami » ?",
+    "correct_answer": "Guy de Maupassant",
+    "incorrect_answers": [
+      "Umberto Eco",
+      "Elie Wiesel",
+      "Giuseppe Tomasi di Lampedusa"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Culture générale",
+    "question": "Qui est l'auteur de « Madame Bovary » ?",
+    "correct_answer": "Gustave Flaubert",
+    "incorrect_answers": [
+      "Jean‑Paul Sartre",
+      "Emily Brontë",
+      "Herman Melville"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Culture générale",
+    "question": "Qui est l'auteur de « Jane Eyre » ?",
+    "correct_answer": "Charlotte Brontë",
+    "incorrect_answers": [
+      "Dante Alighieri",
+      "Pierre Corneille",
+      "Aldous Huxley"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Culture générale",
+    "question": "Qui est l'auteur de « Les Hauts de Hurlevent » ?",
+    "correct_answer": "Emily Brontë",
+    "incorrect_answers": [
+      "William Shakespeare",
+      "Albert Camus",
+      "Léon Tolstoï"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Culture générale",
+    "question": "Qui est l'auteur de « Anna Karénine » ?",
+    "correct_answer": "Léon Tolstoï",
+    "incorrect_answers": [
+      "François Rabelais",
+      "Ernest Hemingway",
+      "George Orwell"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Culture générale",
+    "question": "Qui est l'auteur de « Les Travailleurs de la mer » ?",
+    "correct_answer": "Victor Hugo",
+    "incorrect_answers": [
+      "Günter Grass",
+      "Choderlos de Laclos",
+      "Albert Camus"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Culture générale",
+    "question": "Qui est l'auteur de « La Métamorphose » ?",
+    "correct_answer": "Franz Kafka",
+    "incorrect_answers": [
+      "Vladimir Nabokov",
+      "Stendhal",
+      "Gaston Leroux"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Culture générale",
+    "question": "Qui est l'auteur de « Le Parfum » ?",
+    "correct_answer": "Patrick Süskind",
+    "incorrect_answers": [
+      "François Rabelais",
+      "Italo Calvino",
+      "Bram Stoker"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Culture générale",
+    "question": "Qui est l'auteur de « Le Meilleur des mondes » ?",
+    "correct_answer": "Aldous Huxley",
+    "incorrect_answers": [
+      "Alexandre Dumas",
+      "Franz Kafka",
+      "Léon Tolstoï"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Culture générale",
+    "question": "Qui est l'auteur de « La Chartreuse de Parme » ?",
+    "correct_answer": "Stendhal",
+    "incorrect_answers": [
+      "Oscar Wilde",
+      "Charles Baudelaire",
+      "Alexandre Dumas"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Culture générale",
+    "question": "Qui est l'auteur de « L'Alchimiste » ?",
+    "correct_answer": "Paulo Coelho",
+    "incorrect_answers": [
+      "Victor Hugo",
+      "Oscar Wilde",
+      "Johann Wolfgang von Goethe"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Culture générale",
+    "question": "Qui est l'auteur de « Les Raisins de la colère » ?",
+    "correct_answer": "John Steinbeck",
+    "incorrect_answers": [
+      "Stendhal",
+      "Samuel Beckett",
+      "Herman Melville"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Culture générale",
+    "question": "Qui est l'auteur de « Des souris et des hommes » ?",
+    "correct_answer": "John Steinbeck",
+    "incorrect_answers": [
+      "Edmond Rostand",
+      "Cormac McCarthy",
+      "Jean Racine"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Culture générale",
+    "question": "Qui est l'auteur de « Le Portrait de Dorian Gray » ?",
+    "correct_answer": "Oscar Wilde",
+    "incorrect_answers": [
+      "Simone de Beauvoir",
+      "Jean Racine",
+      "Bret Easton Ellis"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Culture générale",
+    "question": "Qui est l'auteur de « Le Silence des agneaux » ?",
+    "correct_answer": "Thomas Harris",
+    "incorrect_answers": [
+      "Irène Frain",
+      "Bret Easton Ellis",
+      "Simone de Beauvoir"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Culture générale",
+    "question": "Qui est l'auteur de « Les Chroniques de Narnia » ?",
+    "correct_answer": "C.S. Lewis",
+    "incorrect_answers": [
+      "Stendhal",
+      "Jean‑Paul Sartre",
+      "Charlotte Brontë"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Culture générale",
+    "question": "Qui est l'auteur de « La Force des choses » ?",
+    "correct_answer": "Simone de Beauvoir",
+    "incorrect_answers": [
+      "Miguel de Cervantes",
+      "Hermann Hesse",
+      "Victor Hugo"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Culture générale",
+    "question": "Qui est l'auteur de « La Peste » ?",
+    "correct_answer": "Albert Camus",
+    "incorrect_answers": [
+      "Homère",
+      "Victor Hugo",
+      "Luis Sepúlveda"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Culture générale",
+    "question": "Qui est l'auteur de « La Nuit » ?",
+    "correct_answer": "Elie Wiesel",
+    "incorrect_answers": [
+      "Miguel de Cervantes",
+      "Victor Hugo",
+      "Jane Austen"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Culture générale",
+    "question": "Qui est l'auteur de « La Route » ?",
+    "correct_answer": "Cormac McCarthy",
+    "incorrect_answers": [
+      "Franz Kafka",
+      "Rudyard Kipling",
+      "Pierre Corneille"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Culture générale",
+    "question": "Qui est l'auteur de « Le Vieil homme qui lisait des romans d'amour » ?",
+    "correct_answer": "Luis Sepúlveda",
+    "incorrect_answers": [
+      "Irène Frain",
+      "Gaston Leroux",
+      "Victor Hugo"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Culture générale",
+    "question": "Qui est l'auteur de « Si c'est un homme » ?",
+    "correct_answer": "Primo Levi",
+    "incorrect_answers": [
+      "Dante Alighieri",
+      "John Steinbeck",
+      "Gaston Leroux"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Culture générale",
+    "question": "Qui est l'auteur de « Les Piliers de la Terre » ?",
+    "correct_answer": "Ken Follett",
+    "incorrect_answers": [
+      "André Malraux",
+      "Charlotte Brontë",
+      "Alexandre Dumas"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Culture générale",
+    "question": "Qui est l'auteur de « Le Parfum de la Dame en noir » ?",
+    "correct_answer": "Gaston Leroux",
+    "incorrect_answers": [
+      "Homère",
+      "Victor Hugo",
+      "Jean Racine"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Culture générale",
+    "question": "Qui est l'auteur de « Notre‑Dame de Paris » ?",
+    "correct_answer": "Victor Hugo",
+    "incorrect_answers": [
+      "Marcel Proust",
+      "Cormac McCarthy",
+      "Stendhal"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Culture générale",
+    "question": "Qui est l'auteur de « La Ferme des animaux » ?",
+    "correct_answer": "George Orwell",
+    "incorrect_answers": [
+      "Gabriel García Márquez",
+      "Gustave Flaubert",
+      "Jean‑Paul Sartre"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Culture générale",
+    "question": "Qui est l'auteur de « Le Nomades du Soleil » ?",
+    "correct_answer": "Irène Frain",
+    "incorrect_answers": [
+      "Marcel Proust",
+      "Jean‑Paul Sartre",
+      "Gaston Leroux"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Culture générale",
+    "question": "Qui est l'auteur de « Les Liaisons dangereuses » ?",
+    "correct_answer": "Choderlos de Laclos",
+    "incorrect_answers": [
+      "Luis Sepúlveda",
+      "Victor Hugo",
+      "Rudyard Kipling"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Culture générale",
+    "question": "Qui est l'auteur de « La Princesse de Clèves » ?",
+    "correct_answer": "Madame de La Fayette",
+    "incorrect_answers": [
+      "Choderlos de Laclos",
+      "Léon Tolstoï",
+      "Gaston Leroux"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Culture générale",
+    "question": "Qui est l'auteur de « Gargantua » ?",
+    "correct_answer": "François Rabelais",
+    "incorrect_answers": [
+      "Antoine de Saint‑Exupéry",
+      "Hermann Hesse",
+      "Frank Herbert"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Culture générale",
+    "question": "Qui est l'auteur de « Candide » ?",
+    "correct_answer": "Voltaire",
+    "incorrect_answers": [
+      "Homère",
+      "Johann Wolfgang von Goethe",
+      "Oscar Wilde"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Culture générale",
+    "question": "Qui est l'auteur de « Le Cid » ?",
+    "correct_answer": "Pierre Corneille",
+    "incorrect_answers": [
+      "Irène Frain",
+      "Gabriel García Márquez",
+      "Franz Kafka"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Culture générale",
+    "question": "Qui est l'auteur de « Phèdre » ?",
+    "correct_answer": "Jean Racine",
+    "incorrect_answers": [
+      "Herman Melville",
+      "Ernest Hemingway",
+      "Madame de La Fayette"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Culture générale",
+    "question": "Qui est l'auteur de « Cyrano de Bergerac » ?",
+    "correct_answer": "Edmond Rostand",
+    "incorrect_answers": [
+      "Antoine de Saint‑Exupéry",
+      "Jane Austen",
+      "Johann Wolfgang von Goethe"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Culture générale",
+    "question": "Qui est l'auteur de « La Cantatrice chauve » ?",
+    "correct_answer": "Eugène Ionesco",
+    "incorrect_answers": [
+      "C.S. Lewis",
+      "Léon Tolstoï",
+      "Patrick Süskind"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Culture générale",
+    "question": "Qui est l'auteur de « En attendant Godot » ?",
+    "correct_answer": "Samuel Beckett",
+    "incorrect_answers": [
+      "Thomas Harris",
+      "Choderlos de Laclos",
+      "Dante Alighieri"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Culture générale",
+    "question": "Qui est l'auteur de « Le Baron perché » ?",
+    "correct_answer": "Italo Calvino",
+    "incorrect_answers": [
+      "William Shakespeare",
+      "Franz Kafka",
+      "Charles Baudelaire"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Culture générale",
+    "question": "Qui est l'auteur de « Siddhartha » ?",
+    "correct_answer": "Hermann Hesse",
+    "incorrect_answers": [
+      "Stendhal",
+      "Alexandre Dumas",
+      "Mary Shelley"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Culture générale",
+    "question": "Qui est l'auteur de « La Condition humaine » ?",
+    "correct_answer": "André Malraux",
+    "incorrect_answers": [
+      "Oscar Wilde",
+      "Albert Camus",
+      "Emily Brontë"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Culture générale",
+    "question": "Qui est l'auteur de « Le Tambour » ?",
+    "correct_answer": "Günter Grass",
+    "incorrect_answers": [
+      "Dante Alighieri",
+      "Oscar Wilde",
+      "Aldous Huxley"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Culture générale",
+    "question": "Qui est l'auteur de « La Nausée » ?",
+    "correct_answer": "Jean‑Paul Sartre",
+    "incorrect_answers": [
+      "Frank Herbert",
+      "Jane Austen",
+      "Gustave Flaubert"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Culture générale",
+    "question": "Qui est l'auteur de « Le Guépard » ?",
+    "correct_answer": "Giuseppe Tomasi di Lampedusa",
+    "incorrect_answers": [
+      "William Shakespeare",
+      "Albert Camus",
+      "Aldous Huxley"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Culture générale",
+    "question": "Qui est l'auteur de « Le Livre de la jungle » ?",
+    "correct_answer": "Rudyard Kipling",
+    "incorrect_answers": [
+      "Herman Melville",
+      "Thomas Harris",
+      "Antoine de Saint‑Exupéry"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Culture générale",
+    "question": "Qui est l'auteur de « Le Maître et Marguerite » ?",
+    "correct_answer": "Mikhaïl Boulgakov",
+    "incorrect_answers": [
+      "Gaston Leroux",
+      "Léon Tolstoï",
+      "Primo Levi"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Culture générale",
+    "question": "Qui est l'auteur de « American Psycho » ?",
+    "correct_answer": "Bret Easton Ellis",
+    "incorrect_answers": [
+      "William Shakespeare",
+      "Stendhal",
+      "Franz Kafka"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Culture générale",
+    "question": "Qui est l'auteur de « Dune » ?",
+    "correct_answer": "Frank Herbert",
+    "incorrect_answers": [
+      "Léon Tolstoï",
+      "Marcel Proust",
+      "James Joyce"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Science",
+    "question": "Quel est le numéro atomique de l’élément Hydrogène ?",
+    "correct_answer": "1",
+    "incorrect_answers": [
+      "2",
+      "3",
+      "4"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Science",
+    "question": "Quel est le numéro atomique de l’élément Hélium ?",
+    "correct_answer": "2",
+    "incorrect_answers": [
+      "1",
+      "3",
+      "4"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Science",
+    "question": "Quel est le numéro atomique de l’élément Lithium ?",
+    "correct_answer": "3",
+    "incorrect_answers": [
+      "1",
+      "2",
+      "4"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Science",
+    "question": "Quel est le numéro atomique de l’élément Béryllium ?",
+    "correct_answer": "4",
+    "incorrect_answers": [
+      "2",
+      "3",
+      "5"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Science",
+    "question": "Quel est le numéro atomique de l’élément Bore ?",
+    "correct_answer": "5",
+    "incorrect_answers": [
+      "3",
+      "4",
+      "6"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Science",
+    "question": "Quel est le numéro atomique de l’élément Carbone ?",
+    "correct_answer": "6",
+    "incorrect_answers": [
+      "4",
+      "5",
+      "7"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Science",
+    "question": "Quel est le numéro atomique de l’élément Azote ?",
+    "correct_answer": "7",
+    "incorrect_answers": [
+      "5",
+      "6",
+      "8"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Science",
+    "question": "Quel est le numéro atomique de l’élément Oxygène ?",
+    "correct_answer": "8",
+    "incorrect_answers": [
+      "6",
+      "7",
+      "9"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Science",
+    "question": "Quel est le numéro atomique de l’élément Fluor ?",
+    "correct_answer": "9",
+    "incorrect_answers": [
+      "7",
+      "8",
+      "10"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Science",
+    "question": "Quel est le numéro atomique de l’élément Néon ?",
+    "correct_answer": "10",
+    "incorrect_answers": [
+      "8",
+      "9",
+      "11"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Science",
+    "question": "Quel est le numéro atomique de l’élément Sodium ?",
+    "correct_answer": "11",
+    "incorrect_answers": [
+      "9",
+      "10",
+      "12"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Science",
+    "question": "Quel est le numéro atomique de l’élément Magnésium ?",
+    "correct_answer": "12",
+    "incorrect_answers": [
+      "10",
+      "11",
+      "13"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Science",
+    "question": "Quel est le numéro atomique de l’élément Aluminium ?",
+    "correct_answer": "13",
+    "incorrect_answers": [
+      "11",
+      "12",
+      "14"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Science",
+    "question": "Quel est le numéro atomique de l’élément Silicium ?",
+    "correct_answer": "14",
+    "incorrect_answers": [
+      "12",
+      "13",
+      "15"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Science",
+    "question": "Quel est le numéro atomique de l’élément Phosphore ?",
+    "correct_answer": "15",
+    "incorrect_answers": [
+      "13",
+      "14",
+      "16"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Science",
+    "question": "Quel est le numéro atomique de l’élément Soufre ?",
+    "correct_answer": "16",
+    "incorrect_answers": [
+      "14",
+      "15",
+      "17"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Science",
+    "question": "Quel est le numéro atomique de l’élément Chlore ?",
+    "correct_answer": "17",
+    "incorrect_answers": [
+      "15",
+      "16",
+      "18"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Science",
+    "question": "Quel est le numéro atomique de l’élément Argon ?",
+    "correct_answer": "18",
+    "incorrect_answers": [
+      "16",
+      "17",
+      "19"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Science",
+    "question": "Quel est le numéro atomique de l’élément Potassium ?",
+    "correct_answer": "19",
+    "incorrect_answers": [
+      "17",
+      "18",
+      "20"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Science",
+    "question": "Quel est le numéro atomique de l’élément Calcium ?",
+    "correct_answer": "20",
+    "incorrect_answers": [
+      "18",
+      "19",
+      "21"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Science",
+    "question": "Quel est le numéro atomique de l’élément Scandium ?",
+    "correct_answer": "21",
+    "incorrect_answers": [
+      "19",
+      "20",
+      "22"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Science",
+    "question": "Quel est le numéro atomique de l’élément Titane ?",
+    "correct_answer": "22",
+    "incorrect_answers": [
+      "20",
+      "21",
+      "23"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Science",
+    "question": "Quel est le numéro atomique de l’élément Vanadium ?",
+    "correct_answer": "23",
+    "incorrect_answers": [
+      "21",
+      "22",
+      "24"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Science",
+    "question": "Quel est le numéro atomique de l’élément Chrome ?",
+    "correct_answer": "24",
+    "incorrect_answers": [
+      "22",
+      "23",
+      "25"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Science",
+    "question": "Quel est le numéro atomique de l’élément Manganèse ?",
+    "correct_answer": "25",
+    "incorrect_answers": [
+      "23",
+      "24",
+      "26"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Science",
+    "question": "Quel est le numéro atomique de l’élément Fer ?",
+    "correct_answer": "26",
+    "incorrect_answers": [
+      "24",
+      "25",
+      "27"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Science",
+    "question": "Quel est le numéro atomique de l’élément Cobalt ?",
+    "correct_answer": "27",
+    "incorrect_answers": [
+      "25",
+      "26",
+      "28"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Science",
+    "question": "Quel est le numéro atomique de l’élément Nickel ?",
+    "correct_answer": "28",
+    "incorrect_answers": [
+      "26",
+      "27",
+      "29"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Science",
+    "question": "Quel est le numéro atomique de l’élément Cuivre ?",
+    "correct_answer": "29",
+    "incorrect_answers": [
+      "27",
+      "28",
+      "30"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Science",
+    "question": "Quel est le numéro atomique de l’élément Zinc ?",
+    "correct_answer": "30",
+    "incorrect_answers": [
+      "28",
+      "29",
+      "31"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Science",
+    "question": "Quel est le numéro atomique de l’élément Gallium ?",
+    "correct_answer": "31",
+    "incorrect_answers": [
+      "29",
+      "30",
+      "32"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Science",
+    "question": "Quel est le numéro atomique de l’élément Germanium ?",
+    "correct_answer": "32",
+    "incorrect_answers": [
+      "30",
+      "31",
+      "33"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Science",
+    "question": "Quel est le numéro atomique de l’élément Arsenic ?",
+    "correct_answer": "33",
+    "incorrect_answers": [
+      "31",
+      "32",
+      "34"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Science",
+    "question": "Quel est le numéro atomique de l’élément Sélénium ?",
+    "correct_answer": "34",
+    "incorrect_answers": [
+      "32",
+      "33",
+      "35"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Science",
+    "question": "Quel est le numéro atomique de l’élément Brome ?",
+    "correct_answer": "35",
+    "incorrect_answers": [
+      "33",
+      "34",
+      "36"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Science",
+    "question": "Quel est le numéro atomique de l’élément Krypton ?",
+    "correct_answer": "36",
+    "incorrect_answers": [
+      "34",
+      "35",
+      "37"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Science",
+    "question": "Quel est le numéro atomique de l’élément Rubidium ?",
+    "correct_answer": "37",
+    "incorrect_answers": [
+      "35",
+      "36",
+      "38"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Science",
+    "question": "Quel est le numéro atomique de l’élément Strontium ?",
+    "correct_answer": "38",
+    "incorrect_answers": [
+      "36",
+      "37",
+      "39"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Science",
+    "question": "Quel est le numéro atomique de l’élément Yttrium ?",
+    "correct_answer": "39",
+    "incorrect_answers": [
+      "37",
+      "38",
+      "40"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Science",
+    "question": "Quel est le numéro atomique de l’élément Zirconium ?",
+    "correct_answer": "40",
+    "incorrect_answers": [
+      "38",
+      "39",
+      "41"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Science",
+    "question": "Quel est le numéro atomique de l’élément Niobium ?",
+    "correct_answer": "41",
+    "incorrect_answers": [
+      "39",
+      "40",
+      "42"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Science",
+    "question": "Quel est le numéro atomique de l’élément Molybdène ?",
+    "correct_answer": "42",
+    "incorrect_answers": [
+      "40",
+      "41",
+      "43"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Science",
+    "question": "Quel est le numéro atomique de l’élément Technétium ?",
+    "correct_answer": "43",
+    "incorrect_answers": [
+      "41",
+      "42",
+      "44"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Science",
+    "question": "Quel est le numéro atomique de l’élément Ruthénium ?",
+    "correct_answer": "44",
+    "incorrect_answers": [
+      "42",
+      "43",
+      "45"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Science",
+    "question": "Quel est le numéro atomique de l’élément Rhodium ?",
+    "correct_answer": "45",
+    "incorrect_answers": [
+      "43",
+      "44",
+      "46"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Science",
+    "question": "Quel est le numéro atomique de l’élément Palladium ?",
+    "correct_answer": "46",
+    "incorrect_answers": [
+      "44",
+      "45",
+      "47"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Science",
+    "question": "Quel est le numéro atomique de l’élément Argent ?",
+    "correct_answer": "47",
+    "incorrect_answers": [
+      "45",
+      "46",
+      "48"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Science",
+    "question": "Quel est le numéro atomique de l’élément Cadmium ?",
+    "correct_answer": "48",
+    "incorrect_answers": [
+      "46",
+      "47",
+      "49"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Science",
+    "question": "Quel est le numéro atomique de l’élément Indium ?",
+    "correct_answer": "49",
+    "incorrect_answers": [
+      "47",
+      "48",
+      "50"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Science",
+    "question": "Quel est le numéro atomique de l’élément Étain ?",
+    "correct_answer": "50",
+    "incorrect_answers": [
+      "48",
+      "49",
+      "51"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Science",
+    "question": "Quel est le numéro atomique de l’élément Antimoine ?",
+    "correct_answer": "51",
+    "incorrect_answers": [
+      "49",
+      "50",
+      "52"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Science",
+    "question": "Quel est le numéro atomique de l’élément Tellure ?",
+    "correct_answer": "52",
+    "incorrect_answers": [
+      "50",
+      "51",
+      "53"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Science",
+    "question": "Quel est le numéro atomique de l’élément Iode ?",
+    "correct_answer": "53",
+    "incorrect_answers": [
+      "51",
+      "52",
+      "54"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Science",
+    "question": "Quel est le numéro atomique de l’élément Xénon ?",
+    "correct_answer": "54",
+    "incorrect_answers": [
+      "52",
+      "53",
+      "55"
+    ]
+  }
 ]
