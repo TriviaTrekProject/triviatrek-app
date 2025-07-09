@@ -117,13 +117,21 @@ public class QuizGameService {
         }
 
         String messageSystem = playerAnswer.getPlayer();
+        int mutiplicater = switch (current.getDifficulty()) {
+                case "easy" -> 1;
+                case "medium" -> 2;
+                case "hard" -> 3;
+                default -> throw new IllegalArgumentException("Difficulté inconnue: " + current.getDifficulty());
+        };
+
+
 
         if (Objects.equals(playerAnswer.getAnswer(), current.getCorrectAnswer())) {
-            game.addScore(playerAnswer.getPlayer(), correctAnswerPoints);
+            game.addScore(playerAnswer.getPlayer(), mutiplicater * correctAnswerPoints);
             messageSystem = messageSystem.concat(" a répondu correctement !");
         }
         else {
-            game.addScore(playerAnswer.getPlayer(), -2*correctAnswerPoints);
+            game.addScore(playerAnswer.getPlayer(), -2 * correctAnswerPoints * mutiplicater);
             messageSystem = messageSystem.concat(" a répondu faux !");
         }
 
