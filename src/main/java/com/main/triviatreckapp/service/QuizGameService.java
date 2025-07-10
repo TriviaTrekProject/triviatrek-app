@@ -136,7 +136,7 @@ public class QuizGameService {
         }
 
             String destination = "/chatroom/" + game.getRoom().getRoomId();
-            Message message = chatService.saveMessage(game.getRoom().getRoomId(), "GAME_SYSTEM", messageSystem);
+            Message message = chatService.saveMessage(game.getRoom().getRoomId(), "GAME_SYSTEM_"+game.getCurrentQuestionIndex(), messageSystem);
             game.getRoom().getMessages().add(message);
             roomRepository.save(game.getRoom());
             messagingTemplate.convertAndSend(destination, Optional.ofNullable(roomService.convertRoomToDTO(roomRepository.save(game.getRoom()), game.getRoom().getRoomId())));
