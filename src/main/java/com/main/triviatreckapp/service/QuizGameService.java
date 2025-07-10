@@ -1,11 +1,15 @@
 package com.main.triviatreckapp.service;
 
+import com.main.triviatreckapp.Request.PlayerJokerRequest;
 import com.main.triviatreckapp.Request.StartGameRequest;
+import com.main.triviatreckapp.dto.JokerDTO;
+import com.main.triviatreckapp.dto.ParticipantDTO;
 import com.main.triviatreckapp.dto.PlayerAnswerDTO;
 import com.main.triviatreckapp.dto.QuestionDTO;
 import com.main.triviatreckapp.dto.QuizGameDTO;
 import com.main.triviatreckapp.dto.ScoreDTO;
 import com.main.triviatreckapp.entities.Message;
+import com.main.triviatreckapp.entities.Participant;
 import com.main.triviatreckapp.entities.Question;
 import com.main.triviatreckapp.entities.QuizGame;
 import com.main.triviatreckapp.entities.Room;
@@ -141,6 +145,11 @@ public class QuizGameService {
             roomRepository.save(game.getRoom());
             messagingTemplate.convertAndSend(destination, Optional.ofNullable(roomService.convertRoomToDTO(roomRepository.save(game.getRoom()), game.getRoom().getRoomId())));
 
+            // Reset delaiReponse for all participants
+            for (Participant participant : game.getParticipants()) {
+                participant.setDelaiReponse(0);
+            }
+
             game.nextQuestion();
 
             return toDTO(gameRepository.save(game));
@@ -178,9 +187,34 @@ public class QuizGameService {
         dto.setScores(scoreDTOs);
         dto.setFinished(game.isFinished());
         dto.setGameId(game.getGameId());
-        dto.setParticipants(game.getParticipants());
+
+        // Convert Participant entities to ParticipantDTO objects
+        List<ParticipantDTO> participantDTOs = game.getParticipants().stream()
+                .map(participant -> new ParticipantDTO(participant.getId(), participant.getUsername(), participant.getDelaiReponse()))
+                .toList();
+        dto.setParticipants(participantDTOs);
+
         dto.setCurrentQuestionIndex(game.getCurrentQuestionIndex());
         return dto;
+    }
+
+    // Helper method to find a participant by username
+    private Participant findParticipantByUsername(List<Participant> participants, String username) {
+        return participants.stream()
+                .filter(p -> p.getUsername().equals(username))
+                .findFirst()
+                .orElse(null);
+    }
+
+    // Helper method to check if a participant with the given username exists
+    private boolean hasParticipantWithUsername(List<Participant> participants, String username) {
+        return participants.stream()
+                .anyMatch(p -> p.getUsername().equals(username));
+    }
+
+    // Helper method to remove a participant by username
+    private boolean removeParticipantByUsername(List<Participant> participants, String username) {
+        return participants.removeIf(p -> p.getUsername().equals(username));
     }
 
 
@@ -201,7 +235,7 @@ public class QuizGameService {
                 .findByGameId((gameId)).orElseThrow(() ->
                         new NoSuchElementException("Partie introuvable : " + gameId)
                 );
-        game.addParticipant(user);
+        game.addParticipant(user, 0); // Default delaiReponse to 0
         return gameRepository.save(game);
     }
 
@@ -212,7 +246,7 @@ public class QuizGameService {
                 .orElseThrow(() ->
                         new NoSuchElementException("Partie introuvable : " + gameId)
                 );
-            game.getParticipants().remove(user);
+            removeParticipantByUsername(game.getParticipants(), user);
             return gameRepository.save(game);
 
     }
@@ -256,4 +290,25 @@ public class QuizGameService {
             return toDTO(getGame(gameId).orElseThrow(() -> new IllegalArgumentException("Game not found: " + gameId)));
     }
 
+    /**
+     * Process a joker used by a player
+     * @param gameId the game ID
+     * @param jokerRequest the joker request containing the joker type and participant ID
+     */
+    @Transactional
+    public void processJoker(String gameId, PlayerJokerRequest jokerRequest) {
+        if(jokerRequest.getJokerType() == PlayerJokerRequest.JokerType.PRIORITE_REPONSE) {
+
+            // Create a Joker object
+            JokerDTO joker = new JokerDTO(
+                jokerRequest.getUsername(),
+                jokerRequest.getParticipantId(),
+                JokerDTO.JokerType.valueOf(jokerRequest.getJokerType().name())
+            );
+
+            // Send the Joker object to all subscribers of /game/{gameId}/joker/
+            String destination = "/game/joker/"+gameId;
+            messagingTemplate.convertAndSend(destination, joker);
+        }
+    }
 }

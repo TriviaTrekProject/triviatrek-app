@@ -1,5 +1,6 @@
 package com.main.triviatreckapp.controller;
 
+import com.main.triviatreckapp.Request.PlayerJokerRequest;
 import com.main.triviatreckapp.Request.StartGameRequest;
 import com.main.triviatreckapp.dto.PlayerAnswerDTO;
 import com.main.triviatreckapp.dto.QuizGameDTO;
@@ -60,4 +61,11 @@ public class QuizGameController {
       return gameService.getQuizGameDTO(gameId);
   }
 
+
+  @MessageMapping("/game/joker/{gameId}")
+  @SendTo("/game/{gameId}")
+  public void processJoker(@DestinationVariable String gameId,
+                                   @Payload PlayerJokerRequest joker) {
+    gameService.processJoker(gameId, joker);
+  }
 }
