@@ -45,12 +45,13 @@ public class QuizGame {
     private Map<String, Integer> scores = new HashMap<>();
     private boolean finished = false;           // Indique si le jeu est terminé
 
-    @Column(name = "participant")
-    @CollectionTable(
+    @ManyToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+    @JoinTable(
             name = "quiz_game_participants",
-            joinColumns = @JoinColumn(name = "quiz_game_id")
+            joinColumns = @JoinColumn(name = "quiz_game_id"),
+            inverseJoinColumns = @JoinColumn(name = "participant_id")
     )
-    private List<String> participants = new ArrayList<>();
+    private List<Participant> participants = new ArrayList<>();
 
 
     // index dans la liste questions
@@ -87,8 +88,12 @@ public class QuizGame {
         }
     }
 
-    public void addParticipant(String participant) {
+    public void addParticipant(Participant participant) {
         participants.add(participant);
+    }
+
+    public void addParticipant(String username, int delaiReponse) {
+        participants.add(new Participant(username, delaiReponse));
     }
 
     public void addQuestion(Question q) {
