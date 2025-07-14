@@ -15,5 +15,5 @@ import lombok.Setter;
 @AllArgsConstructor
 public class StartGameRequest {
     private String roomId;
-    private String user;
+    private Long participantId;
 }

@@ -13,7 +13,7 @@ import java.util.List;
 @AllArgsConstructor
 public class RoomDTO {
     public String roomId;
-    public List<String> participants;
+    public List<ParticipantDTO> participants;
     public List<MessageDTO> messages;
     public String gameId;
     public boolean activeGame;

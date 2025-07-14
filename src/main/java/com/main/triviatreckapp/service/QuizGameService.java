@@ -56,6 +56,17 @@ public class QuizGameService {
         this.roomRepository = roomRepository;
     }
 
+    private String generateUniqueName(Collection<String> existing, String base) {
+        String candidate = base;
+        int suffix = 2;
+        while (existing.contains(candidate)) {
+            candidate = base + "(" + suffix + ")";
+            suffix++;
+        }
+        return candidate;
+    }
+
+
     /**
      * Crée ou redémarre une partie dans une salle
      * @param gameId identifiant de la salle
@@ -104,7 +115,6 @@ public class QuizGameService {
         try {
 
         Optional<QuizGame> opt = gameRepository.findByGameId(gameId);
-
         if (opt.isEmpty()) {
             return null;
         }
@@ -119,8 +129,8 @@ public class QuizGameService {
             game.setFinished(true);
             return toDTO(gameRepository.save(game));
         }
-
-        String messageSystem = playerAnswer.getPlayer();
+        Participant part = game.getParticipants().stream().filter(participant -> participant.getId().toString().equals(playerAnswer.getParticipantId())).findFirst().orElseThrow(() -> new IllegalArgumentException("Participant introuvable : " + playerAnswer.getParticipantId()));
+        String messageSystem = part.getUsername();
         int mutiplicater = switch (current.getDifficulty()) {
                 case "easy" -> 1;
                 case "medium" -> 2;
@@ -131,11 +141,11 @@ public class QuizGameService {
 
 
         if (Objects.equals(playerAnswer.getAnswer(), current.getCorrectAnswer())) {
-            game.addScore(playerAnswer.getPlayer(), mutiplicater * correctAnswerPoints);
+            game.addScore(part.getUsername(), mutiplicater * correctAnswerPoints);
             messageSystem = messageSystem.concat(" a répondu correctement !");
         }
         else {
-            game.addScore(playerAnswer.getPlayer(), -2 * correctAnswerPoints * mutiplicater);
+            game.addScore(part.getUsername(), -2 * correctAnswerPoints * mutiplicater);
             messageSystem = messageSystem.concat(" a répondu faux !");
         }
 
@@ -143,7 +153,7 @@ public class QuizGameService {
             Message message = chatService.saveMessage(game.getRoom().getRoomId(), "GAME_SYSTEM_"+game.getCurrentQuestionIndex(), messageSystem);
             game.getRoom().getMessages().add(message);
             roomRepository.save(game.getRoom());
-            messagingTemplate.convertAndSend(destination, Optional.ofNullable(roomService.convertRoomToDTO(roomRepository.save(game.getRoom()), game.getRoom().getRoomId())));
+            messagingTemplate.convertAndSend(destination, Optional.ofNullable(roomService.convertRoomToDTO(roomRepository.save(game.getRoom()))));
 
             // Reset delaiReponse for all participants
             for (Participant participant : game.getParticipants()) {
@@ -190,7 +200,7 @@ public class QuizGameService {
 
         // Convert Participant entities to ParticipantDTO objects
         List<ParticipantDTO> participantDTOs = game.getParticipants().stream()
-                .map(participant -> new ParticipantDTO(participant.getId(), participant.getUsername(), participant.getDelaiReponse()))
+                .map(participant -> new ParticipantDTO(participant.getId(), participant.getUsername(), participant.getDelaiReponse(), null))
                 .toList();
         dto.setParticipants(participantDTOs);
 
@@ -230,23 +240,28 @@ public class QuizGameService {
 
 
     @Transactional
-    public QuizGame addParticipant(String gameId, String user) {
+    public QuizGame addParticipant(String gameId, Long participantId) {
         QuizGame game = gameRepository
                 .findByGameId((gameId)).orElseThrow(() ->
                         new NoSuchElementException("Partie introuvable : " + gameId)
                 );
-        game.addParticipant(user, 0); // Default delaiReponse to 0
+        game.addParticipant(
+                game.getRoom().getParticipants().stream()
+                        .filter(p -> p.getId().equals(participantId))
+                        .findAny()
+                        .orElseThrow(() -> new NoSuchElementException("Participant introuvable : " + participantId))
+        );
         return gameRepository.save(game);
     }
 
     @Transactional
-    public QuizGame removeParticipant(String gameId, String user) {
+    public QuizGame removeParticipant(String gameId, Long participantId) {
         QuizGame game = gameRepository
                 .findByGameId(gameId)
                 .orElseThrow(() ->
                         new NoSuchElementException("Partie introuvable : " + gameId)
                 );
-            removeParticipantByUsername(game.getParticipants(), user);
+        game.getParticipants().removeIf(p -> p.getId().equals(participantId));
             return gameRepository.save(game);
 
     }
@@ -254,21 +269,26 @@ public class QuizGameService {
 
     @Transactional
     public QuizGameDTO startQuizGameDTO(String gameId, StartGameRequest payload) {
-        Room room = roomService.getRoom(payload.getRoomId()).orElseThrow(() -> new IllegalArgumentException("Room not found: " + payload.getRoomId()));
+        Room room = roomService.getRoom(payload.getRoomId())
+                .orElseThrow(() -> new IllegalArgumentException("Room not found: " + payload.getRoomId()));
         QuizGame game = createGame(gameId, room);
-        addParticipant(gameId, payload.getUser());
+
+        List<Participant> snapshot = new ArrayList<>(room.getParticipants());
+        for (Participant participant : snapshot) {
+            addParticipant(gameId, participant.getId());
+        }
+
         room.setQuizGame(game);
         room.setActiveGame(true);
         roomService.saveRoom(room);
 
-        String destination = "/game/" + game.getGameId();
-        System.out.println("Sending game"+ game.getGameId() +" to " + destination);
-        return (toDTO(game));
+        return toDTO(game);
     }
 
+
     @Transactional
-    public Optional<QuizGameDTO> removeParticipantFromGame(String gameId, String user) {
-        QuizGame updated = removeParticipant(gameId, user);
+    public Optional<QuizGameDTO> removeParticipantFromGame(String gameId, Long participantId) {
+        QuizGame updated = removeParticipant(gameId, participantId);
         if (updated.getParticipants().isEmpty()) {
             gameRepository.deleteByGameId(gameId);
             updated.getRoom().setActiveGame(false);
@@ -280,9 +300,17 @@ public class QuizGameService {
         return Optional.empty();
     }
     @Transactional
-    public QuizGameDTO enterQuizGame(String gameId, String user) {
-        QuizGame updated = addParticipant(gameId, user);
-        return toDTO(updated);
+    public QuizGameDTO enterQuizGame(String gameId, Long participantId) {
+        QuizGame game = gameRepository.findByGameId(gameId)
+                .orElseThrow(() -> new IllegalArgumentException("Jeu introuvable : " + gameId));
+
+
+        if (game.getParticipants().stream().noneMatch(p -> p.getId().equals(participantId))) {
+            QuizGame updated = addParticipant(gameId, participantId);
+            return toDTO(updated);
+        }
+
+        return null;
     }
 
     @Transactional

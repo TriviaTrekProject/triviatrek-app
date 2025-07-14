@@ -92,10 +92,6 @@ public class QuizGame {
         participants.add(participant);
     }
 
-    public void addParticipant(String username, int delaiReponse) {
-        participants.add(new Participant(username, delaiReponse));
-    }
-
     public void addQuestion(Question q) {
         this.questions.add(q);
     }

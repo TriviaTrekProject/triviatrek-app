@@ -1,4 +1,4 @@
-package com.main.triviatreckapp.dto;
+package com.main.triviatreckapp.Request;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -9,10 +9,9 @@ import lombok.Setter;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class ParticipantDTO {
-    private Long participantId;
+
+public class JoinRoomRequest {
     private String username;
-    private int delaiReponse;
     private String tempId;
 
 }
