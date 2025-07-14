@@ -1,5 +1,6 @@
 package com.main.triviatreckapp.controller;
 
+import com.main.triviatreckapp.Request.JoinRoomRequest;
 import com.main.triviatreckapp.dto.RoomDTO;
 import com.main.triviatreckapp.entities.Message;
 import com.main.triviatreckapp.service.RoomService;
@@ -21,9 +22,9 @@ public class RoomController {
 
     @MessageMapping("/join/{roomId}")
     @SendTo("/chatroom/{roomId}")
-    public RoomDTO joinRoom(@DestinationVariable String roomId, @Payload String user, SimpMessageHeaderAccessor messageHeaderAccessor) {
+    public RoomDTO joinRoom(@DestinationVariable String roomId, @Payload JoinRoomRequest joinRoomRequest, SimpMessageHeaderAccessor messageHeaderAccessor) {
         // 1) On calcule d'abord le pseudo unique
-        String uniqueUser = roomService.getUniqueUserName(roomId, user);
+        String uniqueUser = roomService.getUniqueUserName(roomId, joinRoomRequest.getUsername());
 
         // 2) On stocke ce pseudo en session
         Objects.requireNonNull(messageHeaderAccessor.getSessionAttributes())
@@ -32,7 +33,7 @@ public class RoomController {
                 .put("username", uniqueUser);
 
         // 3) Puis on ajoute vraiment l'utilisateur optimisé
-        return roomService.addUserToRoom(roomId, uniqueUser);
+        return roomService.addUserToRoom(roomId, uniqueUser, joinRoomRequest.getTempId());
     }
 
 

@@ -36,14 +36,14 @@ public class QuizGameController {
 
     @MessageMapping("/game/join/{gameId}")
     @SendTo("/game/{gameId}")
-    public QuizGameDTO joinGame(@DestinationVariable String gameId, @Payload String user) {
-      return gameService.enterQuizGame(gameId, user);
+    public QuizGameDTO joinGame(@DestinationVariable String gameId, @Payload Long participantId) {
+      return gameService.enterQuizGame(gameId, participantId);
     }
 
     @MessageMapping("/game/leave/{gameId}")
     @SendTo("/game/{gameId}")
-    public Optional<QuizGameDTO> leaveGame(@DestinationVariable String gameId, @Payload String user) {
-        return gameService.removeParticipantFromGame(gameId, user);
+    public Optional<QuizGameDTO> leaveGame(@DestinationVariable String gameId, @Payload Long participantId) {
+        return gameService.removeParticipantFromGame(gameId, participantId);
 
     }
 

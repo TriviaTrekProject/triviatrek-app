@@ -1,10 +1,14 @@
 package com.main.triviatreckapp.service;
 
 import com.main.triviatreckapp.dto.MessageDTO;
+import com.main.triviatreckapp.dto.ParticipantDTO;
 import com.main.triviatreckapp.dto.RoomDTO;
 import com.main.triviatreckapp.entities.Message;
+import com.main.triviatreckapp.entities.Participant;
 import com.main.triviatreckapp.entities.Room;
+import com.main.triviatreckapp.repository.ParticipantRepository;
 import com.main.triviatreckapp.repository.RoomRepository;
+import jakarta.servlet.http.Part;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -14,9 +18,11 @@ import java.util.*;
 public class RoomService {
     private final RoomRepository roomRepo;
     private final ChatService chatService;
+    private final ParticipantRepository participantRepo;
 
-    public RoomService(RoomRepository roomRepo, ChatService chatService) { this.roomRepo = roomRepo;
+    public RoomService(RoomRepository roomRepo, ChatService chatService, ParticipantRepository participantRepo) { this.roomRepo = roomRepo;
         this.chatService = chatService;
+        this.participantRepo = participantRepo;
     }
 
     /**
@@ -56,11 +62,13 @@ public class RoomService {
 
 
     @Transactional
-    public void removeParticipant(String roomId, String user) {
-        Room room = getRoom(roomId).orElseThrow(() -> new IllegalArgumentException("Room not found: " + roomId));
-        room.getParticipants().remove(user);
+    public void removeParticipant(String roomId, String username) {
+        Room room = roomRepo.findByRoomId(roomId)
+                .orElseThrow(() -> new IllegalArgumentException("Room introuvable"));
+        room.getParticipants().removeIf(p -> p.getUsername().equals(username));
         roomRepo.save(room);
     }
+
 
     @Transactional
     public Room createRoom(String roomId) {
@@ -72,18 +80,26 @@ public class RoomService {
         return roomRepo.save(room);
     }
 
-    public RoomDTO convertRoomToDTO(Room room, String roomId) {
-        List<String> participantsDTO = new ArrayList<>(room.getParticipants());
-        String gameId = room.getQuizGame() != null ? room.getQuizGame().getGameId() : UUID.randomUUID().toString();
-
-        List<MessageDTO> messagesDTO = room.getMessages().stream()
-                .map(message ->
-                        new MessageDTO(message.getRoomId(),
-                                message.getSender(),
-                                message.getContent()))
+    public RoomDTO convertRoomToDTO(Room room) {
+        List<ParticipantDTO> participantsDTO = new ArrayList<>();
+        room.getParticipants().forEach(participant -> {
+            participantsDTO.add(new ParticipantDTO(participant.getId(), participant.getUsername(), participant.getDelaiReponse(), null));
+        });
+                ;
+        List<MessageDTO> msgs = room.getMessages().stream()
+                .map(m -> new MessageDTO(m.getRoomId(), m.getSender(), m.getContent()))
                 .toList();
-        return new RoomDTO(roomId, participantsDTO, messagesDTO, gameId, room.isActiveGame());
+        String gameId = room.getQuizGame() != null
+                ? room.getQuizGame().getGameId()
+                : UUID.randomUUID().toString();
+
+        return new RoomDTO(room.getRoomId(),
+                participantsDTO,
+                msgs,
+                gameId,
+                room.isActiveGame());
     }
+
 
     /**
      * Renvoie un pseudo unique dans la room (suffixe (2),(3)…)
@@ -94,34 +110,46 @@ public class RoomService {
         // récupère la room si elle existe
         Room room = roomRepo.findByRoomId(roomId).orElse(null);
         Collection<String> participants = (room != null)
-                ? room.getParticipants()
+                ? room.getParticipants().stream().map(Participant::getUsername).toList()
                 : List.of();
         return generateUniqueName(participants, desiredUser);
     }
 
 
     @Transactional
-    public RoomDTO addUserToRoom(String roomId, String user) {
-
-        // 1) Récupération de la room avec verrou d’écriture
+    public RoomDTO addUserToRoom(String roomId, String username, String tempUuid) {
         Room room = roomRepo.findByRoomIdForUpdate(roomId)
                 .orElseGet(() -> createRoom(roomId));
 
-        // 2) Idempotence : on n’ajoute que si nécessaire
-        if (!room.getParticipants().contains(user)) {
-            Message sysMsg = chatService.saveMessage(
-                    roomId,
-                    "SYSTEM",                       // expéditeur technique
-                     user + " a rejoint la room");
+        // création ou récupération du Participant
+        Participant p = participantRepo.findByUsername(username)
+                .orElseGet(() -> participantRepo.save(new Participant(username, 0)));
 
+        if (room.getParticipants().stream().noneMatch(x -> x.getUsername().equals(username))) {
+            Message sysMsg = chatService.saveMessage(roomId, "SYSTEM", username + " a rejoint la room");
             room.getMessages().add(sysMsg);
-            room.addParticipant(user);
+            room.addParticipant(p);
             roomRepo.save(room);
         }
+        RoomDTO roomDTO = convertRoomToDTO(room);
 
-        // 3) Conversion du résultat
-        return convertRoomToDTO(room, roomId);
+        // On reconstruit la liste en injectant le tempId là où il faut
+        List<ParticipantDTO> updated = roomDTO.getParticipants().stream()
+                .peek(part -> {
+                    if (part.getUsername().equals(username)) {
+                        part.setTempId(tempUuid);
+                    }
+                })
+                .toList();
+
+        // On remplace l’ancienne liste par la nouvelle
+        roomDTO.setParticipants(updated);
+
+        return roomDTO;
+
     }
+
+
 
     @Transactional
     public RoomDTO submitMessageToRoom(String roomId, Message chatMessage) {
@@ -131,14 +159,14 @@ public class RoomService {
             Message savedMessage = chatService.saveMessage(
                     roomId, chatMessage.getSender(), chatMessage.getContent());
             room.get().getMessages().add(savedMessage);
-            return convertRoomToDTO(saveRoom(room.get()), roomId);
+            return convertRoomToDTO(saveRoom(room.get()));
         } else {
             throw new RuntimeException("room not found !!");
         }
     }
 
     @Transactional
-    public Optional<RoomDTO> removeParticipantAndCheckRoomStatus(String roomId, String user) {
+    public Optional<RoomDTO> removeParticipantAndCheckRoomStatus(String roomId, String username) {
         // Utilisation d’un verrou pessimiste pour éviter les accès concurrents
         Optional<Room> optionalRoom = roomRepo.findByRoomIdForUpdate(roomId);
         if (optionalRoom.isEmpty()) {
@@ -147,12 +175,13 @@ public class RoomService {
         }
         Room room = optionalRoom.get();
 
-        if (room.getParticipants().contains(user)) {
-            room.getParticipants().remove(user);
+        if (room.getParticipants().stream().anyMatch(p -> p.getUsername().equals(username))) {
+            Participant participant = room.getParticipants().stream().filter(p -> p.getUsername().equals(username)).findAny().orElseThrow();
+            room.removeParticipant(participant);
             Message sysMsg = chatService.saveMessage(
                     roomId,
                     "SYSTEM",
-                    user + " a quitté la room");
+                    participant.getUsername() + " a quitté la room");
             room.getMessages().add(sysMsg);
         }
 
@@ -161,13 +190,13 @@ public class RoomService {
             return Optional.empty();
         } else {
             roomRepo.save(room);
-            return Optional.ofNullable(convertRoomToDTO(room, roomId));
+            return Optional.ofNullable(convertRoomToDTO(room));
         }
     }
 
     @Transactional
     public RoomDTO getRoomDTO(String roomId) {
-        return getRoom(roomId).map(room -> convertRoomToDTO(room, roomId)).orElseThrow(() -> new IllegalArgumentException("Room not found: " + roomId));
+        return getRoom(roomId).map(this::convertRoomToDTO).orElseThrow(() -> new IllegalArgumentException("Room not found: " + roomId));
     }
 
 }

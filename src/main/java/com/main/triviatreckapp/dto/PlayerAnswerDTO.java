@@ -8,6 +8,6 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class PlayerAnswerDTO {
-    private String player;     // Identifiant du joueur
+    private String participantId;     // Identifiant du joueur
     private String answer;   // Index de la réponse choisie (0-based)
 }
