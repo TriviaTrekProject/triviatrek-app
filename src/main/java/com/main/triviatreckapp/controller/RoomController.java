@@ -22,10 +22,17 @@ public class RoomController {
     @MessageMapping("/join/{roomId}")
     @SendTo("/chatroom/{roomId}")
     public RoomDTO joinRoom(@DestinationVariable String roomId, @Payload String user, SimpMessageHeaderAccessor messageHeaderAccessor) {
-        Objects.requireNonNull(messageHeaderAccessor.getSessionAttributes()).put("roomId", roomId);
-        messageHeaderAccessor.getSessionAttributes().put("username", user);
+        // 1) On calcule d'abord le pseudo unique
+        String uniqueUser = roomService.getUniqueUserName(roomId, user);
 
-        return roomService.addUserToRoom(roomId, user);
+        // 2) On stocke ce pseudo en session
+        Objects.requireNonNull(messageHeaderAccessor.getSessionAttributes())
+                .put("roomId", roomId);
+        messageHeaderAccessor.getSessionAttributes()
+                .put("username", uniqueUser);
+
+        // 3) Puis on ajoute vraiment l'utilisateur optimisé
+        return roomService.addUserToRoom(roomId, uniqueUser);
     }
 
 

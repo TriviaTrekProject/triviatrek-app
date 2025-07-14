@@ -56,6 +56,17 @@ public class QuizGameService {
         this.roomRepository = roomRepository;
     }
 
+    private String generateUniqueName(Collection<String> existing, String base) {
+        String candidate = base;
+        int suffix = 2;
+        while (existing.contains(candidate)) {
+            candidate = base + "(" + suffix + ")";
+            suffix++;
+        }
+        return candidate;
+    }
+
+
     /**
      * Crée ou redémarre une partie dans une salle
      * @param gameId identifiant de la salle
@@ -281,8 +292,21 @@ public class QuizGameService {
     }
     @Transactional
     public QuizGameDTO enterQuizGame(String gameId, String user) {
-        QuizGame updated = addParticipant(gameId, user);
-        return toDTO(updated);
+        QuizGame game = gameRepository.findByGameId(gameId)
+                .orElseThrow(() -> new IllegalArgumentException("Jeu introuvable : " + gameId));
+
+        Collection<String> participantsName = List.of(game.getParticipants().stream().map(Participant::getUsername).toArray(String[]::new));
+        // Génération du pseudo unique
+        String finalUser = participantsName.contains(user)
+                ? generateUniqueName(participantsName, user)
+                : user;
+
+        if (!participantsName.contains(finalUser)) {
+            QuizGame updated = addParticipant(gameId, user);
+            return toDTO(updated);
+        }
+
+        return null;
     }
 
     @Transactional

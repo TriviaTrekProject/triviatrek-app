@@ -8,10 +8,7 @@ import com.main.triviatreckapp.repository.RoomRepository;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Optional;
-import java.util.UUID;
+import java.util.*;
 
 @Service
 public class RoomService {
@@ -21,6 +18,21 @@ public class RoomService {
     public RoomService(RoomRepository roomRepo, ChatService chatService) { this.roomRepo = roomRepo;
         this.chatService = chatService;
     }
+
+    /**
+     * Génère un nom unique en ajoutant (2), (3)... tant que nécessaire.
+     */
+    private String generateUniqueName(Collection<String> existing, String base) {
+        String candidate = base;
+        int suffix = 2;
+        while (existing.contains(candidate)) {
+            candidate = base + "(" + suffix + ")";
+            suffix++;
+        }
+        return candidate;
+    }
+
+
     @Transactional(readOnly = true)
     public Optional<Room> getRoom(String roomId) {
         return roomRepo.findByRoomId(roomId);
@@ -72,6 +84,21 @@ public class RoomService {
                 .toList();
         return new RoomDTO(roomId, participantsDTO, messagesDTO, gameId, room.isActiveGame());
     }
+
+    /**
+     * Renvoie un pseudo unique dans la room (suffixe (2),(3)…)
+     * même si la room n'existe pas encore.
+     */
+    @Transactional(readOnly = true)
+    public String getUniqueUserName(String roomId, String desiredUser) {
+        // récupère la room si elle existe
+        Room room = roomRepo.findByRoomId(roomId).orElse(null);
+        Collection<String> participants = (room != null)
+                ? room.getParticipants()
+                : List.of();
+        return generateUniqueName(participants, desiredUser);
+    }
+
 
     @Transactional
     public RoomDTO addUserToRoom(String roomId, String user) {
