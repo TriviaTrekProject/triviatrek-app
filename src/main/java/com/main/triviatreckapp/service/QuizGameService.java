@@ -62,6 +62,8 @@ public class QuizGameService {
 
     // Remplacez votre Map<String, Boolean> processingAnswers par :
     private final Map<String, ReentrantLock> gameLocks = new ConcurrentHashMap<>();
+    // ❶ Suivi des joueurs déjà passés sur la question courante
+    private final Map<String, Set<String>> answeredPlayers = new ConcurrentHashMap<>();
 
 
     public QuizGameService(QuestionRepository questionRepository,
@@ -177,7 +179,7 @@ public class QuizGameService {
                     game.addScore(username, basePoints);
                     answerWindowStarted.put(gameId, true);
 
-                    // Timer de 30s pour passer à la question suivante
+                    // Timer de 10s pour passer à la question suivante
                     ScheduledFuture<?> f = gameTaskScheduler.schedule(
                             () -> {
                                 applicationContext.getBean(QuizGameService.class)
@@ -198,10 +200,40 @@ public class QuizGameService {
                 game.setWaitingForNext(true);
 
             }
+            // ❸ Enregistrer que ce participant a répondu
+            Set<String> answered = answeredPlayers
+                    .computeIfAbsent(gameId, k -> ConcurrentHashMap.newKeySet());
+            answered.add(playerAnswer.getParticipantId());
+
 
             // Sauvegarde et broadcast immédiat des scores mis à jour
             QuizGame saved = gameRepository.save(game);
             messagingTemplate.convertAndSend("/game/" + gameId, toDTO(saved));
+
+
+            // Si tous ont répondu => annuler timer et passer à la q suivante
+            int totalParticipants = game.getParticipants().size();
+            if (answered.size() >= totalParticipants) {
+                // annulation du timer programmé
+                ScheduledFuture<?> future = scheduledFutures.remove(gameId);
+                if (future != null) {
+                    future.cancel(false);
+                }
+
+                // Timer de 10s pour passer à la question suivante
+                ScheduledFuture<?> f = gameTaskScheduler.schedule(
+                        () -> {
+                            applicationContext.getBean(QuizGameService.class)
+                                    .triggerNextQuestion(gameId);
+                            // on vide le suivi des réponses
+                            answeredPlayers.remove(gameId);
+
+                        },
+                        Date.from(Instant.now().plusSeconds(10))
+                );
+                scheduledFutures.put(gameId, f);
+
+            }
 
             return toDTO(saved);
 
