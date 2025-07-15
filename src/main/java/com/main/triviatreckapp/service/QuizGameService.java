@@ -160,9 +160,9 @@ public class QuizGameService {
 
         String username = part.getUsername();
         int basePoints = switch (current.getDifficulty()) {
-                case "easy" -> 1;
-                case "medium" -> 2;
-                case "hard" -> 3;
+                case "easy" -> 10;
+                case "medium" -> 20;
+                case "hard" -> 30;
                 default -> throw new IllegalArgumentException("Difficulté inconnue: " + current.getDifficulty());
         };
 
@@ -215,25 +215,23 @@ public class QuizGameService {
             int totalParticipants = game.getParticipants().size();
             if (answered.size() >= totalParticipants) {
                 // annulation du timer programmé
-                ScheduledFuture<?> future = scheduledFutures.remove(gameId);
-                if (future != null) {
-                    future.cancel(false);
+
+                if (!scheduledFutures.containsKey(gameId)) {
+                    game.setWaitingForNext(true);
+
+                    // Timer de 10s pour passer à la question suivante
+                    ScheduledFuture<?> f = gameTaskScheduler.schedule(
+                            () -> {
+                                applicationContext.getBean(QuizGameService.class)
+                                        .triggerNextQuestion(gameId);
+                                // on vide le suivi des réponses
+                                game.setWaitingForNext(false);
+
+                            },
+                            Date.from(Instant.now().plusSeconds(10))
+                    );
+                    scheduledFutures.put(gameId, f);
                 }
-                game.setWaitingForNext(true);
-
-                // Timer de 10s pour passer à la question suivante
-                ScheduledFuture<?> f = gameTaskScheduler.schedule(
-                        () -> {
-                            applicationContext.getBean(QuizGameService.class)
-                                    .triggerNextQuestion(gameId);
-                            // on vide le suivi des réponses
-                            answeredPlayers.remove(gameId);
-                            game.setWaitingForNext(false);
-
-                        },
-                        Date.from(Instant.now().plusSeconds(10))
-                );
-                scheduledFutures.put(gameId, f);
 
             }
 
@@ -255,13 +253,16 @@ public class QuizGameService {
      */
     @Transactional
     public void triggerNextQuestion(String gameId) {
+        answeredPlayers.remove(gameId);
+        correctAnswerOrder.remove(gameId);
+        answerWindowStarted.remove(gameId);
+
         Optional<QuizGame> opt = gameRepository.findWithAllByGameId(gameId);
         if (opt.isEmpty()) return;
 
         QuizGame game = opt.get();
         if (!game.isFinished()) {
             // Réinitialiser l'état de la fenêtre
-            resetWindow(gameId);
             game.setWaitingForNext(false);
 
             game.nextQuestion();
@@ -284,8 +285,8 @@ public class QuizGameService {
      * on retire 20% de la valeur de base par position-1
      */
     private int computeDecreasingPoints(int base, int position) {
-        int decrement = base / 20;
-        return Math.max(0, base - (position - 1) * decrement);
+        int decrement = base * 20 / 100;
+        return Math.max(base/10, base - (position - 1) * decrement);
     }
 
 
