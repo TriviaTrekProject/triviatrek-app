@@ -20,5 +20,6 @@ public class QuizGameDTO {
     private boolean finished;
     private List<ParticipantDTO> participants;
     private int currentQuestionIndex;
+    private boolean waitingForNext;
 
 }
