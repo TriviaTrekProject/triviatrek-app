@@ -35,6 +35,7 @@ public class QuizGame {
             joinColumns = @JoinColumn(name = "quiz_game_id"),
             inverseJoinColumns = @JoinColumn(name = "question_id")
     )
+    @OrderColumn(name = "question_order")        // <-- ajouté pour indexer la liste
     private List<Question> questions = new ArrayList<>();
 
     // score par joueur (clé = nom ou id utilisateur)
@@ -44,7 +45,8 @@ public class QuizGame {
     @Column(name = "score")
     private Map<String, Integer> scores = new HashMap<>();
     private boolean finished = false;           // Indique si le jeu est terminé
-
+    @Column(name = "waiting_for_next", nullable = false, columnDefinition = "BOOLEAN DEFAULT FALSE")
+    private boolean waitingForNext = false;
     @ManyToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     @JoinTable(
             name = "quiz_game_participants",

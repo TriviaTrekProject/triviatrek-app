@@ -16,13 +16,18 @@ import com.main.triviatreckapp.entities.Room;
 import com.main.triviatreckapp.repository.QuestionRepository;
 import com.main.triviatreckapp.repository.QuizGameRepository;
 import com.main.triviatreckapp.repository.RoomRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.ApplicationContext;
 import org.springframework.messaging.simp.SimpMessagingTemplate;
+import org.springframework.scheduling.TaskScheduler;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.time.Instant;
 import java.util.*;
-import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.*;
+import java.util.concurrent.locks.ReentrantLock;
 import java.util.stream.Collectors;
 
 @Service
@@ -33,6 +38,20 @@ public class QuizGameService {
     private final ChatService chatService;
     private final SimpMessagingTemplate messagingTemplate;
     private final RoomRepository roomRepository;
+    private final TaskScheduler gameTaskScheduler;
+
+    // Pour suivre l'ordre des bonnes réponses par partie
+    private final Map<String, List<String>> correctAnswerOrder = new ConcurrentHashMap<>();
+
+    // Indique si la fenêtre de 30s est ouverte pour chaque gameId
+    private final Map<String, Boolean> answerWindowStarted = new ConcurrentHashMap<>();
+
+    // Pour pouvoir annuler le timer si besoin
+    private final Map<String, ScheduledFuture<?>> scheduledFutures = new ConcurrentHashMap<>();
+
+    // ApplicationContext pour récupérer le proxy Spring
+    @Autowired
+    private ApplicationContext applicationContext;
 
 
     @Value("${quiz.questions-per-game:10}")
@@ -41,19 +60,21 @@ public class QuizGameService {
     @Value("${quiz.correct-answer-points:1}")
     private int correctAnswerPoints;
 
-    // Carte de verrouillage pour éviter le traitement concurrent de réponses
-    private final ConcurrentHashMap<String, Boolean> processingAnswers = new ConcurrentHashMap<>();
+    // Remplacez votre Map<String, Boolean> processingAnswers par :
+    private final Map<String, ReentrantLock> gameLocks = new ConcurrentHashMap<>();
 
 
     public QuizGameService(QuestionRepository questionRepository,
                            QuizGameRepository gameRepository, RoomService roomService, ChatService chatService, SimpMessagingTemplate messagingTemplate,
-                           RoomRepository roomRepository) {
+                           RoomRepository roomRepository, TaskScheduler gameTaskScheduler)
+     {
         this.questionRepository = questionRepository;
         this.gameRepository = gameRepository;
         this.roomService = roomService;
         this.chatService = chatService;
         this.messagingTemplate = messagingTemplate;
         this.roomRepository = roomRepository;
+        this.gameTaskScheduler = gameTaskScheduler;
     }
 
     private String generateUniqueName(Collection<String> existing, String base) {
@@ -107,11 +128,11 @@ public class QuizGameService {
     @Transactional
     public QuizGameDTO processAnswerDTO(String gameId, PlayerAnswerDTO playerAnswer) {
         // Tente d'acquérir le verrou; si déjà en traitement, ignorer la nouvelle réponse.
-        if (processingAnswers.putIfAbsent(gameId, Boolean.TRUE) != null) {
-            Optional<QuizGame> optExisting = gameRepository.findByGameId(gameId);
-            return optExisting.map(this::toDTO).orElse(null);
-        }
+        // récupère (ou crée) un lock "fair" pour cette partie
+        ReentrantLock lock = gameLocks
+                .computeIfAbsent(gameId, id -> new ReentrantLock(true)); // true = FIFO fairness
 
+        lock.lock();
         try {
 
         Optional<QuizGame> opt = gameRepository.findByGameId(gameId);
@@ -129,46 +150,110 @@ public class QuizGameService {
             game.setFinished(true);
             return toDTO(gameRepository.save(game));
         }
-        Participant part = game.getParticipants().stream().filter(participant -> participant.getId().toString().equals(playerAnswer.getParticipantId())).findFirst().orElseThrow(() -> new IllegalArgumentException("Participant introuvable : " + playerAnswer.getParticipantId()));
-        String messageSystem = part.getUsername();
-        int mutiplicater = switch (current.getDifficulty()) {
+            // Récupérer le participant
+            Participant part = game.getParticipants().stream()
+                    .filter(p -> p.getId().toString().equals(playerAnswer.getParticipantId()))
+                    .findFirst()
+                    .orElseThrow(() -> new IllegalArgumentException("Participant introuvable"));
+
+        String username = part.getUsername();
+        int basePoints = switch (current.getDifficulty()) {
                 case "easy" -> 1;
                 case "medium" -> 2;
                 case "hard" -> 3;
                 default -> throw new IllegalArgumentException("Difficulté inconnue: " + current.getDifficulty());
         };
 
+            boolean isCorrect = playerAnswer.getAnswer().equals(current.getCorrectAnswer());
+            // Liste des joueurs déjà corrects
+            List<String> order = correctAnswerOrder
+                    .computeIfAbsent(gameId, id -> new CopyOnWriteArrayList<>());
 
 
-        if (Objects.equals(playerAnswer.getAnswer(), current.getCorrectAnswer())) {
-            game.addScore(part.getUsername(), mutiplicater * correctAnswerPoints);
-            messageSystem = messageSystem.concat(" a répondu correctement !");
-        }
-        else {
-            game.addScore(part.getUsername(), -2 * correctAnswerPoints * mutiplicater);
-            messageSystem = messageSystem.concat(" a répondu faux !");
-        }
+            if (isCorrect) {
+                if (order.isEmpty()) {
+                    // 1ʳᵉ bonne réponse : plein de points + démarrage du timer
+                    order.add(username);
+                    game.addScore(username, basePoints);
+                    answerWindowStarted.put(gameId, true);
 
-            String destination = "/chatroom/" + game.getRoom().getRoomId();
-            Message message = chatService.saveMessage(game.getRoom().getRoomId(), "GAME_SYSTEM_"+game.getCurrentQuestionIndex(), messageSystem);
-            game.getRoom().getMessages().add(message);
-            roomRepository.save(game.getRoom());
-            messagingTemplate.convertAndSend(destination, Optional.ofNullable(roomService.convertRoomToDTO(roomRepository.save(game.getRoom()))));
+                    // Timer de 30s pour passer à la question suivante
+                    ScheduledFuture<?> f = gameTaskScheduler.schedule(
+                            () -> {
+                                applicationContext.getBean(QuizGameService.class)
+                                        .triggerNextQuestion(gameId);
+                                },
+                            Date.from(Instant.now().plusSeconds(10))
+                    );
+                    scheduledFutures.put(gameId, f);
 
-            // Reset delaiReponse for all participants
-            for (Participant participant : game.getParticipants()) {
-                participant.setDelaiReponse(0);
+                } else if (answerWindowStarted.getOrDefault(gameId, false)
+                        && !order.contains(username)) {
+                    // Bonnes réponses suivantes : barème dégressif
+                    order.add(username);
+                    int position = order.size(); // 2=>deuxième, 3=>troisième, etc.
+                    int points = computeDecreasingPoints(basePoints, position);
+                    game.addScore(username, points);
+                }
+                game.setWaitingForNext(true);
+
             }
 
-            game.nextQuestion();
+            // Sauvegarde et broadcast immédiat des scores mis à jour
+            QuizGame saved = gameRepository.save(game);
+            messagingTemplate.convertAndSend("/game/" + gameId, toDTO(saved));
 
-            return toDTO(gameRepository.save(game));
+            return toDTO(saved);
 
         } finally {
-            processingAnswers.remove(gameId);
+            lock.unlock();
+            //  cleanup si la partie est finie
+            if (gameRepository.findByGameId(gameId).map(QuizGame::isFinished).orElse(false)) {
+                gameLocks.remove(gameId);
+            }
         }
 
     }
+
+    /**
+     * Déclenché au bout de 30s après la 1ʳᵉ bonne réponse :
+     * passe à la question suivante et broadcast.
+     */
+    @Transactional
+    public void triggerNextQuestion(String gameId) {
+        Optional<QuizGame> opt = gameRepository.findWithAllByGameId(gameId);
+        if (opt.isEmpty()) return;
+
+        QuizGame game = opt.get();
+        if (!game.isFinished()) {
+            // Réinitialiser l'état de la fenêtre
+            resetWindow(gameId);
+            game.setWaitingForNext(false);
+
+            game.nextQuestion();
+
+            QuizGame saved = gameRepository.save(game);
+            messagingTemplate.convertAndSend("/game/" + gameId, toDTO(saved));
+
+        }
+    }
+
+    private void resetWindow(String gameId) {
+        answerWindowStarted.remove(gameId);
+        correctAnswerOrder.remove(gameId);
+        ScheduledFuture<?> f = scheduledFutures.remove(gameId);
+        if (f != null) f.cancel(false);
+    }
+
+    /**
+     * barème dégressif :
+     * on retire 20% de la valeur de base par position-1
+     */
+    private int computeDecreasingPoints(int base, int position) {
+        int decrement = base / 20;
+        return Math.max(0, base - (position - 1) * decrement);
+    }
+
 
 
     /**
@@ -205,6 +290,7 @@ public class QuizGameService {
         dto.setParticipants(participantDTOs);
 
         dto.setCurrentQuestionIndex(game.getCurrentQuestionIndex());
+        dto.setWaitingForNext(game.isWaitingForNext());
         return dto;
     }
 
