@@ -219,6 +219,7 @@ public class QuizGameService {
                 if (future != null) {
                     future.cancel(false);
                 }
+                game.setWaitingForNext(true);
 
                 // Timer de 10s pour passer à la question suivante
                 ScheduledFuture<?> f = gameTaskScheduler.schedule(
@@ -227,6 +228,7 @@ public class QuizGameService {
                                     .triggerNextQuestion(gameId);
                             // on vide le suivi des réponses
                             answeredPlayers.remove(gameId);
+                            game.setWaitingForNext(false);
 
                         },
                         Date.from(Instant.now().plusSeconds(10))
