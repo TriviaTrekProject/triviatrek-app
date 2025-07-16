@@ -256,6 +256,7 @@ public class QuizGameService {
         answeredPlayers.remove(gameId);
         correctAnswerOrder.remove(gameId);
         answerWindowStarted.remove(gameId);
+        scheduledFutures.remove(gameId);
 
         Optional<QuizGame> opt = gameRepository.findWithAllByGameId(gameId);
         if (opt.isEmpty()) return;
