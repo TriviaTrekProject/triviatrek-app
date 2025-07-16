@@ -693,17 +693,6 @@
         ]
       },
       {
-        "difficulty": "hard",
-        "category": "Histoire",
-        "question": "Quel traité de  Treaty of Karlowitz (1699) marqua la fin de la domination ottomane en Hongrie ?",
-        "correct_answer": "Traité de Karlowitz",
-        "incorrect_answers": [
-          "Traité de Passarowitz",
-          "Traité de Sèvres",
-          "Traité de Belgrade"
-        ]
-      },
-      {
         "difficulty": "medium",
         "category": "Histoire",
         "question": "Quel célèbre explorateur français fonda la colonie de Québec en 1608 ?",
@@ -734,17 +723,6 @@
           "Révolution de Février",
           "Révolution d'Octobre",
           "Guerre russo-japonaise"
-        ]
-      },
-      {
-        "difficulty": "hard",
-        "category": "Histoire",
-        "question": "Quel congrès de  Congress of Berlin (1878) redessina les frontières des Balkans après la guerre russo-turque ?",
-        "correct_answer": "Congrès de Berlin",
-        "incorrect_answers": [
-          "Congrès de Vienne",
-          "Congrès de Paris",
-          "Congrès de Prague"
         ]
       },
       {
@@ -2486,597 +2464,6076 @@
     ]
   },
   {
-    "difficulty": "medium",
-    "category": "Science",
-    "question": "Quel est le numéro atomique de l’élément Hydrogène ?",
-    "correct_answer": "1",
+    "difficulty": "easy",
+    "category": "Histoire",
+    "question": "En quelle ann\u00e9e a d\u00e9but\u00e9 la R\u00e9volution fran\u00e7aise\u00a0?",
+    "correct_answer": "1789",
     "incorrect_answers": [
-      "2",
-      "3",
-      "4"
+      "1776",
+      "1792",
+      "1815"
     ]
   },
   {
     "difficulty": "medium",
-    "category": "Science",
-    "question": "Quel est le numéro atomique de l’élément Hélium ?",
-    "correct_answer": "2",
+    "category": "Histoire",
+    "question": "Qui a \u00e9t\u00e9 le premier empereur romain\u00a0?",
+    "correct_answer": "Auguste",
     "incorrect_answers": [
-      "1",
-      "3",
-      "4"
+      "Jules C\u00e9sar",
+      "N\u00e9ron",
+      "Marc Aur\u00e8le"
     ]
   },
   {
     "difficulty": "medium",
-    "category": "Science",
-    "question": "Quel est le numéro atomique de l’élément Lithium ?",
-    "correct_answer": "3",
+    "category": "Histoire",
+    "question": "Quel roi de France est associ\u00e9 \u00e0 l'expression \u00ab Apr\u00e8s moi, le d\u00e9luge \u00bb\u00a0?",
+    "correct_answer": "Louis XV",
     "incorrect_answers": [
-      "1",
-      "2",
-      "4"
+      "Louis XIV",
+      "Louis XVI",
+      "Henri IV"
     ]
   },
   {
     "difficulty": "medium",
-    "category": "Science",
-    "question": "Quel est le numéro atomique de l’élément Béryllium ?",
-    "correct_answer": "4",
+    "category": "Histoire",
+    "question": "Quel \u00e9v\u00e9nement a marqu\u00e9 la fin de la Seconde Guerre mondiale en Europe\u00a0?",
+    "correct_answer": "La capitulation de l'Allemagne nazie (8 mai 1945)",
     "incorrect_answers": [
-      "2",
-      "3",
-      "5"
+      "Le d\u00e9barquement en Normandie (6 juin 1944)",
+      "Le bombardement d'Hiroshima (6 ao\u00fbt 1945)",
+      "L'assassinat de Hitler (1945)"
     ]
   },
   {
     "difficulty": "medium",
-    "category": "Science",
-    "question": "Quel est le numéro atomique de l’élément Bore ?",
-    "correct_answer": "5",
+    "category": "Histoire",
+    "question": "Quel empire a \u00e9t\u00e9 fond\u00e9 par Gengis Khan\u00a0?",
+    "correct_answer": "L'Empire mongol",
     "incorrect_answers": [
-      "3",
-      "4",
-      "6"
+      "L'Empire ottoman",
+      "L'Empire romain",
+      "L'Empire perse"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "Histoire",
+    "question": "Quel pays \u00e9tait dirig\u00e9 par Fidel Castro\u00a0?",
+    "correct_answer": "Cuba",
+    "incorrect_answers": [
+      "Chili",
+      "Venezuela",
+      "Argentine"
     ]
   },
   {
     "difficulty": "medium",
-    "category": "Science",
-    "question": "Quel est le numéro atomique de l’élément Carbone ?",
-    "correct_answer": "6",
+    "category": "Histoire",
+    "question": "Qui est connu comme le \"p\u00e8re de la bombe atomique\"\u00a0?",
+    "correct_answer": "J. Robert Oppenheimer",
     "incorrect_answers": [
-      "4",
-      "5",
-      "7"
+      "Albert Einstein",
+      "Enrico Fermi",
+      "Niels Bohr"
     ]
   },
   {
     "difficulty": "medium",
-    "category": "Science",
-    "question": "Quel est le numéro atomique de l’élément Azote ?",
-    "correct_answer": "7",
+    "category": "Histoire",
+    "question": "Quel \u00e9tait le nom de naissance de S\u0153ur Emmanuelle\u00a0?",
+    "correct_answer": "Madeleine Cinquin",
     "incorrect_answers": [
-      "5",
-      "6",
-      "8"
+      "Marie Dupont",
+      "Sophie Metteur",
+      "Anne Pech"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "Histoire",
+    "question": "En quelle ann\u00e9e a eu lieu la prise de la Bastille\u00a0?",
+    "correct_answer": "1789",
+    "incorrect_answers": [
+      "1778",
+      "1792",
+      "1804"
     ]
   },
   {
     "difficulty": "medium",
-    "category": "Science",
-    "question": "Quel est le numéro atomique de l’élément Oxygène ?",
-    "correct_answer": "8",
+    "category": "Histoire",
+    "question": "La bataille de Verdun en 1916 a oppos\u00e9 quels deux pays pendant la Premi\u00e8re Guerre mondiale\u00a0?",
+    "correct_answer": "La France et l'Allemagne",
     "incorrect_answers": [
-      "6",
-      "7",
-      "9"
+      "France et Royaume-Uni",
+      "Allemagne et Russie",
+      "Italie et Autriche"
     ]
   },
   {
     "difficulty": "medium",
-    "category": "Science",
-    "question": "Quel est le numéro atomique de l’élément Fluor ?",
-    "correct_answer": "9",
+    "category": "Histoire",
+    "question": "Qui \u00e9tait le commandant en chef des forces alli\u00e9es lors du d\u00e9barquement de Normandie en 1944\u00a0?",
+    "correct_answer": "Dwight D. Eisenhower",
     "incorrect_answers": [
-      "7",
-      "8",
-      "10"
+      "Bernard Montgomery",
+      "Charles de Gaulle",
+      "Omar Bradley"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "Histoire",
+    "question": "En quelle ann\u00e9e la Premi\u00e8re Guerre mondiale a-t-elle commenc\u00e9\u00a0?",
+    "correct_answer": "1914",
+    "incorrect_answers": [
+      "1918",
+      "1939",
+      "1917"
+    ]
+  },
+  {
+    "difficulty": "hard",
+    "category": "Histoire",
+    "question": "Quel pays a \u00e9t\u00e9 le premier \u00e0 abolir l'esclavage\u00a0?",
+    "correct_answer": "Ha\u00efti",
+    "incorrect_answers": [
+      "France",
+      "\u00c9tats-Unis",
+      "Royaume-Uni"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "Histoire",
+    "question": "Quel trait\u00e9 a mis fin \u00e0 la Premi\u00e8re Guerre mondiale\u00a0?",
+    "correct_answer": "Le trait\u00e9 de Versailles",
+    "incorrect_answers": [
+      "Le trait\u00e9 de Brest-Litovsk",
+      "Les Accords de Munich",
+      "Le trait\u00e9 de Paris"
     ]
   },
   {
     "difficulty": "medium",
-    "category": "Science",
-    "question": "Quel est le numéro atomique de l’élément Néon ?",
-    "correct_answer": "10",
+    "category": "Histoire",
+    "question": "Quel pharaon \u00e9gyptien a fait construire la Grande Pyramide de Gizeh\u00a0?",
+    "correct_answer": "Kheops (Kh\u00e9phren)",
     "incorrect_answers": [
-      "8",
-      "9",
-      "11"
+      "Rams\u00e8s II",
+      "Toutankhamon",
+      "Cl\u00e9op\u00e2tre"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "Histoire",
+    "question": "En quelle ann\u00e9e la chute du mur de Berlin a-t-elle eu lieu\u00a0?",
+    "correct_answer": "1989",
+    "incorrect_answers": [
+      "1961",
+      "1971",
+      "1991"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "Histoire",
+    "question": "Quelle civilisation antique a construit Machu Picchu\u00a0?",
+    "correct_answer": "Les Incas",
+    "incorrect_answers": [
+      "Les Mayas",
+      "Les Azt\u00e8ques",
+      "Les Olm\u00e8ques"
     ]
   },
   {
     "difficulty": "medium",
-    "category": "Science",
-    "question": "Quel est le numéro atomique de l’élément Sodium ?",
+    "category": "Histoire",
+    "question": "Quelle reine du Royaume-Uni a r\u00e9gn\u00e9 le plus longtemps avant de s'\u00e9teindre en 1901\u00a0?",
+    "correct_answer": "Victoria",
+    "incorrect_answers": [
+      "\u00c9lisabeth Ire",
+      "\u00c9douard VII",
+      "Anne"
+    ]
+  },
+  {
+    "difficulty": "hard",
+    "category": "Histoire",
+    "question": "Quel empereur romain a scind\u00e9 l'Empire romain en deux \u00e0 sa mort en 395\u00a0?",
+    "correct_answer": "Th\u00e9odose Ier",
+    "incorrect_answers": [
+      "Jules C\u00e9sar",
+      "N\u00e9ron",
+      "Diocl\u00e9tien"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Histoire",
+    "question": "Qui a \u00e9t\u00e9 Premier ministre du Royaume-Uni pendant la majeure partie de la Seconde Guerre mondiale\u00a0?",
+    "correct_answer": "Winston Churchill",
+    "incorrect_answers": [
+      "Neville Chamberlain",
+      "Anthony Eden",
+      "Harold Wilson"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "G\u00e9ographie",
+    "question": "Quelle est la capitale de l'Australie\u00a0?",
+    "correct_answer": "Canberra",
+    "incorrect_answers": [
+      "Sydney",
+      "Melbourne",
+      "Brisbane"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "G\u00e9ographie",
+    "question": "Quelle est la capitale du Canada\u00a0?",
+    "correct_answer": "Ottawa",
+    "incorrect_answers": [
+      "Toronto",
+      "Montr\u00e9al",
+      "Vancouver"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "G\u00e9ographie",
+    "question": "Quelle est la capitale de l'Argentine\u00a0?",
+    "correct_answer": "Buenos Aires",
+    "incorrect_answers": [
+      "C\u00f3rdoba",
+      "Rosario",
+      "Mendoza"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "G\u00e9ographie",
+    "question": "Quelle est la capitale de l'Inde\u00a0?",
+    "correct_answer": "New Delhi",
+    "incorrect_answers": [
+      "Bombay (Mumbai)",
+      "Calcutta (Kolkata)",
+      "Chennai"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "G\u00e9ographie",
+    "question": "Quel est le plus long fleuve du monde\u00a0?",
+    "correct_answer": "Le Nil",
+    "incorrect_answers": [
+      "L'Amazone",
+      "Le Yangts\u00e9",
+      "Le Mississippi"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "G\u00e9ographie",
+    "question": "Quel est le plus grand pays du monde par superficie\u00a0?",
+    "correct_answer": "La Russie",
+    "incorrect_answers": [
+      "Le Canada",
+      "Les \u00c9tats-Unis",
+      "La Chine"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "G\u00e9ographie",
+    "question": "Quel est le plus haut sommet du monde\u00a0?",
+    "correct_answer": "Le mont Everest",
+    "incorrect_answers": [
+      "Le K2",
+      "Le Makalu",
+      "Le Lhotse"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "G\u00e9ographie",
+    "question": "Quel est le plus petit pays du monde\u00a0?",
+    "correct_answer": "Le Vatican",
+    "incorrect_answers": [
+      "Monaco",
+      "Nauru",
+      "Saint-Marin"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "G\u00e9ographie",
+    "question": "Quelle cha\u00eene de montagnes forme la fronti\u00e8re naturelle entre la France et l'Espagne\u00a0?",
+    "correct_answer": "Les Pyr\u00e9n\u00e9es",
+    "incorrect_answers": [
+      "Les Alpes",
+      "Les Andes",
+      "Les Apennins"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "G\u00e9ographie",
+    "question": "Quel oc\u00e9an borde la c\u00f4te ouest des \u00c9tats-Unis\u00a0?",
+    "correct_answer": "Oc\u00e9an Pacifique",
+    "incorrect_answers": [
+      "Oc\u00e9an Atlantique",
+      "Oc\u00e9an Indien",
+      "Oc\u00e9an Arctique"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "G\u00e9ographie",
+    "question": "Quel continent compte le plus de pays\u00a0?",
+    "correct_answer": "L'Afrique",
+    "incorrect_answers": [
+      "L'Asie",
+      "L'Europe",
+      "L'Am\u00e9rique du Sud"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "G\u00e9ographie",
+    "question": "Quelle est la capitale du Japon\u00a0?",
+    "correct_answer": "Tokyo",
+    "incorrect_answers": [
+      "Kyoto",
+      "Osaka",
+      "Hiroshima"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "G\u00e9ographie",
+    "question": "Dans quel pays se trouve le mont Kilimandjaro\u00a0?",
+    "correct_answer": "Tanzanie",
+    "incorrect_answers": [
+      "Kenya",
+      "Ouganda",
+      "\u00c9thiopie"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "G\u00e9ographie",
+    "question": "Quel est l'oc\u00e9an le plus profond du monde\u00a0?",
+    "correct_answer": "Oc\u00e9an Pacifique",
+    "incorrect_answers": [
+      "Oc\u00e9an Atlantique",
+      "Oc\u00e9an Indien",
+      "Oc\u00e9an Arctique"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "G\u00e9ographie",
+    "question": "Quelle est la capitale de la Croatie\u00a0?",
+    "correct_answer": "Zagreb",
+    "incorrect_answers": [
+      "Split",
+      "Dubrovnik",
+      "Ljubljana"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "G\u00e9ographie",
+    "question": "Quel pays a pour capitale Abuja\u00a0?",
+    "correct_answer": "Nigeria",
+    "incorrect_answers": [
+      "Ghana",
+      "Angola",
+      "Kenya"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "G\u00e9ographie",
+    "question": "Quel pays est le plus peupl\u00e9 du monde\u00a0?",
+    "correct_answer": "La Chine",
+    "incorrect_answers": [
+      "L'Inde",
+      "Les \u00c9tats-Unis",
+      "L'Indon\u00e9sie"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "G\u00e9ographie",
+    "question": "Istanbul est une ville situ\u00e9e sur deux continents : lesquels\u00a0?",
+    "correct_answer": "L'Europe et l'Asie",
+    "incorrect_answers": [
+      "L'Europe et l'Afrique",
+      "L'Asie et l'Afrique",
+      "L'Am\u00e9rique et l'Europe"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "G\u00e9ographie",
+    "question": "Quelle est la capitale du Portugal\u00a0?",
+    "correct_answer": "Lisbonne",
+    "incorrect_answers": [
+      "Porto",
+      "Madrid",
+      "Barcelone"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "G\u00e9ographie",
+    "question": "Quelle est la plus longue cha\u00eene de montagnes du monde\u00a0?",
+    "correct_answer": "Les Andes",
+    "incorrect_answers": [
+      "L'Himalaya",
+      "Les Rocheuses",
+      "Les Alpes"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "Sciences",
+    "question": "Quelle est la plan\u00e8te la plus proche du Soleil\u00a0?",
+    "correct_answer": "Mercure",
+    "incorrect_answers": [
+      "V\u00e9nus",
+      "Terre",
+      "Mars"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "Sciences",
+    "question": "Quelle est la plan\u00e8te la plus lointaine du Soleil dans le syst\u00e8me solaire\u00a0?",
+    "correct_answer": "Neptune",
+    "incorrect_answers": [
+      "Saturne",
+      "Uranus",
+      "Pluton"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Sciences",
+    "question": "Qui a d\u00e9couvert la loi de la gravitation universelle\u00a0?",
+    "correct_answer": "Isaac Newton",
+    "incorrect_answers": [
+      "Albert Einstein",
+      "Galil\u00e9e",
+      "Johannes Kepler"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "Sciences",
+    "question": "Quel est l'\u00e9l\u00e9ment chimique de symbole O\u00a0?",
+    "correct_answer": "Oxyg\u00e8ne",
+    "incorrect_answers": [
+      "Or",
+      "Argent",
+      "Plutonium"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Sciences",
+    "question": "Combien d'\u00e9l\u00e9ments le tableau p\u00e9riodique comporte-t-il\u00a0?",
+    "correct_answer": "118",
+    "incorrect_answers": [
+      "112",
+      "120",
+      "106"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "Sciences",
+    "question": "Quel gaz les plantes absorbent-elles pour la photosynth\u00e8se\u00a0?",
+    "correct_answer": "Dioxyde de carbone",
+    "incorrect_answers": [
+      "Oxyg\u00e8ne",
+      "Azote",
+      "M\u00e9thane"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Sciences",
+    "question": "Quelle est la distance mediumne entre la Terre et le Soleil\u00a0?",
+    "correct_answer": "150 millions de kilom\u00e8tres",
+    "incorrect_answers": [
+      "384 000 km",
+      "1 million de km",
+      "30 millions de km"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "Sciences",
+    "question": "Quelle est la temp\u00e9rature d'\u00e9bullition de l'eau (en \u00baC) \u00e0 pression atmosph\u00e9rique\u00a0?",
+    "correct_answer": "100°C",
+    "incorrect_answers": [
+      "90°C",
+      "80°C",
+      "120°C"
+    ]
+  },
+  {
+    "difficulty": "hard",
+    "category": "Sciences",
+    "question": "Quel est le m\u00e9tal de plus haute densit\u00e9\u00a0?",
+    "correct_answer": "Osmium",
+    "incorrect_answers": [
+      "Plomb",
+      "Fer",
+      "Argent"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "Sciences",
+    "question": "Quelle particule poss\u00e8de une charge \u00e9lectrique n\u00e9gative\u00a0?",
+    "correct_answer": "L'\u00e9lectron",
+    "incorrect_answers": [
+      "Le proton",
+      "Le neutron",
+      "Le photon"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "Sciences",
+    "question": "Quel physicien a formul\u00e9 la th\u00e9orie de la relativit\u00e9\u00a0?",
+    "correct_answer": "Albert Einstein",
+    "incorrect_answers": [
+      "Isaac Newton",
+      "Niels Bohr",
+      "Galil\u00e9e"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Sciences",
+    "question": "Quel organe du corps humain produit l'insuline\u00a0?",
+    "correct_answer": "Le pancr\u00e9as",
+    "incorrect_answers": [
+      "Le foie",
+      "Les reins",
+      "La rate"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Sciences",
+    "question": "Combien de paires de chromosomes poss\u00e8de l'\u00eatre humain\u00a0?",
+    "correct_answer": "23 paires",
+    "incorrect_answers": [
+      "22 paires",
+      "24 paires",
+      "46 paires"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "Sciences",
+    "question": "Quel est l'organe principal de la respiration chez l'homme\u00a0?",
+    "correct_answer": "Les poumons",
+    "incorrect_answers": [
+      "Le c\u0153ur",
+      "Le foie",
+      "Le rein"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Sciences",
+    "question": "Quel instrument permet de mesurer la pression atmosph\u00e9rique\u00a0?",
+    "correct_answer": "Le barom\u00e8tre",
+    "incorrect_answers": [
+      "Le thermom\u00e8tre",
+      "Le sismographe",
+      "L'altim\u00e8tre"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "Sciences",
+    "question": "Quel liquide est utilis\u00e9 dans les colonnes de thermom\u00e8tres \u00e0 mercure\u00a0?",
+    "correct_answer": "Le mercure",
+    "incorrect_answers": [
+      "L'alcool",
+      "L'eau",
+      "L'\u00e9ther"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Sciences",
+    "question": "Quel type de rayonnement est utilis\u00e9 pour prendre des radios\u00a0?",
+    "correct_answer": "Les rayons X",
+    "incorrect_answers": [
+      "Les ultraviolets",
+      "Les infrarouges",
+      "Les micro-ondes"
+    ]
+  },
+  {
+    "difficulty": "hard",
+    "category": "Sciences",
+    "question": "Quel est l'\u00e9tat physique de la lumi\u00e8re\u00a0?",
+    "correct_answer": "Un rayonnement \u00e9lectromagn\u00e9tique",
+    "incorrect_answers": [
+      "Une particule subatomique",
+      "Une onde sonore",
+      "Une onde gravitationnelle"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Sciences",
+    "question": "Quel gaz est majoritairement \u00e9mis par les volcans lors d'une \u00e9ruption\u00a0?",
+    "correct_answer": "La vapeur d'eau (H2O)",
+    "incorrect_answers": [
+      "Le dioxyde de carbone (CO2)",
+      "Le dioxyde de soufre (SO2)",
+      "Le m\u00e9thane (CH4)"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "Sciences",
+    "question": "Quel est le symbole chimique du sodium\u00a0?",
+    "correct_answer": "Na",
+    "incorrect_answers": [
+      "S",
+      "Sn",
+      "Si"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "Litt\u00e9rature",
+    "question": "Qui a \u00e9crit \"Les Mis\u00e9rables\"\u00a0?",
+    "correct_answer": "Victor Hugo",
+    "incorrect_answers": [
+      "\u00c9mile Zola",
+      "Jean Valjean",
+      "Honor\u00e9 de Balzac"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "Litt\u00e9rature",
+    "question": "Quel \u00e9crivain fran\u00e7ais est l'auteur de \"Le Petit Prince\"\u00a0?",
+    "correct_answer": "Antoine de Saint-Exup\u00e9ry",
+    "incorrect_answers": [
+      "Jean de La Fontaine",
+      "Guillaume Apollinaire",
+      "Victor Hugo"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Litt\u00e9rature",
+    "question": "Quel philosophe grec est l'auteur de \"La R\u00e9publique\"\u00a0?",
+    "correct_answer": "Platon",
+    "incorrect_answers": [
+      "Aristote",
+      "Socrate",
+      "\u00c9picure"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "Litt\u00e9rature",
+    "question": "Qui a \u00e9crit \"Rom\u00e9o et Juliette\"\u00a0?",
+    "correct_answer": "William Shakespeare",
+    "incorrect_answers": [
+      "Victor Hugo",
+      "Moli\u00e8re",
+      "Pierre Corneille"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Litt\u00e9rature",
+    "question": "Quel est l'auteur du roman \"1984\"\u00a0?",
+    "correct_answer": "George Orwell",
+    "incorrect_answers": [
+      "Aldous Huxley",
+      "Ray Bradbury",
+      "Jules Verne"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Litt\u00e9rature",
+    "question": "Quel po\u00e8te a \u00e9crit \"Demain, d\u00e8s l'aube\"\u00a0?",
+    "correct_answer": "Victor Hugo",
+    "incorrect_answers": [
+      "Charles Baudelaire",
+      "Alphonse de Lamartine",
+      "Arthur Rimbaud"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Litt\u00e9rature",
+    "question": "Quel \u00e9crivain est \u00e0 l'origine du personnage de Sherlock Holmes\u00a0?",
+    "correct_answer": "Arthur Conan Doyle",
+    "incorrect_answers": [
+      "Agatha Christie",
+      "Sir Arthur C. Clarke",
+      "J.K. Rowling"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Litt\u00e9rature",
+    "question": "Qui a \u00e9crit \"La Divine Com\u00e9die\"\u00a0?",
+    "correct_answer": "Dante Alighieri",
+    "incorrect_answers": [
+      "Giovanni Boccaccio",
+      "William Blake",
+      "Fran\u00e7ois Villon"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Litt\u00e9rature",
+    "question": "Quel auteur fran\u00e7ais a \u00e9crit \"Le Rouge et le Noir\"\u00a0?",
+    "correct_answer": "Stendhal",
+    "incorrect_answers": [
+      "Honor\u00e9 de Balzac",
+      "\u00c9mile Zola",
+      "Alexandre Dumas"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Litt\u00e9rature",
+    "question": "Qui a \u00e9crit \"Les Fleurs du mal\"\u00a0?",
+    "correct_answer": "Charles Baudelaire",
+    "incorrect_answers": [
+      "Victor Hugo",
+      "Th\u00e9ophile Gautier",
+      "Guillaume Apollinaire"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Litt\u00e9rature",
+    "question": "Quel \u00e9crivain am\u00e9ricain a \u00e9crit \"Le Vieil Homme et la Mer\"\u00a0?",
+    "correct_answer": "Ernest Hemingway",
+    "incorrect_answers": [
+      "John Steinbeck",
+      "F. Scott Fitzgerald",
+      "Edgar Allan Poe"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "Litt\u00e9rature",
+    "question": "Qui a \u00e9crit \"Germinal\"\u00a0?",
+    "correct_answer": "\u00c9mile Zola",
+    "incorrect_answers": [
+      "Victor Hugo",
+      "Honor\u00e9 de Balzac",
+      "Guy de Maupassant"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "Litt\u00e9rature",
+    "question": "Quel est l'auteur de la saga \"Harry Potter\"\u00a0?",
+    "correct_answer": "J.K. Rowling",
+    "incorrect_answers": [
+      "Suzanne Collins",
+      "C.S. Lewis",
+      "J.R.R. Tolkien"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Litt\u00e9rature",
+    "question": "Quel \u00e9crivain a \u00e9crit \"Madame Bovary\"\u00a0?",
+    "correct_answer": "Gustave Flaubert",
+    "incorrect_answers": [
+      "Charles Baudelaire",
+      "\u00c9mile Zola",
+      "Victor Hugo"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "Litt\u00e9rature",
+    "question": "Qui a \u00e9crit le roman \"Le Seigneur des Anneaux\"\u00a0?",
+    "correct_answer": "J.R.R. Tolkien",
+    "incorrect_answers": [
+      "C.S. Lewis",
+      "George R.R. Martin",
+      "J.K. Rowling"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Litt\u00e9rature",
+    "question": "Qui a \u00e9crit la pi\u00e8ce \"Le Cid\"\u00a0?",
+    "correct_answer": "Pierre Corneille",
+    "incorrect_answers": [
+      "Moli\u00e8re",
+      "Jean Racine",
+      "Voltaire"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Litt\u00e9rature",
+    "question": "Quel auteur a \u00e9crit \"Le Comte de Monte-Cristo\"\u00a0?",
+    "correct_answer": "Alexandre Dumas",
+    "incorrect_answers": [
+      "Victor Hugo",
+      "\u00c9mile Zola",
+      "Honor\u00e9 de Balzac"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Litt\u00e9rature",
+    "question": "Quel auteur a \u00e9crit \"Alice au pays des merveilles\"\u00a0?",
+    "correct_answer": "Lewis Carroll",
+    "incorrect_answers": [
+      "Jules Verne",
+      "C.S. Lewis",
+      "Mark Twain"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Litt\u00e9rature",
+    "question": "Qui a \u00e9crit \"Candide\"\u00a0?",
+    "correct_answer": "Voltaire",
+    "incorrect_answers": [
+      "Jean-Jacques Rousseau",
+      "Montesquieu",
+      "Denis Diderot"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "Litt\u00e9rature",
+    "question": "Qui a \u00e9crit \"Hamlet\"\u00a0?",
+    "correct_answer": "William Shakespeare",
+    "incorrect_answers": [
+      "Victor Hugo",
+      "Jean Racine",
+      "Moli\u00e8re"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Pop Culture",
+    "question": "Dans la s\u00e9rie t\u00e9l\u00e9vis\u00e9e \"Breaking Bad\", quel est le nom de naissance de Heisenberg\u00a0?",
+    "correct_answer": "Walter White",
+    "incorrect_answers": [
+      "Jesse Pinkman",
+      "Gustavo Fring",
+      "Saul Goodman"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Pop Culture",
+    "question": "Quel film a remport\u00e9 l'Oscar du meilleur film en 1994\u00a0?",
+    "correct_answer": "Forrest Gump",
+    "incorrect_answers": [
+      "Pulp Fiction",
+      "The Shawshank Redemption",
+      "Qu'il en soit ainsi (It Could Happen to You)"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "Pop Culture",
+    "question": "Quel groupe a chant\u00e9 \"Bohemian Rhapsody\"\u00a0?",
+    "correct_answer": "Queen",
+    "incorrect_answers": [
+      "Pink Floyd",
+      "Led Zeppelin",
+      "The Rolling Stones"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "Pop Culture",
+    "question": "Dans quelle saga cin\u00e9matographique Luke Skywalker appara\u00eet-il\u00a0?",
+    "correct_answer": "Star Wars",
+    "incorrect_answers": [
+      "Star Trek",
+      "Matrix",
+      "Stargate"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Pop Culture",
+    "question": "Quel est le nom de famille du d\u00e9tective c\u00e9l\u00e8bre Sherlock Holmes\u00a0?",
+    "correct_answer": "Holmes",
+    "incorrect_answers": [
+      "Watson",
+      "Marple",
+      "Poirot"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "Pop Culture",
+    "question": "Quel film d'animation Pixar met en sc\u00e8ne des jouets qui prennent vie\u00a0?",
+    "correct_answer": "Toy Story",
+    "incorrect_answers": [
+      "Les Indestructibles",
+      "Wall-E",
+      "Monstres & Cie"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "Pop Culture",
+    "question": "Quel personnage c\u00e9l\u00e8bre est capitaine d'un bateau dans la bande dessin\u00e9e \"Les Aventures de Tintin\"\u00a0?",
+    "correct_answer": "Le Capitaine Haddock",
+    "incorrect_answers": [
+      "Le Professeur Tournesol",
+      "Milou",
+      "Bianca Castafiore"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "Pop Culture",
+    "question": "Quel super-h\u00e9ros Marvel utilise un marteau appel\u00e9 Mjolnir\u00a0?",
+    "correct_answer": "Thor",
+    "incorrect_answers": [
+      "Iron Man",
+      "Captain America",
+      "Hulk"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "Pop Culture",
+    "question": "Quel personnage de Star Wars est le p\u00e8re de Luke Skywalker\u00a0?",
+    "correct_answer": "Dark Vador",
+    "incorrect_answers": [
+      "Obi-Wan Kenobi",
+      "Ma\u00eetre Yoda",
+      "Han Solo"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "Pop Culture",
+    "question": "Qui a chant\u00e9 la chanson \"Thriller\"\u00a0?",
+    "correct_answer": "Michael Jackson",
+    "incorrect_answers": [
+      "Prince",
+      "Madonna",
+      "David Bowie"
+    ]
+  },
+  {
+    "difficulty": "hard",
+    "category": "Pop Culture",
+    "question": "Quel jeu vid\u00e9o implique de casser des briques en faisant rebondir une balle avec une raquette\u00a0?",
+    "correct_answer": "Arkanoid",
+    "incorrect_answers": [
+      "Tetris",
+      "Space Invaders",
+      "Pac-Man"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Pop Culture",
+    "question": "Quel est le nom du personnage principal de la s\u00e9rie de jeux vid\u00e9o \"The Legend of Zelda\"\u00a0?",
+    "correct_answer": "Link",
+    "incorrect_answers": [
+      "Zelda",
+      "Ganondorf",
+      "Mario"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Pop Culture",
+    "question": "Quel chanteur fran\u00e7ais est connu pour la chanson \"Ne me quitte pas\"\u00a0?",
+    "correct_answer": "Jacques Brel",
+    "incorrect_answers": [
+      "Charles Aznavour",
+      "Georges Brassens",
+      "Serge Gainsbourg"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "Pop Culture",
+    "question": "Quel super-h\u00e9ros Marvel est un milliardaire portant un costume high-tech rouge\u00a0?",
+    "correct_answer": "Iron Man",
+    "incorrect_answers": [
+      "Captain America",
+      "Batman",
+      "Thor"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Pop Culture",
+    "question": "Qui a incarn\u00e9 Jack Sparrow dans \"Pirates des Cara\u00efbes\"\u00a0?",
+    "correct_answer": "Johnny Depp",
+    "incorrect_answers": [
+      "Orlando Bloom",
+      "Keira Knightley",
+      "Jason Statham"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "Pop Culture",
+    "question": "Comment s'appelle le vaisseau spatial de \"Star Trek\"\u00a0?",
+    "correct_answer": "USS Enterprise",
+    "incorrect_answers": [
+      "Millennium Falcon",
+      "Battlestar Galactica",
+      "Serenity"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "Pop Culture",
+    "question": "Quel joueur de basketball est surnomm\u00e9 \"Air Jordan\"\u00a0?",
+    "correct_answer": "Michael Jordan",
+    "incorrect_answers": [
+      "LeBron James",
+      "Kobe Bryant",
+      "Shaquille O'Neal"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "Pop Culture",
+    "question": "Quel personnage de jeu vid\u00e9o porte un chapeau rouge et une moustache noire\u00a0?",
+    "correct_answer": "Mario",
+    "incorrect_answers": [
+      "Luigi",
+      "Dracula",
+      "Wario"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "Pop Culture",
+    "question": "Quel h\u00e9ros de comics a un bouclier \u00e9toil\u00e9 et porte un casque ail\u00e9\u00a0?",
+    "correct_answer": "Captain America",
+    "incorrect_answers": [
+      "Batman",
+      "Iron Man",
+      "Thor"
+    ]
+  },
+  {
+    "difficulty": "hard",
+    "category": "Pop Culture",
+    "question": "Dans la saga Star Wars, qui est la m\u00e8re de Luke Skywalker\u00a0?",
+    "correct_answer": "Padm\u00e9 Amidala",
+    "incorrect_answers": [
+      "Leia Organa",
+      "Shmi Skywalker",
+      "Mara Jade"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "Sport",
+    "question": "Combien de joueurs y a-t-il par \u00e9quipe sur un terrain de football\u00a0?",
     "correct_answer": "11",
     "incorrect_answers": [
-      "9",
       "10",
+      "9",
       "12"
     ]
   },
   {
-    "difficulty": "medium",
-    "category": "Science",
-    "question": "Quel est le numéro atomique de l’élément Magnésium ?",
-    "correct_answer": "12",
+    "difficulty": "easy",
+    "category": "Sport",
+    "question": "Quel pays a remport\u00e9 la Coupe du monde de football en 2018\u00a0?",
+    "correct_answer": "La France",
     "incorrect_answers": [
-      "10",
-      "11",
-      "13"
+      "La Croatie",
+      "L'Allemagne",
+      "Le Br\u00e9sil"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "Sport",
+    "question": "Quel pays a remport\u00e9 la m\u00e9daille d'or en football masculin aux Jeux olympiques de 2016\u00a0?",
+    "correct_answer": "Le Br\u00e9sil",
+    "incorrect_answers": [
+      "L'Allemagne",
+      "L'Argentine",
+      "L'Espagne"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "Sport",
+    "question": "Quel est le nom de l'\u00e9preuve combinant natation, cyclisme et course \u00e0 pied aux Jeux olympiques\u00a0?",
+    "correct_answer": "Le triathlon",
+    "incorrect_answers": [
+      "Le pentathlon moderne",
+      "Le d\u00e9cathlon",
+      "Le pentathlon"
     ]
   },
   {
     "difficulty": "medium",
-    "category": "Science",
-    "question": "Quel est le numéro atomique de l’élément Aluminium ?",
-    "correct_answer": "13",
+    "category": "Sport",
+    "question": "Quel sprinteur jama\u00efcain d\u00e9tient le record du monde du 100 m\u00a0?",
+    "correct_answer": "Usain Bolt",
+    "incorrect_answers": [
+      "Carl Lewis",
+      "Justin Gatlin",
+      "Mike Powell"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "Sport",
+    "question": "Dans quel sport peut-on r\u00e9aliser un saut appel\u00e9 \"dunk\" en anglais\u00a0?",
+    "correct_answer": "Le basketball",
+    "incorrect_answers": [
+      "Le volley-ball",
+      "Le football am\u00e9ricain",
+      "Le water-polo"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Sport",
+    "question": "Quel est le sport principal des New York Yankees\u00a0?",
+    "correct_answer": "Le baseball",
+    "incorrect_answers": [
+      "Le basketball",
+      "Le football am\u00e9ricain",
+      "Le hockey sur glace"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Sport",
+    "question": "Combien de joueurs composent une \u00e9quipe de basket-ball sur le terrain\u00a0?",
+    "correct_answer": "5",
+    "incorrect_answers": [
+      "6",
+      "7",
+      "4"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Sport",
+    "question": "Quel sport pratique-t-on avec une planche \u00e0 voile\u00a0?",
+    "correct_answer": "La planche \u00e0 voile",
+    "incorrect_answers": [
+      "Le kitesurf",
+      "Le surf",
+      "Le ski nautique"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Sport",
+    "question": "Quel sportif a remport\u00e9 23 m\u00e9dailles olympiques\u00a0?",
+    "correct_answer": "Michael Phelps",
+    "incorrect_answers": [
+      "Mark Spitz",
+      "Ian Thorpe",
+      "Ryan Lochte"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Sport",
+    "question": "Quelle est la distance d'un marathon en kilom\u00e8tres\u00a0?",
+    "correct_answer": "42,195 km",
+    "incorrect_answers": [
+      "50 km",
+      "42 km",
+      "40 km"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "Sport",
+    "question": "Quel joueur de tennis a remport\u00e9 le plus de titres en Grand Chelem en simple\u00a0?",
+    "correct_answer": "Novak Djokovic",
+    "incorrect_answers": [
+      "Roger Federer",
+      "Rafael Nadal",
+      "Pete Sampras"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Sport",
+    "question": "Quel club de football a remport\u00e9 la Ligue des champions de l'UEFA en 2021\u00a0?",
+    "correct_answer": "Chelsea",
+    "incorrect_answers": [
+      "Manchester City",
+      "Bayern Munich",
+      "Paris Saint-Germain"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Sport",
+    "question": "Quel pays a remport\u00e9 le Championnat d'Europe de football en 2021\u00a0?",
+    "correct_answer": "L'Italie",
+    "incorrect_answers": [
+      "L'Angleterre",
+      "La France",
+      "Le Portugal"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "Sport",
+    "question": "Combien de joueurs y a-t-il sur le terrain en rugby \u00e0 XV\u00a0?",
+    "correct_answer": "15",
     "incorrect_answers": [
       "11",
-      "12",
+      "13",
       "14"
     ]
   },
   {
     "difficulty": "medium",
-    "category": "Science",
-    "question": "Quel est le numéro atomique de l’élément Silicium ?",
-    "correct_answer": "14",
+    "category": "Sport",
+    "question": "Qui \u00e9tait le capitaine de l'\u00e9quipe de France de Coupe Davis en 2017\u00a0?",
+    "correct_answer": "Yannick Noah",
     "incorrect_answers": [
-      "12",
-      "13",
-      "15"
+      "Guy Forget",
+      "Henri Leconte",
+      "S\u00e9bastien Grosjean"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "Musique",
+    "question": "Quel chanteur a interpr\u00e9t\u00e9 \"La Vie en rose\"\u00a0?",
+    "correct_answer": "\u00c9dith Piaf",
+    "incorrect_answers": [
+      "Juliette Gr\u00e9co",
+      "Johnny Hallyday",
+      "Charles Aznavour"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "Musique",
+    "question": "Quel groupe a chant\u00e9 \"Hey Jude\"\u00a0?",
+    "correct_answer": "The Beatles",
+    "incorrect_answers": [
+      "The Rolling Stones",
+      "Queen",
+      "Pink Floyd"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "Musique",
+    "question": "Quel compositeur a \u00e9crit \"La Fl\u00fbte enchant\u00e9e\"\u00a0?",
+    "correct_answer": "Wolfgang Amadeus Mozart",
+    "incorrect_answers": [
+      "Ludwig van Beethoven",
+      "Johann Sebastian Bach",
+      "Richard Wagner"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "Musique",
+    "question": "Qui a compos\u00e9 la Neuvi\u00e8me Symphonie (\"Ode \u00e0 la Joie\")\u00a0?",
+    "correct_answer": "Ludwig van Beethoven",
+    "incorrect_answers": [
+      "Wolfgang Amadeus Mozart",
+      "Johann Sebastian Bach",
+      "Fr\u00e9d\u00e9ric Chopin"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "Musique",
+    "question": "Quel est le style musical des Rolling Stones\u00a0?",
+    "correct_answer": "Rock",
+    "incorrect_answers": [
+      "Jazz",
+      "Rap",
+      "Classique"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "Musique",
+    "question": "Quelle chanteuse am\u00e9ricaine interpr\u00e8te \"Like a Virgin\"\u00a0?",
+    "correct_answer": "Madonna",
+    "incorrect_answers": [
+      "Britney Spears",
+      "Lady Gaga",
+      "C\u00e9line Dion"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "Musique",
+    "question": "Quel chanteur a sorti l'album \"Thriller\"\u00a0?",
+    "correct_answer": "Michael Jackson",
+    "incorrect_answers": [
+      "Prince",
+      "Stevie Wonder",
+      "Lionel Richie"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "Musique",
+    "question": "Quel instrument \u00e0 cordes ressemble \u00e0 une petite guitare\u00a0?",
+    "correct_answer": "Ukul\u00e9l\u00e9",
+    "incorrect_answers": [
+      "Violoncelle",
+      "Banjo",
+      "Mandoline"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "Musique",
+    "question": "Quel est le style musical de Beethoven\u00a0?",
+    "correct_answer": "Musique classique",
+    "incorrect_answers": [
+      "Jazz",
+      "Baroque",
+      "Romantique"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "Musique",
+    "question": "Qui chantait \"No Woman, No Cry\"\u00a0?",
+    "correct_answer": "Bob Marley",
+    "incorrect_answers": [
+      "Justin Bieber",
+      "Michael Jackson",
+      "Elvis Presley"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "Musique",
+    "question": "Quel musicien est surnomm\u00e9 \"The King of Pop\"\u00a0?",
+    "correct_answer": "Michael Jackson",
+    "incorrect_answers": [
+      "Elvis Presley",
+      "Prince",
+      "Freddie Mercury"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "Musique",
+    "question": "Quel instrument poss\u00e8de 88 touches\u00a0?",
+    "correct_answer": "Le piano",
+    "incorrect_answers": [
+      "La guitare",
+      "Le violon",
+      "Le saxophone"
     ]
   },
   {
     "difficulty": "medium",
-    "category": "Science",
-    "question": "Quel est le numéro atomique de l’élément Phosphore ?",
+    "category": "Musique",
+    "question": "Quel groupe a interpr\u00e9t\u00e9 \"Smells Like Teen Spirit\"\u00a0?",
+    "correct_answer": "Nirvana",
+    "incorrect_answers": [
+      "Metallica",
+      "Pearl Jam",
+      "Oasis"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Musique",
+    "question": "Qui chantait \"Like a Rolling Stone\"\u00a0?",
+    "correct_answer": "Bob Dylan",
+    "incorrect_answers": [
+      "Bruce Springsteen",
+      "Mick Jagger",
+      "Leonard Cohen"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "Musique",
+    "question": "Quelle chanteuse a chant\u00e9 \"Rolling in the Deep\"\u00a0?",
+    "correct_answer": "Adele",
+    "incorrect_answers": [
+      "Rihanna",
+      "Lady Gaga",
+      "Taylor Swift"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Musique",
+    "question": "Quel groupe a interpr\u00e9t\u00e9 \"Hotel California\"\u00a0?",
+    "correct_answer": "The Eagles",
+    "incorrect_answers": [
+      "Fleetwood Mac",
+      "Pink Floyd",
+      "Journey"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Musique",
+    "question": "Quel instrument \u00e0 vent a un pavillon en laiton et se joue en appuyant sur des pistons\u00a0?",
+    "correct_answer": "Trompette",
+    "incorrect_answers": [
+      "Trombone",
+      "Cor",
+      "Clarinette"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "Musique",
+    "question": "Quelle chanteuse fran\u00e7aise a chant\u00e9 \"Dern\u00e8re danse\"\u00a0?",
+    "correct_answer": "Indila",
+    "incorrect_answers": [
+      "Christine and the Queens",
+      "Zaz",
+      "Vanessa Paradis"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Musique",
+    "question": "Quel compositeur italien a \u00e9crit l'op\u00e9ra \"La Boh\u00e8me\"\u00a0?",
+    "correct_answer": "Giacomo Puccini",
+    "incorrect_answers": [
+      "Giuseppe Verdi",
+      "Gioachino Rossini",
+      "Wolfgang Amadeus Mozart"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "Musique",
+    "question": "Quel chanteur am\u00e9ricain est connu pour la chanson \"Purple Rain\"\u00a0?",
+    "correct_answer": "Prince",
+    "incorrect_answers": [
+      "Michael Jackson",
+      "David Bowie",
+      "Elvis Presley"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "Culture G\u00e9n\u00e9rale",
+    "question": "Quel est le plus grand oc\u00e9an du monde\u00a0?",
+    "correct_answer": "Oc\u00e9an Pacifique",
+    "incorrect_answers": [
+      "Oc\u00e9an Atlantique",
+      "Oc\u00e9an Indien",
+      "Oc\u00e9an Arctique"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "Culture G\u00e9n\u00e9rale",
+    "question": "Quelle est la capitale du Br\u00e9sil\u00a0?",
+    "correct_answer": "Bras\u00edlia",
+    "incorrect_answers": [
+      "Rio de Janeiro",
+      "S\u00e3o Paulo",
+      "Montevideo"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Culture G\u00e9n\u00e9rale",
+    "question": "Quel est le plus petit continent\u00a0?",
+    "correct_answer": "L'Australie",
+    "incorrect_answers": [
+      "L'Europe",
+      "L'Antarctique",
+      "L'Am\u00e9rique du Sud"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "Culture G\u00e9n\u00e9rale",
+    "question": "Quelle est la plus grande \u00eele du monde\u00a0?",
+    "correct_answer": "Le Groenland",
+    "incorrect_answers": [
+      "Madagascar",
+      "Nouvelle-Guin\u00e9e",
+      "Born\u00e9o"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "Culture G\u00e9n\u00e9rale",
+    "question": "Quelle est la langue la plus parl\u00e9e au monde\u00a0?",
+    "correct_answer": "Le chinois mandarin",
+    "incorrect_answers": [
+      "L'anglais",
+      "L'espagnol",
+      "L'hindi"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "Culture G\u00e9n\u00e9rale",
+    "question": "Dans quel pays se trouve Machu Picchu\u00a0?",
+    "correct_answer": "P\u00e9rou",
+    "incorrect_answers": [
+      "Chili",
+      "Mexique",
+      "Argentine"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "Culture G\u00e9n\u00e9rale",
+    "question": "Quel est l'animal terrestre le plus rapide\u00a0?",
+    "correct_answer": "Le gu\u00e9pard",
+    "incorrect_answers": [
+      "Le lion",
+      "L'autruche",
+      "L'antilope"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "Culture G\u00e9n\u00e9rale",
+    "question": "Quelle est la capitale de la Russie\u00a0?",
+    "correct_answer": "Moscou",
+    "incorrect_answers": [
+      "Saint-P\u00e9tersbourg",
+      "Novossibirsk",
+      "Kyiv"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "Culture G\u00e9n\u00e9rale",
+    "question": "Quel est le plus grand d\u00e9sert du monde\u00a0?",
+    "correct_answer": "L'Antarctique",
+    "incorrect_answers": [
+      "Le Sahara",
+      "Le Gobi",
+      "Le Kalahari"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "Culture G\u00e9n\u00e9rale",
+    "question": "Quel est le symbole chimique du fer\u00a0?",
+    "correct_answer": "Fe",
+    "incorrect_answers": [
+      "Fi",
+      "Fr",
+      "F"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "Culture G\u00e9n\u00e9rale",
+    "question": "Quel est l'animal terrestre le plus grand\u00a0?",
+    "correct_answer": "L'\u00e9l\u00e9phant d'Afrique",
+    "incorrect_answers": [
+      "La girafe",
+      "La baleine bleue",
+      "L'hippopotame"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "Culture G\u00e9n\u00e9rale",
+    "question": "Quelle est la capitale de la Turquie\u00a0?",
+    "correct_answer": "Ankara",
+    "incorrect_answers": [
+      "Istanbul",
+      "Izmir",
+      "Constantinople"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "Culture G\u00e9n\u00e9rale",
+    "question": "Quelle plan\u00e8te est surnomm\u00e9e la plan\u00e8te rouge\u00a0?",
+    "correct_answer": "Mars",
+    "incorrect_answers": [
+      "Jupiter",
+      "V\u00e9nus",
+      "Saturne"
+    ]
+  },
+  {
+    "difficulty": "hard",
+    "category": "Culture G\u00e9n\u00e9rale",
+    "question": "Quel mammif\u00e8re pond des \u0153ufs et allaite ses petits\u00a0?",
+    "correct_answer": "L'ornithorynque",
+    "incorrect_answers": [
+      "L'\u00e9chidn\u00e9",
+      "Le cachalot",
+      "Le manchot empereur"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "Culture G\u00e9n\u00e9rale",
+    "question": "Quel est le plus grand mammif\u00e8re marin\u00a0?",
+    "correct_answer": "La baleine bleue",
+    "incorrect_answers": [
+      "L'orque",
+      "La baleine \u00e0 bosse",
+      "Le dauphin"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "Culture G\u00e9n\u00e9rale",
+    "question": "Quelle est la plus grande m\u00e9tropole de France\u00a0?",
+    "correct_answer": "Paris",
+    "incorrect_answers": [
+      "Lyon",
+      "Marseille",
+      "Bordeaux"
+    ]
+  },
+  {
+    "difficulty": "hard",
+    "category": "Culture G\u00e9n\u00e9rale",
+    "question": "Quel est l'animal le plus rapide du monde\u00a0?",
+    "correct_answer": "Le faucon p\u00e8lerin (en piqu\u00e9e)",
+    "incorrect_answers": [
+      "Le gu\u00e9pard",
+      "L'aigle royal",
+      "La fus\u00e9e supersonique"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "Culture G\u00e9n\u00e9rale",
+    "question": "Quel est le plat traditionnel national du Japon\u00a0?",
+    "correct_answer": "Les sushis",
+    "incorrect_answers": [
+      "Le sashimi",
+      "La tempura",
+      "Le miso"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Culture G\u00e9n\u00e9rale",
+    "question": "Quelle fleur est symbole de la France\u00a0?",
+    "correct_answer": "Le lys (fleur de lys)",
+    "incorrect_answers": [
+      "Le tournesol",
+      "La rose",
+      "Le coquelicot"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "Culture G\u00e9n\u00e9rale",
+    "question": "Quelle est la devise de la R\u00e9publique fran\u00e7aise\u00a0?",
+    "correct_answer": "Libert\u00e9, \u00c9galit\u00e9, Fraternit\u00e9",
+    "incorrect_answers": [
+      "Libert\u00e9, propri\u00e9t\u00e9, s\u00e9curit\u00e9",
+      "Unit\u00e9, paix, fraternit\u00e9",
+      "Raison, \u00e9galit\u00e9, libert\u00e9"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Cin\u00e9ma et T\u00e9l\u00e9vision",
+    "question": "Quel r\u00e9alisateur a dirig\u00e9 les films \"Inception\" et \"The Dark Knight\"\u00a0?",
+    "correct_answer": "Christopher Nolan",
+    "incorrect_answers": [
+      "Steven Spielberg",
+      "Quentin Tarantino",
+      "James Cameron"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "Cin\u00e9ma et T\u00e9l\u00e9vision",
+    "question": "Quel acteur joue le r\u00f4le principal dans le film \"Forrest Gump\"\u00a0?",
+    "correct_answer": "Tom Hanks",
+    "incorrect_answers": [
+      "Leonardo DiCaprio",
+      "Johnny Depp",
+      "Brad Pitt"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "Cin\u00e9ma et T\u00e9l\u00e9vision",
+    "question": "Quel r\u00e9alisateur a tourn\u00e9 \"Jurassic Park\" en 1993\u00a0?",
+    "correct_answer": "Steven Spielberg",
+    "incorrect_answers": [
+      "James Cameron",
+      "Ridley Scott",
+      "George Lucas"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "Cin\u00e9ma et T\u00e9l\u00e9vision",
+    "question": "Quel film d'animation Disney met en sc\u00e8ne un \u00e9l\u00e9phant volant\u00a0?",
+    "correct_answer": "Dumbo",
+    "incorrect_answers": [
+      "Bambi",
+      "Le Roi Lion",
+      "Peter Pan"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "Cin\u00e9ma et T\u00e9l\u00e9vision",
+    "question": "Qui est surnomm\u00e9e \"M\u00e8re des dragons\" dans la s\u00e9rie Game of Thrones\u00a0?",
+    "correct_answer": "Daenerys Targaryen",
+    "incorrect_answers": [
+      "Cersei Lannister",
+      "Sansa Stark",
+      "Mellisandre"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Cin\u00e9ma et T\u00e9l\u00e9vision",
+    "question": "Quel est le titre du film d'horreur r\u00e9alis\u00e9 par Stanley Kubrick adapt\u00e9 du roman de Stephen King\u00a0?",
+    "correct_answer": "Shining",
+    "incorrect_answers": [
+      "Psychose",
+      "Halloween",
+      "Alien"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "Cin\u00e9ma et T\u00e9l\u00e9vision",
+    "question": "Quel acteur incarnait James Bond dans le film \"Goldfinger\"\u00a0?",
+    "correct_answer": "Sean Connery",
+    "incorrect_answers": [
+      "Roger Moore",
+      "Timothy Dalton",
+      "Pierce Brosnan"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Cin\u00e9ma et T\u00e9l\u00e9vision",
+    "question": "Dans quelle ville se d\u00e9roule l'action du film \"Blade Runner\"\u00a0?",
+    "correct_answer": "Los Angeles",
+    "incorrect_answers": [
+      "New York",
+      "Paris",
+      "Chicago"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Cin\u00e9ma et T\u00e9l\u00e9vision",
+    "question": "Qui est le r\u00e9alisateur du film \"Le Fabuleux Destin d'Am\u00e9lie Poulain\"\u00a0?",
+    "correct_answer": "Jean-Pierre Jeunet",
+    "incorrect_answers": [
+      "Luc Besson",
+      "Jean-Jacques Annaud",
+      "Clint Eastwood"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "Cin\u00e9ma et T\u00e9l\u00e9vision",
+    "question": "Quel est le nom du personnage principal interpr\u00e9t\u00e9 par Leonardo DiCaprio dans \"Titanic\"\u00a0?",
+    "correct_answer": "Jack Dawson",
+    "incorrect_answers": [
+      "Jack Smith",
+      "Edward",
+      "Bill Beane"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "Cin\u00e9ma et T\u00e9l\u00e9vision",
+    "question": "Quel film met en sc\u00e8ne un personnage nomm\u00e9 Lloyd Christmas interpr\u00e9t\u00e9 par Jim Carrey\u00a0?",
+    "correct_answer": "Dumb and Dumber",
+    "incorrect_answers": [
+      "Ace Ventura",
+      "The Mask",
+      "Yes Man"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "Cin\u00e9ma et T\u00e9l\u00e9vision",
+    "question": "Dans quel film de science-fiction des ann\u00e9es 1970 rencontre-t-on des \u00e9trangers sur une route\u00a0?",
+    "correct_answer": "Rencontres du troisi\u00e8me type",
+    "incorrect_answers": [
+      "La Guerre des \u00e9toiles",
+      "E.T.",
+      "Independence Day"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Cin\u00e9ma et T\u00e9l\u00e9vision",
+    "question": "Quel acteur joue N\u00e9o dans la saga \"Matrix\"\u00a0?",
+    "correct_answer": "Keanu Reeves",
+    "incorrect_answers": [
+      "Tom Cruise",
+      "Will Smith",
+      "Harrison Ford"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "Cin\u00e9ma et T\u00e9l\u00e9vision",
+    "question": "Quel est le film Pixar sorti en 2010 qui met en sc\u00e8ne Andy et ses jouets\u00a0?",
+    "correct_answer": "Toy Story 3",
+    "incorrect_answers": [
+      "Cars",
+      "Ratatouille",
+      "WALL-E"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "Cin\u00e9ma et T\u00e9l\u00e9vision",
+    "question": "Quel film a pour bande originale la chanson \"My Heart Will Go On\" interpr\u00e9t\u00e9e par C\u00e9line Dion\u00a0?",
+    "correct_answer": "Titanic",
+    "incorrect_answers": [
+      "Le Roi Lion",
+      "Ghost",
+      "Pretty Woman"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "Cin\u00e9ma et T\u00e9l\u00e9vision",
+    "question": "Quel film d\u00e9crit la r\u00e9surrection d'un robot sur une plan\u00e8te o\u00f9 l'humanit\u00e9 a \u00e9t\u00e9 an\u00e9antie\u00a0?",
+    "correct_answer": "Wall-E",
+    "incorrect_answers": [
+      "I, Robot",
+      "Terminator",
+      "Interstellar"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Cin\u00e9ma et T\u00e9l\u00e9vision",
+    "question": "Quel film d'action commence par la phrase \"Hasta la vista, baby\"\u00a0?",
+    "correct_answer": "Terminator 2",
+    "incorrect_answers": [
+      "Terminator",
+      "Aliens",
+      "Predator"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Cin\u00e9ma et T\u00e9l\u00e9vision",
+    "question": "Quel acteur a incarn\u00e9 le Joker dans le film \"The Dark Knight\"\u00a0?",
+    "correct_answer": "Heath Ledger",
+    "incorrect_answers": [
+      "Jared Leto",
+      "Joaquin Phoenix",
+      "Jack Nicholson"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "Cin\u00e9ma et T\u00e9l\u00e9vision",
+    "question": "Quel film culte de science-fiction met en sc\u00e8ne Luke Skywalker\u00a0?",
+    "correct_answer": "Star Wars",
+    "incorrect_answers": [
+      "Blade Runner",
+      "Dune",
+      "Star Trek"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "Cin\u00e9ma et T\u00e9l\u00e9vision",
+    "question": "Quel film fran\u00e7ais raconte l'histoire d'un valet de ferme qui d\u00e9fie un tyran du film muet\u00a0?",
+    "correct_answer": "Le Dictateur",
+    "incorrect_answers": [
+      "Les Temps Modernes",
+      "La Grande Illusion",
+      "Intouchables"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "Histoire",
+    "question": "En quelle ann\u00e9e a d\u00e9but\u00e9 la R\u00e9volution fran\u00e7aise\u00a0?",
+    "correct_answer": "1789",
+    "incorrect_answers": [
+      "1776",
+      "1792",
+      "1815"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Histoire",
+    "question": "Qui a \u00e9t\u00e9 le premier empereur romain\u00a0?",
+    "correct_answer": "Auguste",
+    "incorrect_answers": [
+      "Jules C\u00e9sar",
+      "N\u00e9ron",
+      "Marc Aur\u00e8le"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Histoire",
+    "question": "Quel roi de France est associ\u00e9 \u00e0 l'expression \u00ab Apr\u00e8s moi, le d\u00e9luge \u00bb\u00a0?",
+    "correct_answer": "Louis XV",
+    "incorrect_answers": [
+      "Louis XIV",
+      "Louis XVI",
+      "Henri IV"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Histoire",
+    "question": "Quel \u00e9v\u00e9nement a marqu\u00e9 la fin de la Seconde Guerre mondiale en Europe\u00a0?",
+    "correct_answer": "La capitulation de l'Allemagne nazie (8 mai 1945)",
+    "incorrect_answers": [
+      "Le d\u00e9barquement en Normandie (6 juin 1944)",
+      "Le bombardement d'Hiroshima (6 ao\u00fbt 1945)",
+      "L'assassinat de Hitler (1945)"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Histoire",
+    "question": "Quel empire a \u00e9t\u00e9 fond\u00e9 par Gengis Khan\u00a0?",
+    "correct_answer": "L'Empire mongol",
+    "incorrect_answers": [
+      "L'Empire ottoman",
+      "L'Empire romain",
+      "L'Empire perse"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "Histoire",
+    "question": "Quel pays \u00e9tait dirig\u00e9 par Fidel Castro\u00a0?",
+    "correct_answer": "Cuba",
+    "incorrect_answers": [
+      "Chili",
+      "Venezuela",
+      "Argentine"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Histoire",
+    "question": "Qui est connu comme le \"p\u00e8re de la bombe atomique\"\u00a0?",
+    "correct_answer": "J. Robert Oppenheimer",
+    "incorrect_answers": [
+      "Albert Einstein",
+      "Enrico Fermi",
+      "Niels Bohr"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Histoire",
+    "question": "Quel \u00e9tait le nom de naissance de S\u0153ur Emmanuelle\u00a0?",
+    "correct_answer": "Madeleine Cinquin",
+    "incorrect_answers": [
+      "Marie Dupont",
+      "Sophie Metteur",
+      "Anne Pech"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "Histoire",
+    "question": "En quelle ann\u00e9e a eu lieu la prise de la Bastille\u00a0?",
+    "correct_answer": "1789",
+    "incorrect_answers": [
+      "1778",
+      "1792",
+      "1804"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Histoire",
+    "question": "La bataille de Verdun en 1916 a oppos\u00e9 quels deux pays pendant la Premi\u00e8re Guerre mondiale\u00a0?",
+    "correct_answer": "La France et l'Allemagne",
+    "incorrect_answers": [
+      "France et Royaume-Uni",
+      "Allemagne et Russie",
+      "Italie et Autriche"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Histoire",
+    "question": "Qui \u00e9tait le commandant en chef des forces alli\u00e9es lors du d\u00e9barquement de Normandie en 1944\u00a0?",
+    "correct_answer": "Dwight D. Eisenhower",
+    "incorrect_answers": [
+      "Bernard Montgomery",
+      "Charles de Gaulle",
+      "Omar Bradley"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "Histoire",
+    "question": "En quelle ann\u00e9e la Premi\u00e8re Guerre mondiale a-t-elle commenc\u00e9\u00a0?",
+    "correct_answer": "1914",
+    "incorrect_answers": [
+      "1918",
+      "1939",
+      "1917"
+    ]
+  },
+  {
+    "difficulty": "hard",
+    "category": "Histoire",
+    "question": "Quel pays a \u00e9t\u00e9 le premier \u00e0 abolir l'esclavage\u00a0?",
+    "correct_answer": "Ha\u00efti",
+    "incorrect_answers": [
+      "France",
+      "\u00c9tats-Unis",
+      "Royaume-Uni"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "Histoire",
+    "question": "Quel trait\u00e9 a mis fin \u00e0 la Premi\u00e8re Guerre mondiale\u00a0?",
+    "correct_answer": "Le trait\u00e9 de Versailles",
+    "incorrect_answers": [
+      "Le trait\u00e9 de Brest-Litovsk",
+      "Les Accords de Munich",
+      "Le trait\u00e9 de Paris"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Histoire",
+    "question": "Quel pharaon \u00e9gyptien a fait construire la Grande Pyramide de Gizeh\u00a0?",
+    "correct_answer": "Kheops (Kh\u00e9phren)",
+    "incorrect_answers": [
+      "Rams\u00e8s II",
+      "Toutankhamon",
+      "Cl\u00e9op\u00e2tre"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "Histoire",
+    "question": "En quelle ann\u00e9e la chute du mur de Berlin a-t-elle eu lieu\u00a0?",
+    "correct_answer": "1989",
+    "incorrect_answers": [
+      "1961",
+      "1971",
+      "1991"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "Histoire",
+    "question": "Quelle civilisation antique a construit Machu Picchu\u00a0?",
+    "correct_answer": "Les Incas",
+    "incorrect_answers": [
+      "Les Mayas",
+      "Les Azt\u00e8ques",
+      "Les Olm\u00e8ques"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Histoire",
+    "question": "Quelle reine du Royaume-Uni a r\u00e9gn\u00e9 le plus longtemps avant de s'\u00e9teindre en 1901\u00a0?",
+    "correct_answer": "Victoria",
+    "incorrect_answers": [
+      "\u00c9lisabeth Ire",
+      "\u00c9douard VII",
+      "Anne"
+    ]
+  },
+  {
+    "difficulty": "hard",
+    "category": "Histoire",
+    "question": "Quel empereur romain a scind\u00e9 l'Empire romain en deux \u00e0 sa mort en 395\u00a0?",
+    "correct_answer": "Th\u00e9odose Ier",
+    "incorrect_answers": [
+      "Jules C\u00e9sar",
+      "N\u00e9ron",
+      "Diocl\u00e9tien"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Histoire",
+    "question": "Qui a \u00e9t\u00e9 Premier ministre du Royaume-Uni pendant la majeure partie de la Seconde Guerre mondiale\u00a0?",
+    "correct_answer": "Winston Churchill",
+    "incorrect_answers": [
+      "Neville Chamberlain",
+      "Anthony Eden",
+      "Harold Wilson"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "G\u00e9ographie",
+    "question": "Quelle est la capitale de l'Australie\u00a0?",
+    "correct_answer": "Canberra",
+    "incorrect_answers": [
+      "Sydney",
+      "Melbourne",
+      "Brisbane"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "G\u00e9ographie",
+    "question": "Quelle est la capitale du Canada\u00a0?",
+    "correct_answer": "Ottawa",
+    "incorrect_answers": [
+      "Toronto",
+      "Montr\u00e9al",
+      "Vancouver"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "G\u00e9ographie",
+    "question": "Quelle est la capitale de l'Argentine\u00a0?",
+    "correct_answer": "Buenos Aires",
+    "incorrect_answers": [
+      "C\u00f3rdoba",
+      "Rosario",
+      "Mendoza"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "G\u00e9ographie",
+    "question": "Quelle est la capitale de l'Inde\u00a0?",
+    "correct_answer": "New Delhi",
+    "incorrect_answers": [
+      "Bombay (Mumbai)",
+      "Calcutta (Kolkata)",
+      "Chennai"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "G\u00e9ographie",
+    "question": "Quel est le plus long fleuve du monde\u00a0?",
+    "correct_answer": "Le Nil",
+    "incorrect_answers": [
+      "L'Amazone",
+      "Le Yangts\u00e9",
+      "Le Mississippi"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "G\u00e9ographie",
+    "question": "Quel est le plus grand pays du monde par superficie\u00a0?",
+    "correct_answer": "La Russie",
+    "incorrect_answers": [
+      "Le Canada",
+      "Les \u00c9tats-Unis",
+      "La Chine"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "G\u00e9ographie",
+    "question": "Quel est le plus haut sommet du monde\u00a0?",
+    "correct_answer": "Le mont Everest",
+    "incorrect_answers": [
+      "Le K2",
+      "Le Makalu",
+      "Le Lhotse"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "G\u00e9ographie",
+    "question": "Quel est le plus petit pays du monde\u00a0?",
+    "correct_answer": "Le Vatican",
+    "incorrect_answers": [
+      "Monaco",
+      "Nauru",
+      "Saint-Marin"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "G\u00e9ographie",
+    "question": "Quelle cha\u00eene de montagnes forme la fronti\u00e8re naturelle entre la France et l'Espagne\u00a0?",
+    "correct_answer": "Les Pyr\u00e9n\u00e9es",
+    "incorrect_answers": [
+      "Les Alpes",
+      "Les Andes",
+      "Les Apennins"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "G\u00e9ographie",
+    "question": "Quel oc\u00e9an borde la c\u00f4te ouest des \u00c9tats-Unis\u00a0?",
+    "correct_answer": "Oc\u00e9an Pacifique",
+    "incorrect_answers": [
+      "Oc\u00e9an Atlantique",
+      "Oc\u00e9an Indien",
+      "Oc\u00e9an Arctique"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "G\u00e9ographie",
+    "question": "Quel continent compte le plus de pays\u00a0?",
+    "correct_answer": "L'Afrique",
+    "incorrect_answers": [
+      "L'Asie",
+      "L'Europe",
+      "L'Am\u00e9rique du Sud"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "G\u00e9ographie",
+    "question": "Quelle est la capitale du Japon\u00a0?",
+    "correct_answer": "Tokyo",
+    "incorrect_answers": [
+      "Kyoto",
+      "Osaka",
+      "Hiroshima"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "G\u00e9ographie",
+    "question": "Dans quel pays se trouve le mont Kilimandjaro\u00a0?",
+    "correct_answer": "Tanzanie",
+    "incorrect_answers": [
+      "Kenya",
+      "Ouganda",
+      "\u00c9thiopie"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "G\u00e9ographie",
+    "question": "Quel est l'oc\u00e9an le plus profond du monde\u00a0?",
+    "correct_answer": "Oc\u00e9an Pacifique",
+    "incorrect_answers": [
+      "Oc\u00e9an Atlantique",
+      "Oc\u00e9an Indien",
+      "Oc\u00e9an Arctique"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "G\u00e9ographie",
+    "question": "Quelle est la capitale de la Croatie\u00a0?",
+    "correct_answer": "Zagreb",
+    "incorrect_answers": [
+      "Split",
+      "Dubrovnik",
+      "Ljubljana"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "G\u00e9ographie",
+    "question": "Quel pays a pour capitale Abuja\u00a0?",
+    "correct_answer": "Nigeria",
+    "incorrect_answers": [
+      "Ghana",
+      "Angola",
+      "Kenya"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "G\u00e9ographie",
+    "question": "Quel pays est le plus peupl\u00e9 du monde\u00a0?",
+    "correct_answer": "La Chine",
+    "incorrect_answers": [
+      "L'Inde",
+      "Les \u00c9tats-Unis",
+      "L'Indon\u00e9sie"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "G\u00e9ographie",
+    "question": "Istanbul est une ville situ\u00e9e sur deux continents : lesquels\u00a0?",
+    "correct_answer": "L'Europe et l'Asie",
+    "incorrect_answers": [
+      "L'Europe et l'Afrique",
+      "L'Asie et l'Afrique",
+      "L'Am\u00e9rique et l'Europe"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "G\u00e9ographie",
+    "question": "Quelle est la capitale du Portugal\u00a0?",
+    "correct_answer": "Lisbonne",
+    "incorrect_answers": [
+      "Porto",
+      "Madrid",
+      "Barcelone"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "G\u00e9ographie",
+    "question": "Quelle est la plus longue cha\u00eene de montagnes du monde\u00a0?",
+    "correct_answer": "Les Andes",
+    "incorrect_answers": [
+      "L'Himalaya",
+      "Les Rocheuses",
+      "Les Alpes"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "Sciences",
+    "question": "Quelle est la plan\u00e8te la plus proche du Soleil\u00a0?",
+    "correct_answer": "Mercure",
+    "incorrect_answers": [
+      "V\u00e9nus",
+      "Terre",
+      "Mars"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "Sciences",
+    "question": "Quelle est la plan\u00e8te la plus lointaine du Soleil dans le syst\u00e8me solaire\u00a0?",
+    "correct_answer": "Neptune",
+    "incorrect_answers": [
+      "Saturne",
+      "Uranus",
+      "Pluton"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Sciences",
+    "question": "Qui a d\u00e9couvert la loi de la gravitation universelle\u00a0?",
+    "correct_answer": "Isaac Newton",
+    "incorrect_answers": [
+      "Albert Einstein",
+      "Galil\u00e9e",
+      "Johannes Kepler"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "Sciences",
+    "question": "Quel est l'\u00e9l\u00e9ment chimique de symbole O\u00a0?",
+    "correct_answer": "Oxyg\u00e8ne",
+    "incorrect_answers": [
+      "Or",
+      "Argent",
+      "Plutonium"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Sciences",
+    "question": "Combien d'\u00e9l\u00e9ments le tableau p\u00e9riodique comporte-t-il\u00a0?",
+    "correct_answer": "118",
+    "incorrect_answers": [
+      "112",
+      "120",
+      "106"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "Sciences",
+    "question": "Quel gaz les plantes absorbent-elles pour la photosynth\u00e8se\u00a0?",
+    "correct_answer": "Dioxyde de carbone",
+    "incorrect_answers": [
+      "Oxyg\u00e8ne",
+      "Azote",
+      "M\u00e9thane"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Sciences",
+    "question": "Quelle est la distance mediumne entre la Terre et le Soleil\u00a0?",
+    "correct_answer": "150 millions de kilom\u00e8tres",
+    "incorrect_answers": [
+      "384 000 km",
+      "1 million de km",
+      "30 millions de km"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "Sciences",
+    "question": "Quelle est la temp\u00e9rature d'\u00e9bullition de l'eau (en \u00baC) \u00e0 pression atmosph\u00e9rique\u00a0?",
+    "correct_answer": "100°C",
+    "incorrect_answers": [
+      "90°C",
+      "80°C",
+      "120°C"
+    ]
+  },
+  {
+    "difficulty": "hard",
+    "category": "Sciences",
+    "question": "Quel est le m\u00e9tal de plus haute densit\u00e9\u00a0?",
+    "correct_answer": "Osmium",
+    "incorrect_answers": [
+      "Plomb",
+      "Fer",
+      "Argent"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "Sciences",
+    "question": "Quelle particule poss\u00e8de une charge \u00e9lectrique n\u00e9gative\u00a0?",
+    "correct_answer": "L'\u00e9lectron",
+    "incorrect_answers": [
+      "Le proton",
+      "Le neutron",
+      "Le photon"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "Sciences",
+    "question": "Quel physicien a formul\u00e9 la th\u00e9orie de la relativit\u00e9\u00a0?",
+    "correct_answer": "Albert Einstein",
+    "incorrect_answers": [
+      "Isaac Newton",
+      "Niels Bohr",
+      "Galil\u00e9e"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Sciences",
+    "question": "Quel organe du corps humain produit l'insuline\u00a0?",
+    "correct_answer": "Le pancr\u00e9as",
+    "incorrect_answers": [
+      "Le foie",
+      "Les reins",
+      "La rate"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Sciences",
+    "question": "Combien de paires de chromosomes poss\u00e8de l'\u00eatre humain\u00a0?",
+    "correct_answer": "23 paires",
+    "incorrect_answers": [
+      "22 paires",
+      "24 paires",
+      "46 paires"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "Sciences",
+    "question": "Quel est l'organe principal de la respiration chez l'homme\u00a0?",
+    "correct_answer": "Les poumons",
+    "incorrect_answers": [
+      "Le c\u0153ur",
+      "Le foie",
+      "Le rein"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Sciences",
+    "question": "Quel instrument permet de mesurer la pression atmosph\u00e9rique\u00a0?",
+    "correct_answer": "Le barom\u00e8tre",
+    "incorrect_answers": [
+      "Le thermom\u00e8tre",
+      "Le sismographe",
+      "L'altim\u00e8tre"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "Sciences",
+    "question": "Quel liquide est utilis\u00e9 dans les colonnes de thermom\u00e8tres \u00e0 mercure\u00a0?",
+    "correct_answer": "Le mercure",
+    "incorrect_answers": [
+      "L'alcool",
+      "L'eau",
+      "L'\u00e9ther"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Sciences",
+    "question": "Quel type de rayonnement est utilis\u00e9 pour prendre des radios\u00a0?",
+    "correct_answer": "Les rayons X",
+    "incorrect_answers": [
+      "Les ultraviolets",
+      "Les infrarouges",
+      "Les micro-ondes"
+    ]
+  },
+  {
+    "difficulty": "hard",
+    "category": "Sciences",
+    "question": "Quel est l'\u00e9tat physique de la lumi\u00e8re\u00a0?",
+    "correct_answer": "Un rayonnement \u00e9lectromagn\u00e9tique",
+    "incorrect_answers": [
+      "Une particule subatomique",
+      "Une onde sonore",
+      "Une onde gravitationnelle"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Sciences",
+    "question": "Quel gaz est majoritairement \u00e9mis par les volcans lors d'une \u00e9ruption\u00a0?",
+    "correct_answer": "La vapeur d'eau (H2O)",
+    "incorrect_answers": [
+      "Le dioxyde de carbone (CO2)",
+      "Le dioxyde de soufre (SO2)",
+      "Le m\u00e9thane (CH4)"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "Sciences",
+    "question": "Quel est le symbole chimique du sodium\u00a0?",
+    "correct_answer": "Na",
+    "incorrect_answers": [
+      "S",
+      "Sn",
+      "Si"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "Litt\u00e9rature",
+    "question": "Qui a \u00e9crit \"Les Mis\u00e9rables\"\u00a0?",
+    "correct_answer": "Victor Hugo",
+    "incorrect_answers": [
+      "\u00c9mile Zola",
+      "Jean Valjean",
+      "Honor\u00e9 de Balzac"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "Litt\u00e9rature",
+    "question": "Quel \u00e9crivain fran\u00e7ais est l'auteur de \"Le Petit Prince\"\u00a0?",
+    "correct_answer": "Antoine de Saint-Exup\u00e9ry",
+    "incorrect_answers": [
+      "Jean de La Fontaine",
+      "Guillaume Apollinaire",
+      "Victor Hugo"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Litt\u00e9rature",
+    "question": "Quel philosophe grec est l'auteur de \"La R\u00e9publique\"\u00a0?",
+    "correct_answer": "Platon",
+    "incorrect_answers": [
+      "Aristote",
+      "Socrate",
+      "\u00c9picure"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "Litt\u00e9rature",
+    "question": "Qui a \u00e9crit \"Rom\u00e9o et Juliette\"\u00a0?",
+    "correct_answer": "William Shakespeare",
+    "incorrect_answers": [
+      "Victor Hugo",
+      "Moli\u00e8re",
+      "Pierre Corneille"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Litt\u00e9rature",
+    "question": "Quel est l'auteur du roman \"1984\"\u00a0?",
+    "correct_answer": "George Orwell",
+    "incorrect_answers": [
+      "Aldous Huxley",
+      "Ray Bradbury",
+      "Jules Verne"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Litt\u00e9rature",
+    "question": "Quel po\u00e8te a \u00e9crit \"Demain, d\u00e8s l'aube\"\u00a0?",
+    "correct_answer": "Victor Hugo",
+    "incorrect_answers": [
+      "Charles Baudelaire",
+      "Alphonse de Lamartine",
+      "Arthur Rimbaud"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Litt\u00e9rature",
+    "question": "Quel \u00e9crivain est \u00e0 l'origine du personnage de Sherlock Holmes\u00a0?",
+    "correct_answer": "Arthur Conan Doyle",
+    "incorrect_answers": [
+      "Agatha Christie",
+      "Sir Arthur C. Clarke",
+      "J.K. Rowling"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Litt\u00e9rature",
+    "question": "Qui a \u00e9crit \"La Divine Com\u00e9die\"\u00a0?",
+    "correct_answer": "Dante Alighieri",
+    "incorrect_answers": [
+      "Giovanni Boccaccio",
+      "William Blake",
+      "Fran\u00e7ois Villon"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Litt\u00e9rature",
+    "question": "Quel auteur fran\u00e7ais a \u00e9crit \"Le Rouge et le Noir\"\u00a0?",
+    "correct_answer": "Stendhal",
+    "incorrect_answers": [
+      "Honor\u00e9 de Balzac",
+      "\u00c9mile Zola",
+      "Alexandre Dumas"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Litt\u00e9rature",
+    "question": "Qui a \u00e9crit \"Les Fleurs du mal\"\u00a0?",
+    "correct_answer": "Charles Baudelaire",
+    "incorrect_answers": [
+      "Victor Hugo",
+      "Th\u00e9ophile Gautier",
+      "Guillaume Apollinaire"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Litt\u00e9rature",
+    "question": "Quel \u00e9crivain am\u00e9ricain a \u00e9crit \"Le Vieil Homme et la Mer\"\u00a0?",
+    "correct_answer": "Ernest Hemingway",
+    "incorrect_answers": [
+      "John Steinbeck",
+      "F. Scott Fitzgerald",
+      "Edgar Allan Poe"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "Litt\u00e9rature",
+    "question": "Qui a \u00e9crit \"Germinal\"\u00a0?",
+    "correct_answer": "\u00c9mile Zola",
+    "incorrect_answers": [
+      "Victor Hugo",
+      "Honor\u00e9 de Balzac",
+      "Guy de Maupassant"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "Litt\u00e9rature",
+    "question": "Quel est l'auteur de la saga \"Harry Potter\"\u00a0?",
+    "correct_answer": "J.K. Rowling",
+    "incorrect_answers": [
+      "Suzanne Collins",
+      "C.S. Lewis",
+      "J.R.R. Tolkien"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Litt\u00e9rature",
+    "question": "Quel \u00e9crivain a \u00e9crit \"Madame Bovary\"\u00a0?",
+    "correct_answer": "Gustave Flaubert",
+    "incorrect_answers": [
+      "Charles Baudelaire",
+      "\u00c9mile Zola",
+      "Victor Hugo"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "Litt\u00e9rature",
+    "question": "Qui a \u00e9crit le roman \"Le Seigneur des Anneaux\"\u00a0?",
+    "correct_answer": "J.R.R. Tolkien",
+    "incorrect_answers": [
+      "C.S. Lewis",
+      "George R.R. Martin",
+      "J.K. Rowling"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Litt\u00e9rature",
+    "question": "Qui a \u00e9crit la pi\u00e8ce \"Le Cid\"\u00a0?",
+    "correct_answer": "Pierre Corneille",
+    "incorrect_answers": [
+      "Moli\u00e8re",
+      "Jean Racine",
+      "Voltaire"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Litt\u00e9rature",
+    "question": "Quel auteur a \u00e9crit \"Le Comte de Monte-Cristo\"\u00a0?",
+    "correct_answer": "Alexandre Dumas",
+    "incorrect_answers": [
+      "Victor Hugo",
+      "\u00c9mile Zola",
+      "Honor\u00e9 de Balzac"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Litt\u00e9rature",
+    "question": "Quel auteur a \u00e9crit \"Alice au pays des merveilles\"\u00a0?",
+    "correct_answer": "Lewis Carroll",
+    "incorrect_answers": [
+      "Jules Verne",
+      "C.S. Lewis",
+      "Mark Twain"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Litt\u00e9rature",
+    "question": "Qui a \u00e9crit \"Candide\"\u00a0?",
+    "correct_answer": "Voltaire",
+    "incorrect_answers": [
+      "Jean-Jacques Rousseau",
+      "Montesquieu",
+      "Denis Diderot"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "Litt\u00e9rature",
+    "question": "Qui a \u00e9crit \"Hamlet\"\u00a0?",
+    "correct_answer": "William Shakespeare",
+    "incorrect_answers": [
+      "Victor Hugo",
+      "Jean Racine",
+      "Moli\u00e8re"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Pop Culture",
+    "question": "Dans la s\u00e9rie t\u00e9l\u00e9vis\u00e9e \"Breaking Bad\", quel est le nom de naissance de Heisenberg\u00a0?",
+    "correct_answer": "Walter White",
+    "incorrect_answers": [
+      "Jesse Pinkman",
+      "Gustavo Fring",
+      "Saul Goodman"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Pop Culture",
+    "question": "Quel film a remport\u00e9 l'Oscar du meilleur film en 1994\u00a0?",
+    "correct_answer": "Forrest Gump",
+    "incorrect_answers": [
+      "Pulp Fiction",
+      "The Shawshank Redemption",
+      "Qu'il en soit ainsi (It Could Happen to You)"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "Pop Culture",
+    "question": "Quel groupe a chant\u00e9 \"Bohemian Rhapsody\"\u00a0?",
+    "correct_answer": "Queen",
+    "incorrect_answers": [
+      "Pink Floyd",
+      "Led Zeppelin",
+      "The Rolling Stones"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "Pop Culture",
+    "question": "Dans quelle saga cin\u00e9matographique Luke Skywalker appara\u00eet-il\u00a0?",
+    "correct_answer": "Star Wars",
+    "incorrect_answers": [
+      "Star Trek",
+      "Matrix",
+      "Stargate"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Pop Culture",
+    "question": "Quel est le nom de famille du d\u00e9tective c\u00e9l\u00e8bre Sherlock Holmes\u00a0?",
+    "correct_answer": "Holmes",
+    "incorrect_answers": [
+      "Watson",
+      "Marple",
+      "Poirot"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "Pop Culture",
+    "question": "Quel film d'animation Pixar met en sc\u00e8ne des jouets qui prennent vie\u00a0?",
+    "correct_answer": "Toy Story",
+    "incorrect_answers": [
+      "Les Indestructibles",
+      "Wall-E",
+      "Monstres & Cie"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "Pop Culture",
+    "question": "Quel personnage c\u00e9l\u00e8bre est capitaine d'un bateau dans la bande dessin\u00e9e \"Les Aventures de Tintin\"\u00a0?",
+    "correct_answer": "Le Capitaine Haddock",
+    "incorrect_answers": [
+      "Le Professeur Tournesol",
+      "Milou",
+      "Bianca Castafiore"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "Pop Culture",
+    "question": "Quel super-h\u00e9ros Marvel utilise un marteau appel\u00e9 Mjolnir\u00a0?",
+    "correct_answer": "Thor",
+    "incorrect_answers": [
+      "Iron Man",
+      "Captain America",
+      "Hulk"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "Pop Culture",
+    "question": "Quel personnage de Star Wars est le p\u00e8re de Luke Skywalker\u00a0?",
+    "correct_answer": "Dark Vador",
+    "incorrect_answers": [
+      "Obi-Wan Kenobi",
+      "Ma\u00eetre Yoda",
+      "Han Solo"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "Pop Culture",
+    "question": "Qui a chant\u00e9 la chanson \"Thriller\"\u00a0?",
+    "correct_answer": "Michael Jackson",
+    "incorrect_answers": [
+      "Prince",
+      "Madonna",
+      "David Bowie"
+    ]
+  },
+  {
+    "difficulty": "hard",
+    "category": "Pop Culture",
+    "question": "Quel jeu vid\u00e9o implique de casser des briques en faisant rebondir une balle avec une raquette\u00a0?",
+    "correct_answer": "Arkanoid",
+    "incorrect_answers": [
+      "Tetris",
+      "Space Invaders",
+      "Pac-Man"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Pop Culture",
+    "question": "Quel est le nom du personnage principal de la s\u00e9rie de jeux vid\u00e9o \"The Legend of Zelda\"\u00a0?",
+    "correct_answer": "Link",
+    "incorrect_answers": [
+      "Zelda",
+      "Ganondorf",
+      "Mario"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Pop Culture",
+    "question": "Quel chanteur fran\u00e7ais est connu pour la chanson \"Ne me quitte pas\"\u00a0?",
+    "correct_answer": "Jacques Brel",
+    "incorrect_answers": [
+      "Charles Aznavour",
+      "Georges Brassens",
+      "Serge Gainsbourg"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "Pop Culture",
+    "question": "Quel super-h\u00e9ros Marvel est un milliardaire portant un costume high-tech rouge\u00a0?",
+    "correct_answer": "Iron Man",
+    "incorrect_answers": [
+      "Captain America",
+      "Batman",
+      "Thor"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Pop Culture",
+    "question": "Qui a incarn\u00e9 Jack Sparrow dans \"Pirates des Cara\u00efbes\"\u00a0?",
+    "correct_answer": "Johnny Depp",
+    "incorrect_answers": [
+      "Orlando Bloom",
+      "Keira Knightley",
+      "Jason Statham"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "Pop Culture",
+    "question": "Comment s'appelle le vaisseau spatial de \"Star Trek\"\u00a0?",
+    "correct_answer": "USS Enterprise",
+    "incorrect_answers": [
+      "Millennium Falcon",
+      "Battlestar Galactica",
+      "Serenity"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "Pop Culture",
+    "question": "Quel joueur de basketball est surnomm\u00e9 \"Air Jordan\"\u00a0?",
+    "correct_answer": "Michael Jordan",
+    "incorrect_answers": [
+      "LeBron James",
+      "Kobe Bryant",
+      "Shaquille O'Neal"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "Pop Culture",
+    "question": "Quel personnage de jeu vid\u00e9o porte un chapeau rouge et une moustache noire\u00a0?",
+    "correct_answer": "Mario",
+    "incorrect_answers": [
+      "Luigi",
+      "Dracula",
+      "Wario"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "Pop Culture",
+    "question": "Quel h\u00e9ros de comics a un bouclier \u00e9toil\u00e9 et porte un casque ail\u00e9\u00a0?",
+    "correct_answer": "Captain America",
+    "incorrect_answers": [
+      "Batman",
+      "Iron Man",
+      "Thor"
+    ]
+  },
+  {
+    "difficulty": "hard",
+    "category": "Pop Culture",
+    "question": "Dans la saga Star Wars, qui est la m\u00e8re de Luke Skywalker\u00a0?",
+    "correct_answer": "Padm\u00e9 Amidala",
+    "incorrect_answers": [
+      "Leia Organa",
+      "Shmi Skywalker",
+      "Mara Jade"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "Sport",
+    "question": "Combien de joueurs y a-t-il par \u00e9quipe sur un terrain de football\u00a0?",
+    "correct_answer": "11",
+    "incorrect_answers": [
+      "10",
+      "9",
+      "12"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "Sport",
+    "question": "Quel pays a remport\u00e9 la Coupe du monde de football en 2018\u00a0?",
+    "correct_answer": "La France",
+    "incorrect_answers": [
+      "La Croatie",
+      "L'Allemagne",
+      "Le Br\u00e9sil"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "Sport",
+    "question": "Quel pays a remport\u00e9 la m\u00e9daille d'or en football masculin aux Jeux olympiques de 2016\u00a0?",
+    "correct_answer": "Le Br\u00e9sil",
+    "incorrect_answers": [
+      "L'Allemagne",
+      "L'Argentine",
+      "L'Espagne"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "Sport",
+    "question": "Quel est le nom de l'\u00e9preuve combinant natation, cyclisme et course \u00e0 pied aux Jeux olympiques\u00a0?",
+    "correct_answer": "Le triathlon",
+    "incorrect_answers": [
+      "Le pentathlon moderne",
+      "Le d\u00e9cathlon",
+      "Le pentathlon"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Sport",
+    "question": "Quel sprinteur jama\u00efcain d\u00e9tient le record du monde du 100 m\u00a0?",
+    "correct_answer": "Usain Bolt",
+    "incorrect_answers": [
+      "Carl Lewis",
+      "Justin Gatlin",
+      "Mike Powell"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "Sport",
+    "question": "Dans quel sport peut-on r\u00e9aliser un saut appel\u00e9 \"dunk\" en anglais\u00a0?",
+    "correct_answer": "Le basketball",
+    "incorrect_answers": [
+      "Le volley-ball",
+      "Le football am\u00e9ricain",
+      "Le water-polo"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Sport",
+    "question": "Quel est le sport principal des New York Yankees\u00a0?",
+    "correct_answer": "Le baseball",
+    "incorrect_answers": [
+      "Le basketball",
+      "Le football am\u00e9ricain",
+      "Le hockey sur glace"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Sport",
+    "question": "Combien de joueurs composent une \u00e9quipe de basket-ball sur le terrain\u00a0?",
+    "correct_answer": "5",
+    "incorrect_answers": [
+      "6",
+      "7",
+      "4"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Sport",
+    "question": "Quel sport pratique-t-on avec une planche \u00e0 voile\u00a0?",
+    "correct_answer": "La planche \u00e0 voile",
+    "incorrect_answers": [
+      "Le kitesurf",
+      "Le surf",
+      "Le ski nautique"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Sport",
+    "question": "Quel sportif a remport\u00e9 23 m\u00e9dailles olympiques\u00a0?",
+    "correct_answer": "Michael Phelps",
+    "incorrect_answers": [
+      "Mark Spitz",
+      "Ian Thorpe",
+      "Ryan Lochte"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Sport",
+    "question": "Quelle est la distance d'un marathon en kilom\u00e8tres\u00a0?",
+    "correct_answer": "42,195 km",
+    "incorrect_answers": [
+      "50 km",
+      "42 km",
+      "40 km"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "Sport",
+    "question": "Quel joueur de tennis a remport\u00e9 le plus de titres en Grand Chelem en simple\u00a0?",
+    "correct_answer": "Novak Djokovic",
+    "incorrect_answers": [
+      "Roger Federer",
+      "Rafael Nadal",
+      "Pete Sampras"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Sport",
+    "question": "Quel club de football a remport\u00e9 la Ligue des champions de l'UEFA en 2021\u00a0?",
+    "correct_answer": "Chelsea",
+    "incorrect_answers": [
+      "Manchester City",
+      "Bayern Munich",
+      "Paris Saint-Germain"
+    ]
+  },
+  {
+    "difficulty": "medium",
+    "category": "Sport",
+    "question": "Quel pays a remport\u00e9 le Championnat d'Europe de football en 2021\u00a0?",
+    "correct_answer": "L'Italie",
+    "incorrect_answers": [
+      "L'Angleterre",
+      "La France",
+      "Le Portugal"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "Sport",
+    "question": "Combien de joueurs y a-t-il sur le terrain en rugby \u00e0 XV\u00a0?",
     "correct_answer": "15",
     "incorrect_answers": [
+      "11",
       "13",
-      "14",
-      "16"
+      "14"
     ]
   },
   {
     "difficulty": "medium",
-    "category": "Science",
-    "question": "Quel est le numéro atomique de l’élément Soufre ?",
-    "correct_answer": "16",
+    "category": "Sport",
+    "question": "Qui \u00e9tait le capitaine de l'\u00e9quipe de France de Coupe Davis en 2017\u00a0?",
+    "correct_answer": "Yannick Noah",
     "incorrect_answers": [
-      "14",
-      "15",
-      "17"
+      "Guy Forget",
+      "Henri Leconte",
+      "S\u00e9bastien Grosjean"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "Musique",
+    "question": "Quel chanteur a interpr\u00e9t\u00e9 \"La Vie en rose\"\u00a0?",
+    "correct_answer": "\u00c9dith Piaf",
+    "incorrect_answers": [
+      "Juliette Gr\u00e9co",
+      "Johnny Hallyday",
+      "Charles Aznavour"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "Musique",
+    "question": "Quel groupe a chant\u00e9 \"Hey Jude\"\u00a0?",
+    "correct_answer": "The Beatles",
+    "incorrect_answers": [
+      "The Rolling Stones",
+      "Queen",
+      "Pink Floyd"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "Musique",
+    "question": "Quel compositeur a \u00e9crit \"La Fl\u00fbte enchant\u00e9e\"\u00a0?",
+    "correct_answer": "Wolfgang Amadeus Mozart",
+    "incorrect_answers": [
+      "Ludwig van Beethoven",
+      "Johann Sebastian Bach",
+      "Richard Wagner"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "Musique",
+    "question": "Qui a compos\u00e9 la Neuvi\u00e8me Symphonie (\"Ode \u00e0 la Joie\")\u00a0?",
+    "correct_answer": "Ludwig van Beethoven",
+    "incorrect_answers": [
+      "Wolfgang Amadeus Mozart",
+      "Johann Sebastian Bach",
+      "Fr\u00e9d\u00e9ric Chopin"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "Musique",
+    "question": "Quel est le style musical des Rolling Stones\u00a0?",
+    "correct_answer": "Rock",
+    "incorrect_answers": [
+      "Jazz",
+      "Rap",
+      "Classique"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "Musique",
+    "question": "Quelle chanteuse am\u00e9ricaine interpr\u00e8te \"Like a Virgin\"\u00a0?",
+    "correct_answer": "Madonna",
+    "incorrect_answers": [
+      "Britney Spears",
+      "Lady Gaga",
+      "C\u00e9line Dion"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "Musique",
+    "question": "Quel chanteur a sorti l'album \"Thriller\"\u00a0?",
+    "correct_answer": "Michael Jackson",
+    "incorrect_answers": [
+      "Prince",
+      "Stevie Wonder",
+      "Lionel Richie"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "Musique",
+    "question": "Quel instrument \u00e0 cordes ressemble \u00e0 une petite guitare\u00a0?",
+    "correct_answer": "Ukul\u00e9l\u00e9",
+    "incorrect_answers": [
+      "Violoncelle",
+      "Banjo",
+      "Mandoline"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "Musique",
+    "question": "Quel est le style musical de Beethoven\u00a0?",
+    "correct_answer": "Musique classique",
+    "incorrect_answers": [
+      "Jazz",
+      "Baroque",
+      "Romantique"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "Musique",
+    "question": "Qui chantait \"No Woman, No Cry\"\u00a0?",
+    "correct_answer": "Bob Marley",
+    "incorrect_answers": [
+      "Justin Bieber",
+      "Michael Jackson",
+      "Elvis Presley"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "Musique",
+    "question": "Quel musicien est surnomm\u00e9 \"The King of Pop\"\u00a0?",
+    "correct_answer": "Michael Jackson",
+    "incorrect_answers": [
+      "Elvis Presley",
+      "Prince",
+      "Freddie Mercury"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "Musique",
+    "question": "Quel instrument poss\u00e8de 88 touches\u00a0?",
+    "correct_answer": "Le piano",
+    "incorrect_answers": [
+      "La guitare",
+      "Le violon",
+      "Le saxophone"
     ]
   },
   {
     "difficulty": "medium",
-    "category": "Science",
-    "question": "Quel est le numéro atomique de l’élément Chlore ?",
-    "correct_answer": "17",
+    "category": "Musique",
+    "question": "Quel groupe a interpr\u00e9t\u00e9 \"Smells Like Teen Spirit\"\u00a0?",
+    "correct_answer": "Nirvana",
     "incorrect_answers": [
-      "15",
-      "16",
-      "18"
+      "Metallica",
+      "Pearl Jam",
+      "Oasis"
     ]
   },
   {
     "difficulty": "medium",
-    "category": "Science",
-    "question": "Quel est le numéro atomique de l’élément Argon ?",
-    "correct_answer": "18",
+    "category": "Musique",
+    "question": "Qui chantait \"Like a Rolling Stone\"\u00a0?",
+    "correct_answer": "Bob Dylan",
     "incorrect_answers": [
-      "16",
-      "17",
-      "19"
+      "Bruce Springsteen",
+      "Mick Jagger",
+      "Leonard Cohen"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "Musique",
+    "question": "Quelle chanteuse a chant\u00e9 \"Rolling in the Deep\"\u00a0?",
+    "correct_answer": "Adele",
+    "incorrect_answers": [
+      "Rihanna",
+      "Lady Gaga",
+      "Taylor Swift"
     ]
   },
   {
     "difficulty": "medium",
-    "category": "Science",
-    "question": "Quel est le numéro atomique de l’élément Potassium ?",
-    "correct_answer": "19",
+    "category": "Musique",
+    "question": "Quel groupe a interpr\u00e9t\u00e9 \"Hotel California\"\u00a0?",
+    "correct_answer": "The Eagles",
     "incorrect_answers": [
-      "17",
-      "18",
-      "20"
+      "Fleetwood Mac",
+      "Pink Floyd",
+      "Journey"
     ]
   },
   {
     "difficulty": "medium",
-    "category": "Science",
-    "question": "Quel est le numéro atomique de l’élément Calcium ?",
-    "correct_answer": "20",
+    "category": "Musique",
+    "question": "Quel instrument \u00e0 vent a un pavillon en laiton et se joue en appuyant sur des pistons\u00a0?",
+    "correct_answer": "Trompette",
     "incorrect_answers": [
-      "18",
-      "19",
-      "21"
+      "Trombone",
+      "Cor",
+      "Clarinette"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "Musique",
+    "question": "Quelle chanteuse fran\u00e7aise a chant\u00e9 \"Dern\u00e8re danse\"\u00a0?",
+    "correct_answer": "Indila",
+    "incorrect_answers": [
+      "Christine and the Queens",
+      "Zaz",
+      "Vanessa Paradis"
     ]
   },
   {
     "difficulty": "medium",
-    "category": "Science",
-    "question": "Quel est le numéro atomique de l’élément Scandium ?",
-    "correct_answer": "21",
+    "category": "Musique",
+    "question": "Quel compositeur italien a \u00e9crit l'op\u00e9ra \"La Boh\u00e8me\"\u00a0?",
+    "correct_answer": "Giacomo Puccini",
     "incorrect_answers": [
-      "19",
-      "20",
-      "22"
+      "Giuseppe Verdi",
+      "Gioachino Rossini",
+      "Wolfgang Amadeus Mozart"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "Musique",
+    "question": "Quel chanteur am\u00e9ricain est connu pour la chanson \"Purple Rain\"\u00a0?",
+    "correct_answer": "Prince",
+    "incorrect_answers": [
+      "Michael Jackson",
+      "David Bowie",
+      "Elvis Presley"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "Culture G\u00e9n\u00e9rale",
+    "question": "Quel est le plus grand oc\u00e9an du monde\u00a0?",
+    "correct_answer": "Oc\u00e9an Pacifique",
+    "incorrect_answers": [
+      "Oc\u00e9an Atlantique",
+      "Oc\u00e9an Indien",
+      "Oc\u00e9an Arctique"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "Culture G\u00e9n\u00e9rale",
+    "question": "Quelle est la capitale du Br\u00e9sil\u00a0?",
+    "correct_answer": "Bras\u00edlia",
+    "incorrect_answers": [
+      "Rio de Janeiro",
+      "S\u00e3o Paulo",
+      "Montevideo"
     ]
   },
   {
     "difficulty": "medium",
-    "category": "Science",
-    "question": "Quel est le numéro atomique de l’élément Titane ?",
-    "correct_answer": "22",
+    "category": "Culture G\u00e9n\u00e9rale",
+    "question": "Quel est le plus petit continent\u00a0?",
+    "correct_answer": "L'Australie",
     "incorrect_answers": [
-      "20",
-      "21",
-      "23"
+      "L'Europe",
+      "L'Antarctique",
+      "L'Am\u00e9rique du Sud"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "Culture G\u00e9n\u00e9rale",
+    "question": "Quelle est la plus grande \u00eele du monde\u00a0?",
+    "correct_answer": "Le Groenland",
+    "incorrect_answers": [
+      "Madagascar",
+      "Nouvelle-Guin\u00e9e",
+      "Born\u00e9o"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "Culture G\u00e9n\u00e9rale",
+    "question": "Quelle est la langue la plus parl\u00e9e au monde\u00a0?",
+    "correct_answer": "Le chinois mandarin",
+    "incorrect_answers": [
+      "L'anglais",
+      "L'espagnol",
+      "L'hindi"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "Culture G\u00e9n\u00e9rale",
+    "question": "Dans quel pays se trouve Machu Picchu\u00a0?",
+    "correct_answer": "P\u00e9rou",
+    "incorrect_answers": [
+      "Chili",
+      "Mexique",
+      "Argentine"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "Culture G\u00e9n\u00e9rale",
+    "question": "Quel est l'animal terrestre le plus rapide\u00a0?",
+    "correct_answer": "Le gu\u00e9pard",
+    "incorrect_answers": [
+      "Le lion",
+      "L'autruche",
+      "L'antilope"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "Culture G\u00e9n\u00e9rale",
+    "question": "Quelle est la capitale de la Russie\u00a0?",
+    "correct_answer": "Moscou",
+    "incorrect_answers": [
+      "Saint-P\u00e9tersbourg",
+      "Novossibirsk",
+      "Kyiv"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "Culture G\u00e9n\u00e9rale",
+    "question": "Quel est le plus grand d\u00e9sert du monde\u00a0?",
+    "correct_answer": "L'Antarctique",
+    "incorrect_answers": [
+      "Le Sahara",
+      "Le Gobi",
+      "Le Kalahari"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "Culture G\u00e9n\u00e9rale",
+    "question": "Quel est le symbole chimique du fer\u00a0?",
+    "correct_answer": "Fe",
+    "incorrect_answers": [
+      "Fi",
+      "Fr",
+      "F"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "Culture G\u00e9n\u00e9rale",
+    "question": "Quel est l'animal terrestre le plus grand\u00a0?",
+    "correct_answer": "L'\u00e9l\u00e9phant d'Afrique",
+    "incorrect_answers": [
+      "La girafe",
+      "La baleine bleue",
+      "L'hippopotame"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "Culture G\u00e9n\u00e9rale",
+    "question": "Quelle est la capitale de la Turquie\u00a0?",
+    "correct_answer": "Ankara",
+    "incorrect_answers": [
+      "Istanbul",
+      "Izmir",
+      "Constantinople"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "Culture G\u00e9n\u00e9rale",
+    "question": "Quelle plan\u00e8te est surnomm\u00e9e la plan\u00e8te rouge\u00a0?",
+    "correct_answer": "Mars",
+    "incorrect_answers": [
+      "Jupiter",
+      "V\u00e9nus",
+      "Saturne"
+    ]
+  },
+  {
+    "difficulty": "hard",
+    "category": "Culture G\u00e9n\u00e9rale",
+    "question": "Quel mammif\u00e8re pond des \u0153ufs et allaite ses petits\u00a0?",
+    "correct_answer": "L'ornithorynque",
+    "incorrect_answers": [
+      "L'\u00e9chidn\u00e9",
+      "Le cachalot",
+      "Le manchot empereur"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "Culture G\u00e9n\u00e9rale",
+    "question": "Quel est le plus grand mammif\u00e8re marin\u00a0?",
+    "correct_answer": "La baleine bleue",
+    "incorrect_answers": [
+      "L'orque",
+      "La baleine \u00e0 bosse",
+      "Le dauphin"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "Culture G\u00e9n\u00e9rale",
+    "question": "Quelle est la plus grande m\u00e9tropole de France\u00a0?",
+    "correct_answer": "Paris",
+    "incorrect_answers": [
+      "Lyon",
+      "Marseille",
+      "Bordeaux"
+    ]
+  },
+  {
+    "difficulty": "hard",
+    "category": "Culture G\u00e9n\u00e9rale",
+    "question": "Quel est l'animal le plus rapide du monde\u00a0?",
+    "correct_answer": "Le faucon p\u00e8lerin (en piqu\u00e9e)",
+    "incorrect_answers": [
+      "Le gu\u00e9pard",
+      "L'aigle royal",
+      "La fus\u00e9e supersonique"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "Culture G\u00e9n\u00e9rale",
+    "question": "Quel est le plat traditionnel national du Japon\u00a0?",
+    "correct_answer": "Les sushis",
+    "incorrect_answers": [
+      "Le sashimi",
+      "La tempura",
+      "Le miso"
     ]
   },
   {
     "difficulty": "medium",
-    "category": "Science",
-    "question": "Quel est le numéro atomique de l’élément Vanadium ?",
-    "correct_answer": "23",
+    "category": "Culture G\u00e9n\u00e9rale",
+    "question": "Quelle fleur est symbole de la France\u00a0?",
+    "correct_answer": "Le lys (fleur de lys)",
     "incorrect_answers": [
-      "21",
-      "22",
-      "24"
+      "Le tournesol",
+      "La rose",
+      "Le coquelicot"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "Culture G\u00e9n\u00e9rale",
+    "question": "Quelle est la devise de la R\u00e9publique fran\u00e7aise\u00a0?",
+    "correct_answer": "Libert\u00e9, \u00c9galit\u00e9, Fraternit\u00e9",
+    "incorrect_answers": [
+      "Libert\u00e9, propri\u00e9t\u00e9, s\u00e9curit\u00e9",
+      "Unit\u00e9, paix, fraternit\u00e9",
+      "Raison, \u00e9galit\u00e9, libert\u00e9"
     ]
   },
   {
     "difficulty": "medium",
-    "category": "Science",
-    "question": "Quel est le numéro atomique de l’élément Chrome ?",
-    "correct_answer": "24",
+    "category": "Cin\u00e9ma et T\u00e9l\u00e9vision",
+    "question": "Quel r\u00e9alisateur a dirig\u00e9 les films \"Inception\" et \"The Dark Knight\"\u00a0?",
+    "correct_answer": "Christopher Nolan",
     "incorrect_answers": [
-      "22",
-      "23",
-      "25"
+      "Steven Spielberg",
+      "Quentin Tarantino",
+      "James Cameron"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "Cin\u00e9ma et T\u00e9l\u00e9vision",
+    "question": "Quel acteur joue le r\u00f4le principal dans le film \"Forrest Gump\"\u00a0?",
+    "correct_answer": "Tom Hanks",
+    "incorrect_answers": [
+      "Leonardo DiCaprio",
+      "Johnny Depp",
+      "Brad Pitt"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "Cin\u00e9ma et T\u00e9l\u00e9vision",
+    "question": "Quel r\u00e9alisateur a tourn\u00e9 \"Jurassic Park\" en 1993\u00a0?",
+    "correct_answer": "Steven Spielberg",
+    "incorrect_answers": [
+      "James Cameron",
+      "Ridley Scott",
+      "George Lucas"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "Cin\u00e9ma et T\u00e9l\u00e9vision",
+    "question": "Quel film d'animation Disney met en sc\u00e8ne un \u00e9l\u00e9phant volant\u00a0?",
+    "correct_answer": "Dumbo",
+    "incorrect_answers": [
+      "Bambi",
+      "Le Roi Lion",
+      "Peter Pan"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "Cin\u00e9ma et T\u00e9l\u00e9vision",
+    "question": "Qui est surnomm\u00e9e \"M\u00e8re des dragons\" dans la s\u00e9rie Game of Thrones\u00a0?",
+    "correct_answer": "Daenerys Targaryen",
+    "incorrect_answers": [
+      "Cersei Lannister",
+      "Sansa Stark",
+      "Mellisandre"
     ]
   },
   {
     "difficulty": "medium",
-    "category": "Science",
-    "question": "Quel est le numéro atomique de l’élément Manganèse ?",
-    "correct_answer": "25",
+    "category": "Cin\u00e9ma et T\u00e9l\u00e9vision",
+    "question": "Quel est le titre du film d'horreur r\u00e9alis\u00e9 par Stanley Kubrick adapt\u00e9 du roman de Stephen King\u00a0?",
+    "correct_answer": "Shining",
     "incorrect_answers": [
-      "23",
-      "24",
-      "26"
+      "Psychose",
+      "Halloween",
+      "Alien"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "Cin\u00e9ma et T\u00e9l\u00e9vision",
+    "question": "Quel acteur incarnait James Bond dans le film \"Goldfinger\"\u00a0?",
+    "correct_answer": "Sean Connery",
+    "incorrect_answers": [
+      "Roger Moore",
+      "Timothy Dalton",
+      "Pierce Brosnan"
     ]
   },
   {
     "difficulty": "medium",
-    "category": "Science",
-    "question": "Quel est le numéro atomique de l’élément Fer ?",
-    "correct_answer": "26",
+    "category": "Cin\u00e9ma et T\u00e9l\u00e9vision",
+    "question": "Dans quelle ville se d\u00e9roule l'action du film \"Blade Runner\"\u00a0?",
+    "correct_answer": "Los Angeles",
     "incorrect_answers": [
-      "24",
-      "25",
-      "27"
+      "New York",
+      "Paris",
+      "Chicago"
     ]
   },
   {
     "difficulty": "medium",
-    "category": "Science",
-    "question": "Quel est le numéro atomique de l’élément Cobalt ?",
-    "correct_answer": "27",
+    "category": "Cin\u00e9ma et T\u00e9l\u00e9vision",
+    "question": "Qui est le r\u00e9alisateur du film \"Le Fabuleux Destin d'Am\u00e9lie Poulain\"\u00a0?",
+    "correct_answer": "Jean-Pierre Jeunet",
     "incorrect_answers": [
-      "25",
-      "26",
-      "28"
+      "Luc Besson",
+      "Jean-Jacques Annaud",
+      "Clint Eastwood"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "Cin\u00e9ma et T\u00e9l\u00e9vision",
+    "question": "Quel est le nom du personnage principal interpr\u00e9t\u00e9 par Leonardo DiCaprio dans \"Titanic\"\u00a0?",
+    "correct_answer": "Jack Dawson",
+    "incorrect_answers": [
+      "Jack Smith",
+      "Edward",
+      "Bill Beane"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "Cin\u00e9ma et T\u00e9l\u00e9vision",
+    "question": "Quel film met en sc\u00e8ne un personnage nomm\u00e9 Lloyd Christmas interpr\u00e9t\u00e9 par Jim Carrey\u00a0?",
+    "correct_answer": "Dumb and Dumber",
+    "incorrect_answers": [
+      "Ace Ventura",
+      "The Mask",
+      "Yes Man"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "Cin\u00e9ma et T\u00e9l\u00e9vision",
+    "question": "Dans quel film de science-fiction des ann\u00e9es 1970 rencontre-t-on des \u00e9trangers sur une route\u00a0?",
+    "correct_answer": "Rencontres du troisi\u00e8me type",
+    "incorrect_answers": [
+      "La Guerre des \u00e9toiles",
+      "E.T.",
+      "Independence Day"
     ]
   },
   {
     "difficulty": "medium",
-    "category": "Science",
-    "question": "Quel est le numéro atomique de l’élément Nickel ?",
-    "correct_answer": "28",
+    "category": "Cin\u00e9ma et T\u00e9l\u00e9vision",
+    "question": "Quel acteur joue N\u00e9o dans la saga \"Matrix\"\u00a0?",
+    "correct_answer": "Keanu Reeves",
     "incorrect_answers": [
-      "26",
-      "27",
-      "29"
+      "Tom Cruise",
+      "Will Smith",
+      "Harrison Ford"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "Cin\u00e9ma et T\u00e9l\u00e9vision",
+    "question": "Quel est le film Pixar sorti en 2010 qui met en sc\u00e8ne Andy et ses jouets\u00a0?",
+    "correct_answer": "Toy Story 3",
+    "incorrect_answers": [
+      "Cars",
+      "Ratatouille",
+      "WALL-E"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "Cin\u00e9ma et T\u00e9l\u00e9vision",
+    "question": "Quel film a pour bande originale la chanson \"My Heart Will Go On\" interpr\u00e9t\u00e9e par C\u00e9line Dion\u00a0?",
+    "correct_answer": "Titanic",
+    "incorrect_answers": [
+      "Le Roi Lion",
+      "Ghost",
+      "Pretty Woman"
+    ]
+  },
+  {
+    "difficulty": "easy",
+    "category": "Cin\u00e9ma et T\u00e9l\u00e9vision",
+    "question": "Quel film d\u00e9crit la r\u00e9surrection d'un robot sur une plan\u00e8te o\u00f9 l'humanit\u00e9 a \u00e9t\u00e9 an\u00e9antie\u00a0?",
+    "correct_answer": "Wall-E",
+    "incorrect_answers": [
+      "I, Robot",
+      "Terminator",
+      "Interstellar"
     ]
   },
   {
     "difficulty": "medium",
-    "category": "Science",
-    "question": "Quel est le numéro atomique de l’élément Cuivre ?",
-    "correct_answer": "29",
+    "category": "Cin\u00e9ma et T\u00e9l\u00e9vision",
+    "question": "Quel film d'action commence par la phrase \"Hasta la vista, baby\"\u00a0?",
+    "correct_answer": "Terminator 2",
     "incorrect_answers": [
-      "27",
-      "28",
-      "30"
+      "Terminator",
+      "Aliens",
+      "Predator"
     ]
   },
   {
     "difficulty": "medium",
-    "category": "Science",
-    "question": "Quel est le numéro atomique de l’élément Zinc ?",
-    "correct_answer": "30",
+    "category": "Cin\u00e9ma et T\u00e9l\u00e9vision",
+    "question": "Quel acteur a incarn\u00e9 le Joker dans le film \"The Dark Knight\"\u00a0?",
+    "correct_answer": "Heath Ledger",
     "incorrect_answers": [
-      "28",
-      "29",
-      "31"
+      "Jared Leto",
+      "Joaquin Phoenix",
+      "Jack Nicholson"
     ]
   },
   {
-    "difficulty": "medium",
-    "category": "Science",
-    "question": "Quel est le numéro atomique de l’élément Gallium ?",
-    "correct_answer": "31",
+    "difficulty": "easy",
+    "category": "Cin\u00e9ma et T\u00e9l\u00e9vision",
+    "question": "Quel film culte de science-fiction met en sc\u00e8ne Luke Skywalker\u00a0?",
+    "correct_answer": "Star Wars",
     "incorrect_answers": [
-      "29",
-      "30",
-      "32"
+      "Blade Runner",
+      "Dune",
+      "Star Trek"
     ]
   },
   {
-    "difficulty": "medium",
-    "category": "Science",
-    "question": "Quel est le numéro atomique de l’élément Germanium ?",
-    "correct_answer": "32",
+    "difficulty": "easy",
+    "category": "Cin\u00e9ma et T\u00e9l\u00e9vision",
+    "question": "Quel film fran\u00e7ais raconte l'histoire d'un valet de ferme qui d\u00e9fie un tyran du film muet\u00a0?",
+    "correct_answer": "Le Dictateur",
     "incorrect_answers": [
-      "30",
-      "31",
-      "33"
-    ]
-  },
-  {
-    "difficulty": "medium",
-    "category": "Science",
-    "question": "Quel est le numéro atomique de l’élément Arsenic ?",
-    "correct_answer": "33",
-    "incorrect_answers": [
-      "31",
-      "32",
-      "34"
-    ]
-  },
-  {
-    "difficulty": "medium",
-    "category": "Science",
-    "question": "Quel est le numéro atomique de l’élément Sélénium ?",
-    "correct_answer": "34",
-    "incorrect_answers": [
-      "32",
-      "33",
-      "35"
-    ]
-  },
-  {
-    "difficulty": "medium",
-    "category": "Science",
-    "question": "Quel est le numéro atomique de l’élément Brome ?",
-    "correct_answer": "35",
-    "incorrect_answers": [
-      "33",
-      "34",
-      "36"
-    ]
-  },
-  {
-    "difficulty": "medium",
-    "category": "Science",
-    "question": "Quel est le numéro atomique de l’élément Krypton ?",
-    "correct_answer": "36",
-    "incorrect_answers": [
-      "34",
-      "35",
-      "37"
-    ]
-  },
-  {
-    "difficulty": "medium",
-    "category": "Science",
-    "question": "Quel est le numéro atomique de l’élément Rubidium ?",
-    "correct_answer": "37",
-    "incorrect_answers": [
-      "35",
-      "36",
-      "38"
-    ]
-  },
-  {
-    "difficulty": "medium",
-    "category": "Science",
-    "question": "Quel est le numéro atomique de l’élément Strontium ?",
-    "correct_answer": "38",
-    "incorrect_answers": [
-      "36",
-      "37",
-      "39"
-    ]
-  },
-  {
-    "difficulty": "medium",
-    "category": "Science",
-    "question": "Quel est le numéro atomique de l’élément Yttrium ?",
-    "correct_answer": "39",
-    "incorrect_answers": [
-      "37",
-      "38",
-      "40"
-    ]
-  },
-  {
-    "difficulty": "medium",
-    "category": "Science",
-    "question": "Quel est le numéro atomique de l’élément Zirconium ?",
-    "correct_answer": "40",
-    "incorrect_answers": [
-      "38",
-      "39",
-      "41"
-    ]
-  },
-  {
-    "difficulty": "medium",
-    "category": "Science",
-    "question": "Quel est le numéro atomique de l’élément Niobium ?",
-    "correct_answer": "41",
-    "incorrect_answers": [
-      "39",
-      "40",
-      "42"
-    ]
-  },
-  {
-    "difficulty": "medium",
-    "category": "Science",
-    "question": "Quel est le numéro atomique de l’élément Molybdène ?",
-    "correct_answer": "42",
-    "incorrect_answers": [
-      "40",
-      "41",
-      "43"
-    ]
-  },
-  {
-    "difficulty": "medium",
-    "category": "Science",
-    "question": "Quel est le numéro atomique de l’élément Technétium ?",
-    "correct_answer": "43",
-    "incorrect_answers": [
-      "41",
-      "42",
-      "44"
-    ]
-  },
-  {
-    "difficulty": "medium",
-    "category": "Science",
-    "question": "Quel est le numéro atomique de l’élément Ruthénium ?",
-    "correct_answer": "44",
-    "incorrect_answers": [
-      "42",
-      "43",
-      "45"
-    ]
-  },
-  {
-    "difficulty": "medium",
-    "category": "Science",
-    "question": "Quel est le numéro atomique de l’élément Rhodium ?",
-    "correct_answer": "45",
-    "incorrect_answers": [
-      "43",
-      "44",
-      "46"
-    ]
-  },
-  {
-    "difficulty": "medium",
-    "category": "Science",
-    "question": "Quel est le numéro atomique de l’élément Palladium ?",
-    "correct_answer": "46",
-    "incorrect_answers": [
-      "44",
-      "45",
-      "47"
-    ]
-  },
-  {
-    "difficulty": "medium",
-    "category": "Science",
-    "question": "Quel est le numéro atomique de l’élément Argent ?",
-    "correct_answer": "47",
-    "incorrect_answers": [
-      "45",
-      "46",
-      "48"
-    ]
-  },
-  {
-    "difficulty": "medium",
-    "category": "Science",
-    "question": "Quel est le numéro atomique de l’élément Cadmium ?",
-    "correct_answer": "48",
-    "incorrect_answers": [
-      "46",
-      "47",
-      "49"
-    ]
-  },
-  {
-    "difficulty": "medium",
-    "category": "Science",
-    "question": "Quel est le numéro atomique de l’élément Indium ?",
-    "correct_answer": "49",
-    "incorrect_answers": [
-      "47",
-      "48",
-      "50"
-    ]
-  },
-  {
-    "difficulty": "medium",
-    "category": "Science",
-    "question": "Quel est le numéro atomique de l’élément Étain ?",
-    "correct_answer": "50",
-    "incorrect_answers": [
-      "48",
-      "49",
-      "51"
-    ]
-  },
-  {
-    "difficulty": "medium",
-    "category": "Science",
-    "question": "Quel est le numéro atomique de l’élément Antimoine ?",
-    "correct_answer": "51",
-    "incorrect_answers": [
-      "49",
-      "50",
-      "52"
-    ]
-  },
-  {
-    "difficulty": "medium",
-    "category": "Science",
-    "question": "Quel est le numéro atomique de l’élément Tellure ?",
-    "correct_answer": "52",
-    "incorrect_answers": [
-      "50",
-      "51",
-      "53"
-    ]
-  },
-  {
-    "difficulty": "medium",
-    "category": "Science",
-    "question": "Quel est le numéro atomique de l’élément Iode ?",
-    "correct_answer": "53",
-    "incorrect_answers": [
-      "51",
-      "52",
-      "54"
-    ]
-  },
-  {
-    "difficulty": "medium",
-    "category": "Science",
-    "question": "Quel est le numéro atomique de l’élément Xénon ?",
-    "correct_answer": "54",
-    "incorrect_answers": [
-      "52",
-      "53",
-      "55"
+      "Les Temps Modernes",
+      "La Grande Illusion",
+      "Intouchables"
     ]
   }
+,
+{
+"category": "Sciences",
+"difficulty": "easy",
+"question": "Quelle est la planète la plus proche du Soleil ?",
+"correct_answer": "Mercure",
+"incorrect_answers": [
+"Vénus",
+"Terre",
+"Mars"
+]
+},
+{
+"category": "Sciences",
+"difficulty": "easy",
+"question": "Quel est le gaz le plus abondant dans l’atmosphère terrestre ?",
+"correct_answer": "Azote",
+"incorrect_answers": [
+"Oxygène",
+"Argon",
+"Dioxyde de carbone"
+]
+},
+{
+"category": "Sciences",
+"difficulty": "easy",
+"question": "Quel est le plus grand organe du corps humain ?",
+"correct_answer": "La peau",
+"incorrect_answers": [
+"Le foie",
+"Le cœur",
+"Les poumons"
+]
+},
+{
+"category": "Sciences",
+"difficulty": "easy",
+"question": "Quelle est la formule chimique de l’eau ?",
+"correct_answer": "H2O",
+"incorrect_answers": [
+"H2",
+"O2",
+"HO2"
+]
+},
+{
+"category": "Sciences",
+"difficulty": "easy",
+"question": "Quel est le plus grand mammifère terrestre actuel ?",
+"correct_answer": "Éléphant d’Afrique",
+"incorrect_answers": [
+"Girafe",
+"Hippopotame",
+"Rhinocéros"
+]
+},
+{
+"category": "Sciences",
+"difficulty": "easy",
+"question": "Quelle est l’étoile la plus proche de la Terre après le Soleil ?",
+"correct_answer": "Proxima du Centaure",
+"incorrect_answers": [
+"Sirius",
+"Alpha du Centaure",
+"Bételgeuse"
+]
+},
+{
+"category": "Sciences",
+"difficulty": "easy",
+"question": "Combien de chromosomes l’être humain possède-t-il normalement ?",
+"correct_answer": "46",
+"incorrect_answers": [
+"23",
+"42",
+"48"
+]
+},
+{
+"category": "Sciences",
+"difficulty": "easy",
+"question": "Quelle est l’unité de mesure de l’intensité du courant électrique ?",
+"correct_answer": "Ampère",
+"incorrect_answers": [
+"Volt",
+"Ohm",
+"Watt"
+]
+},
+{
+"category": "Sciences",
+"difficulty": "medium",
+"question": "Quel est l’élément chimique dont le symbole est Au ?",
+"correct_answer": "Or",
+"incorrect_answers": [
+"Argent",
+"Mercure",
+"Aluminium"
+]
+},
+{
+"category": "Sciences",
+"difficulty": "medium",
+"question": "Quel est l’élément chimique le plus léger ?",
+"correct_answer": "Hydrogène",
+"incorrect_answers": [
+"Hélium",
+"Oxygène",
+"Carbone"
+]
+},
+{
+"category": "Sciences",
+"difficulty": "easy",
+"question": "Quel scientifique a formulé la loi de la gravitation universelle ?",
+"correct_answer": "Isaac Newton",
+"incorrect_answers": [
+"Albert Einstein",
+"Galilée",
+"Stephen Hawking"
+]
+},
+{
+"category": "Sciences",
+"difficulty": "easy",
+"question": "Quel scientifique a proposé la théorie de la relativité générale ?",
+"correct_answer": "Albert Einstein",
+"incorrect_answers": [
+"Isaac Newton",
+"James Clerk Maxwell",
+"Niels Bohr"
+]
+},
+{
+"category": "Sciences",
+"difficulty": "medium",
+"question": "Quel est le matériau naturel le plus dur sur Terre ?",
+"correct_answer": "Diamant",
+"incorrect_answers": [
+"Corindon",
+"Graphite",
+"Quartz"
+]
+},
+{
+"category": "Sciences",
+"difficulty": "medium",
+"question": "Quel organe produit l’insuline dans le corps humain ?",
+"correct_answer": "Le pancréas",
+"incorrect_answers": [
+"Le foie",
+"Le rein",
+"Le cœur"
+]
+},
+{
+"category": "Sciences",
+"difficulty": "hard",
+"question": "Quel physicien français a découvert la radioactivité en étudiant l’uranium ?",
+"correct_answer": "Henri Becquerel",
+"incorrect_answers": [
+"Pierre Curie",
+"Marie Curie",
+"André-Marie Ampère"
+]
+},
+{
+"category": "Sciences",
+"difficulty": "medium",
+"question": "Quel est l’élément chimique principal constituant le noyau terrestre ?",
+"correct_answer": "Fer",
+"incorrect_answers": [
+"Oxygène",
+"Silicium",
+"Nickel"
+]
+},
+{
+"category": "Sciences",
+"difficulty": "hard",
+"question": "Combien de temps met la lumière du Soleil pour atteindre la Terre ?",
+"correct_answer": "Environ 8 minutes",
+"incorrect_answers": [
+"Environ 1 minute",
+"Environ 30 minutes",
+"Environ 24 heures"
+]
+},
+{
+"category": "Sciences",
+"difficulty": "hard",
+"question": "Quelle est la vitesse approximative de la lumière dans le vide ?",
+"correct_answer": "300 000 km/s",
+"incorrect_answers": [
+"150 000 km/s",
+"1 000 km/s",
+"300 000 m/s"
+]
+},
+{
+"category": "Sciences",
+"difficulty": "medium",
+"question": "Quel est l’organe respiratoire principal des poissons ?",
+"correct_answer": "Les branchies",
+"incorrect_answers": [
+"Les poumons",
+"La peau",
+"Le cœur"
+]
+},
+{
+"category": "Sciences",
+"difficulty": "medium",
+"question": "Quelle est la source principale d’énergie des plantes par photosynthèse ?",
+"correct_answer": "La lumière du soleil",
+"incorrect_answers": [
+"Le sol",
+"L’eau",
+"Les minéraux"
+]
+},
+{
+"category": "Histoire",
+"difficulty": "easy",
+"question": "En quelle année Christophe Colomb a-t-il découvert l’Amérique ?",
+"correct_answer": "1492",
+"incorrect_answers": [
+"1500",
+"1482",
+"1776"
+]
+},
+{
+"category": "Histoire",
+"difficulty": "easy",
+"question": "Quel roi de France a été guillotiné en 1793 ?",
+"correct_answer": "Louis XVI",
+"incorrect_answers": [
+"Louis XIV",
+"Louis XV",
+"Napoléon"
+]
+},
+{
+"category": "Histoire",
+"difficulty": "easy",
+"question": "En quelle année la Révolution française a-t-elle commencé ?",
+"correct_answer": "1789",
+"incorrect_answers": [
+"1776",
+"1804",
+"1794"
+]
+},
+{
+"category": "Histoire",
+"difficulty": "easy",
+"question": "Quel empereur français a abdiqué en 1814 ?",
+"correct_answer": "Napoléon Ier",
+"incorrect_answers": [
+"Louis XVIII",
+"Louis XVI",
+"Charles X"
+]
+},
+{
+"category": "Histoire",
+"difficulty": "medium",
+"question": "Quel événement majeur a eu lieu en Normandie le 6 juin 1944 ?",
+"correct_answer": "Le débarquement allié (Jour J)",
+"incorrect_answers": [
+"L’armistice de la Seconde Guerre mondiale",
+"L’indépendance de la France",
+"La bataille de la Somme"
+]
+},
+{
+"category": "Histoire",
+"difficulty": "medium",
+"question": "Qui était la première femme à voyager dans l’espace ?",
+"correct_answer": "Valentina Terechkova",
+"incorrect_answers": [
+"Sally Ride",
+"Mae Jemison",
+"Peggy Whitson"
+]
+},
+{
+"category": "Histoire",
+"difficulty": "easy",
+"question": "En quelle année le mur de Berlin est-il tombé ?",
+"correct_answer": "1989",
+"incorrect_answers": [
+"1991",
+"1975",
+"1961"
+]
+},
+{
+"category": "Histoire",
+"difficulty": "medium",
+"question": "Quel pharaon égyptien a fait construire la Grande Pyramide de Gizeh ?",
+"correct_answer": "Khéops (Chéops)",
+"incorrect_answers": [
+"Ramsès II",
+"Toutânkhamon",
+"Néfertiti"
+]
+},
+{
+"category": "Histoire",
+"difficulty": "easy",
+"question": "Quel pays d’Afrique du Sud a Nelson Mandela dirigé après être devenu président en 1994 ?",
+"correct_answer": "Afrique du Sud",
+"incorrect_answers": [
+"Kenya",
+"Zimbabwe",
+"Namibie"
+]
+},
+{
+"category": "Histoire",
+"difficulty": "easy",
+"question": "En quelle année l’Armistice de la Première Guerre mondiale a-t-elle été signée ?",
+"correct_answer": "1918",
+"incorrect_answers": [
+"1914",
+"1945",
+"1939"
+]
+},
+{
+"category": "Histoire",
+"difficulty": "medium",
+"question": "En quelle année l’Empire romain d’Occident est-il officiellement tombé ?",
+"correct_answer": "476",
+"incorrect_answers": [
+"1066",
+"1492",
+"800"
+]
+},
+{
+"category": "Histoire",
+"difficulty": "medium",
+"question": "Qui fut le premier empereur de l’Empire romain ?",
+"correct_answer": "Auguste (Octave)",
+"incorrect_answers": [
+"Jules César",
+"Néron",
+"Cléopâtre"
+]
+},
+{
+"category": "Histoire",
+"difficulty": "medium",
+"question": "Quelle reine égyptienne s’est alliée à Marc Antoine dans l’histoire ancienne ?",
+"correct_answer": "Cléopâtre VII",
+"incorrect_answers": [
+"Hatchepsout",
+"Cléopâtre III",
+"Thoutmosis III"
+]
+},
+{
+"category": "Histoire",
+"difficulty": "medium",
+"question": "En quelle année Jules César a-t-il été assassiné ?",
+"correct_answer": "44 av. J.-C.",
+"incorrect_answers": [
+"49 av. J.-C.",
+"31 av. J.-C.",
+"14 ap. J.-C."
+]
+},
+{
+"category": "Histoire",
+"difficulty": "easy",
+"question": "Selon la légende, qui a fondé la ville de Rome en 753 av. J.-C. ?",
+"correct_answer": "Romulus",
+"incorrect_answers": [
+"Remus",
+"Jules César",
+"Auguste"
+]
+},
+{
+"category": "Histoire",
+"difficulty": "easy",
+"question": "En quelle année le premier homme a-t-il marché sur la Lune ?",
+"correct_answer": "1969",
+"incorrect_answers": [
+"1960",
+"1959",
+"1975"
+]
+},
+{
+"category": "Histoire",
+"difficulty": "easy",
+"question": "En quelle année la Première Guerre mondiale a-t-elle débuté ?",
+"correct_answer": "1914",
+"incorrect_answers": [
+"1939",
+"1815",
+"1917"
+]
+},
+{
+"category": "Histoire",
+"difficulty": "medium",
+"question": "Quel dictateur allemand a pris le pouvoir en 1933 et a mené l’Allemagne pendant la Seconde Guerre mondiale ?",
+"correct_answer": "Adolf Hitler",
+"incorrect_answers": [
+"Benito Mussolini",
+"Joseph Staline",
+"François Pétain"
+]
+},
+{
+"category": "Histoire",
+"difficulty": "medium",
+"question": "En quelle année l’Union soviétique s’est-elle officiellement dissoute ?",
+"correct_answer": "1991",
+"incorrect_answers": [
+"1989",
+"1999",
+"1975"
+]
+},
+{
+"category": "Histoire",
+"difficulty": "medium",
+"question": "Quel souverain franc a été couronné empereur à Rome en l’an 800 ?",
+"correct_answer": "Charlemagne",
+"incorrect_answers": [
+"Napoléon",
+"Louis XIV",
+"Philippe le Bel"
+]
+},
+{
+"category": "Géographie",
+"difficulty": "easy",
+"question": "Quelle est la capitale de l’Autriche ?",
+"correct_answer": "Vienne",
+"incorrect_answers": [
+"Berlin",
+"Budapest",
+"Varsovie"
+]
+},
+{
+"category": "Géographie",
+"difficulty": "medium",
+"question": "Quel est le plus long fleuve du monde ?",
+"correct_answer": "Nil",
+"incorrect_answers": [
+"Amazonie",
+"Yangtsé",
+"Mississippi"
+]
+},
+{
+"category": "Géographie",
+"difficulty": "easy",
+"question": "Quelle est la capitale de l’Italie ?",
+"correct_answer": "Rome",
+"incorrect_answers": [
+"Milan",
+"Venise",
+"Turin"
+]
+},
+{
+"category": "Géographie",
+"difficulty": "easy",
+"question": "Quel est le plus haut sommet du monde ?",
+"correct_answer": "Everest",
+"incorrect_answers": [
+"K2",
+"Kilimandjaro",
+"Mont Blanc"
+]
+},
+{
+"category": "Géographie",
+"difficulty": "easy",
+"question": "Quel est le plus grand océan sur Terre ?",
+"correct_answer": "Océan Pacifique",
+"incorrect_answers": [
+"Océan Atlantique",
+"Océan Indien",
+"Océan Arctique"
+]
+},
+{
+"category": "Géographie",
+"difficulty": "easy",
+"question": "Quel fleuve traverse la ville de Paris ?",
+"correct_answer": "La Seine",
+"incorrect_answers": [
+"La Loire",
+"Le Rhône",
+"La Garonne"
+]
+},
+{
+"category": "Géographie",
+"difficulty": "medium",
+"question": "Quel est le plus petit État du monde en superficie ?",
+"correct_answer": "Le Vatican (Cité du Vatican)",
+"incorrect_answers": [
+"Monaco",
+"Saint-Marin",
+"Andorre"
+]
+},
+{
+"category": "Géographie",
+"difficulty": "easy",
+"question": "Quel est le plus grand pays du monde par superficie ?",
+"correct_answer": "La Russie",
+"incorrect_answers": [
+"Le Canada",
+"La Chine",
+"Les États-Unis"
+]
+},
+{
+"category": "Géographie",
+"difficulty": "medium",
+"question": "Quel est le plus grand désert chaud du monde ?",
+"correct_answer": "Le Sahara",
+"incorrect_answers": [
+"Le Kalahari",
+"Le désert de Gobi",
+"Le désert de Sonora"
+]
+},
+{
+"category": "Géographie",
+"difficulty": "easy",
+"question": "Quel pays est surnommé 'l’Hexagone' en raison de sa forme géographique ?",
+"correct_answer": "La France",
+"incorrect_answers": [
+"L’Italie",
+"La Turquie",
+"Le Canada"
+]
+},
+{
+"category": "Géographie",
+"difficulty": "easy",
+"question": "Quelle est la monnaie officielle du Japon ?",
+"correct_answer": "Le yen",
+"incorrect_answers": [
+"Le won",
+"Le yuan",
+"Le baht"
+]
+},
+{
+"category": "Géographie",
+"difficulty": "easy",
+"question": "Quel océan borde la côte est de l’Afrique ?",
+"correct_answer": "Océan Indien",
+"incorrect_answers": [
+"Océan Atlantique",
+"Océan Pacifique",
+"Océan Arctique"
+]
+},
+{
+"category": "Géographie",
+"difficulty": "medium",
+"question": "Quelle île méditerranéenne est indépendante et constitue un pays ?",
+"correct_answer": "Chypre",
+"incorrect_answers": [
+"Corse",
+"Malte",
+"Sardaigne"
+]
+},
+{
+"category": "Géographie",
+"difficulty": "easy",
+"question": "Quel est le sommet le plus élevé de la France ?",
+"correct_answer": "Le Mont Blanc",
+"incorrect_answers": [
+"La Barre des Écrins",
+"Le Mont Ventoux",
+"Le Puy de Dôme"
+]
+},
+{
+"category": "Géographie",
+"difficulty": "easy",
+"question": "Quel massif de montagnes forme une frontière naturelle entre la France et l’Espagne ?",
+"correct_answer": "Les Pyrénées",
+"incorrect_answers": [
+"Les Alpes",
+"Le Massif Central",
+"Les Carpates"
+]
+},
+{
+"category": "Géographie",
+"difficulty": "medium",
+"question": "Quel lac est le plus grand lac d’eau douce en Amérique du Nord ?",
+"correct_answer": "Lac Supérieur",
+"incorrect_answers": [
+"Lac Huron",
+"Lac Michigan",
+"Lac Ontario"
+]
+},
+{
+"category": "Géographie",
+"difficulty": "medium",
+"question": "Dans quel État américain se trouve le mont Rushmore, célèbre pour les têtes sculptées de quatre présidents ?",
+"correct_answer": "Dakota du Sud",
+"incorrect_answers": [
+"Colorado",
+"Wyoming",
+"Montana"
+]
+},
+{
+"category": "Géographie",
+"difficulty": "easy",
+"question": "Combien d’États composent les États-Unis ?",
+"correct_answer": "50",
+"incorrect_answers": [
+"48",
+"52",
+"45"
+]
+},
+{
+"category": "Géographie",
+"difficulty": "medium",
+"question": "Quel est le point culminant des Alpes ?",
+"correct_answer": "Le Mont Blanc",
+"incorrect_answers": [
+"Le Cervin",
+"Le Mont Rose",
+"Le Weisshorn"
+]
+},
+{
+"category": "Géographie",
+"difficulty": "hard",
+"question": "Quel désert occupe une grande partie de l’ouest des États-Unis ?",
+"correct_answer": "Le désert de Mojave",
+"incorrect_answers": [
+"Le désert de Gobi",
+"Le désert de Thar",
+"Le désert de Simpson"
+]
+},
+{
+"category": "Logique",
+"difficulty": "medium",
+"question": "Quel nombre complète la suite suivante : 2, 5, 10, 17, 26, ... ?",
+"correct_answer": "37",
+"incorrect_answers": [
+"35",
+"30",
+"40"
+]
+},
+{
+"category": "Logique",
+"difficulty": "easy",
+"question": "Quel nombre suit la suite géométrique suivante : 1, 2, 4, 8, 16, ... ?",
+"correct_answer": "32",
+"incorrect_answers": [
+"24",
+"64",
+"30"
+]
+},
+{
+"category": "Logique",
+"difficulty": "easy",
+"question": "Combien de mois de l’année ont 28 jours ?",
+"correct_answer": "12",
+"incorrect_answers": [
+"1",
+"2",
+"11"
+]
+},
+{
+"category": "Logique",
+"difficulty": "easy",
+"question": "Combien d’heures y a-t-il dans deux jours et demi ?",
+"correct_answer": "60",
+"incorrect_answers": [
+"54",
+"48",
+"66"
+]
+},
+{
+"category": "Logique",
+"difficulty": "medium",
+"question": "Si hier était deux jours avant jeudi, quel jour sera demain ?",
+"correct_answer": "Jeudi",
+"incorrect_answers": [
+"Samedi",
+"Lundi",
+"Dimanche"
+]
+},
+{
+"category": "Logique",
+"difficulty": "easy",
+"question": "Dans une famille, il y a deux fils et deux filles plus deux parents. Combien y a-t-il de personnes au total dans la famille ?",
+"correct_answer": "6",
+"incorrect_answers": [
+"5",
+"7",
+"4"
+]
+},
+{
+"category": "Logique",
+"difficulty": "medium",
+"question": "Si vous dépassez la deuxième personne dans une course, quelle place occuperez-vous ?",
+"correct_answer": "La deuxième",
+"incorrect_answers": [
+"La première",
+"La troisième",
+"La dernière"
+]
+},
+{
+"category": "Logique",
+"difficulty": "easy",
+"question": "Combien de lettres compte l’alphabet français ?",
+"correct_answer": "26",
+"incorrect_answers": [
+"25",
+"24",
+"27"
+]
+},
+{
+"category": "Logique",
+"difficulty": "medium",
+"question": "Si un garçon a 4 sœurs, combien de sœurs a chaque fille de cette famille ?",
+"correct_answer": "3",
+"incorrect_answers": [
+"4",
+"2",
+"1"
+]
+},
+{
+"category": "Logique",
+"difficulty": "medium",
+"question": "Combien de diagonales possède un hexagone (6 côtés) ?",
+"correct_answer": "9",
+"incorrect_answers": [
+"8",
+"6",
+"12"
+]
+},
+{
+"category": "Logique",
+"difficulty": "easy",
+"question": "Quel nombre complète la suite suivante : 1, 4, 9, 16, 25, ... ?",
+"correct_answer": "36",
+"incorrect_answers": [
+"30",
+"45",
+"49"
+]
+},
+{
+"category": "Logique",
+"difficulty": "medium",
+"question": "Quel est l’intrus dans cette suite de nombres : 2, 3, 5, 7, 11, 13, 16 ?",
+"correct_answer": "16",
+"incorrect_answers": [
+"13",
+"11",
+"7"
+]
+},
+{
+"category": "Logique",
+"difficulty": "easy",
+"question": "Si on double un nombre puis qu’on ajoute 3, on obtient 19. Quel était le nombre initial ?",
+"correct_answer": "8",
+"incorrect_answers": [
+"7",
+"13",
+"5"
+]
+},
+{
+"category": "Logique",
+"difficulty": "easy",
+"question": "Combien de semaines y a-t-il dans une année civile ordinaire ?",
+"correct_answer": "52",
+"incorrect_answers": [
+"48",
+"50",
+"53"
+]
+},
+{
+"category": "Logique",
+"difficulty": "medium",
+"question": "Que vaut l’opération 45 divisé par 1/5 ?",
+"correct_answer": "225",
+"incorrect_answers": [
+"9",
+"0,45",
+"50"
+]
+},
+{
+"category": "Logique",
+"difficulty": "medium",
+"question": "La mère de Jean a trois fils : Igor, Paco et ... Comment s’appelle le troisième fils ?",
+"correct_answer": "Jean",
+"incorrect_answers": [
+"Marc",
+"Luc",
+"André"
+]
+},
+{
+"category": "Logique",
+"difficulty": "easy",
+"question": "Combien de pattes possèdent deux moutons et un chat ?",
+"correct_answer": "6",
+"incorrect_answers": [
+"8",
+"4",
+"5"
+]
+},
+{
+"category": "Logique",
+"difficulty": "easy",
+"question": "Quel nombre apparaît le plus souvent parmi les cinq tirages suivants du loto : 7, 14, 21, 28, 7 ?",
+"correct_answer": "7",
+"incorrect_answers": [
+"14",
+"21",
+"28"
+]
+},
+{
+"category": "Logique",
+"difficulty": "medium",
+"question": "Quel chiffre faut-il ajouter au nombre 999 pour obtenir 1008 ?",
+"correct_answer": "9",
+"incorrect_answers": [
+"8",
+"100",
+"1"
+]
+},
+{
+"category": "Logique",
+"difficulty": "medium",
+"question": "Si vous multipliez un nombre par 2 puis soustrayez 7, vous obtenez 13. Quel était le nombre initial ?",
+"correct_answer": "10",
+"incorrect_answers": [
+"8",
+"11",
+"20"
+]
+},
+{
+"category": "Pop Culture",
+"difficulty": "easy",
+"question": "Quel est le vrai nom de Spider-Man dans les comics Marvel ?",
+"correct_answer": "Peter Parker",
+"incorrect_answers": [
+"Bruce Wayne",
+"Tony Stark",
+"Clark Kent"
+]
+},
+{
+"category": "Pop Culture",
+"difficulty": "easy",
+"question": "Dans le monde DC, quel est le vrai nom de Batman ?",
+"correct_answer": "Bruce Wayne",
+"incorrect_answers": [
+"Oliver Queen",
+"Clark Kent",
+"Tony Stark"
+]
+},
+{
+"category": "Pop Culture",
+"difficulty": "easy",
+"question": "Quel lionceau est le personnage principal du film Disney 'Le Roi Lion' ?",
+"correct_answer": "Simba",
+"incorrect_answers": [
+"Nala",
+"Mufasa",
+"Scar"
+]
+},
+{
+"category": "Pop Culture",
+"difficulty": "medium",
+"question": "Quel film de Steven Spielberg de 1975 met en scène un grand requin blanc ?",
+"correct_answer": "Les Dents de la mer",
+"incorrect_answers": [
+"Jurassic Park",
+"Rencontres du troisième type",
+"E.T. l’extra-terrestre"
+]
+},
+{
+"category": "Pop Culture",
+"difficulty": "easy",
+"question": "Quel acteur américain incarne Jack Dawson dans le film 'Titanic' (1997) ?",
+"correct_answer": "Leonardo DiCaprio",
+"incorrect_answers": [
+"Tom Cruise",
+"Matt Damon",
+"Johnny Depp"
+]
+},
+{
+"category": "Pop Culture",
+"difficulty": "easy",
+"question": "Quel groupe britannique a chanté 'Bohemian Rhapsody' ?",
+"correct_answer": "Queen",
+"incorrect_answers": [
+"The Beatles",
+"Pink Floyd",
+"Queen + David Bowie"
+]
+},
+{
+"category": "Pop Culture",
+"difficulty": "medium",
+"question": "Quel jeu vidéo de survie en monde ouvert a été créé par Markus Persson et a pour blocs cubiques ?",
+"correct_answer": "Minecraft",
+"incorrect_answers": [
+"Fortnite",
+"World of Warcraft",
+"Roblox"
+]
+},
+{
+"category": "Pop Culture",
+"difficulty": "easy",
+"question": "Quel est le nom du chien du dessinateur Hergé dans la bande dessinée 'Tintin' ?",
+"correct_answer": "Milou",
+"incorrect_answers": [
+"Snowy",
+"Rantanplan",
+"Milky"
+]
+},
+{
+"category": "Pop Culture",
+"difficulty": "easy",
+"question": "Quel acteur joue le rôle principal de Forrest Gump dans le film éponyme ?",
+"correct_answer": "Tom Hanks",
+"incorrect_answers": [
+"Brad Pitt",
+"Matt Damon",
+"Kevin Costner"
+]
+},
+{
+"category": "Pop Culture",
+"difficulty": "easy",
+"question": "Quel est le nom complet du panda héros de la saga 'Kung Fu Panda' ?",
+"correct_answer": "Po Ping",
+"incorrect_answers": [
+"Po Panda",
+"Panda Xiao",
+"Master Ping"
+]
+},
+{
+"category": "Pop Culture",
+"difficulty": "easy",
+"question": "Qui est l’héroïne et personnage principal féminin de la trilogie de films 'Hunger Games' ?",
+"correct_answer": "Katniss Everdeen",
+"incorrect_answers": [
+"Hermione Granger",
+"Leia Organa",
+"Tris Prior"
+]
+},
+{
+"category": "Pop Culture",
+"difficulty": "easy",
+"question": "Quel est le nom du vaisseau spatial de Han Solo dans la saga Star Wars ?",
+"correct_answer": "Millenium Falcon",
+"incorrect_answers": [
+"X-Wing",
+"TIE Fighter",
+"Star Destroyer"
+]
+},
+{
+"category": "Pop Culture",
+"difficulty": "easy",
+"question": "Quelle est la couleur du sabre laser de Luke Skywalker dans Star Wars (Épisode IV) ?",
+"correct_answer": "Bleu",
+"incorrect_answers": [
+"Rouge",
+"Vert",
+"Jaune"
+]
+},
+{
+"category": "Pop Culture",
+"difficulty": "easy",
+"question": "Quel entrepreneur américain a créé le réseau social Facebook ?",
+"correct_answer": "Mark Zuckerberg",
+"incorrect_answers": [
+"Steve Jobs",
+"Bill Gates",
+"Elon Musk"
+]
+},
+{
+"category": "Pop Culture",
+"difficulty": "medium",
+"question": "Quel est le nom complet du réseau social de partage de photos fondé en 2010 et appartenant à Facebook ?",
+"correct_answer": "Instagram",
+"incorrect_answers": [
+"Snapchat",
+"TikTok",
+"WhatsApp"
+]
+},
+{
+"category": "Pop Culture",
+"difficulty": "hard",
+"question": "Quel leader politique et méchant de film incarne l'empereur Palpatine dans Star Wars ?",
+"correct_answer": "Ian McDiarmid",
+"incorrect_answers": [
+"Peter Cushing",
+"Anthony Daniels",
+"David Prowse"
+]
+},
+{
+"category": "Pop Culture",
+"difficulty": "easy",
+"question": "Quel chanteur a interprété la chanson 'Beat It' ?",
+"correct_answer": "Michael Jackson",
+"incorrect_answers": [
+"Queen",
+"Prince",
+"Elvis Presley"
+]
+},
+{
+"category": "Pop Culture",
+"difficulty": "medium",
+"question": "Quel est le titre du premier épisode de la saga télévisée Star Wars sorti en 1977 ?",
+"correct_answer": "Un nouvel espoir (Star Wars Épisode IV)",
+"incorrect_answers": [
+"L’Empire contre-attaque",
+"La Revanche des Sith",
+"La Menace fantôme"
+]
+},
+{
+"category": "Pop Culture",
+"difficulty": "easy",
+"question": "Quel pirate marin est incarné par Johnny Depp dans une célèbre saga de films ?",
+"correct_answer": "Jack Sparrow",
+"incorrect_answers": [
+"Davy Jones",
+"Barbe Noire",
+"Capitaine Crochet"
+]
+},
+{
+"category": "Pop Culture",
+"difficulty": "easy",
+"question": "Quelle application de vidéos en ligne, lancée en 2005, a été rachetée par Google en 2006 ?",
+"correct_answer": "YouTube",
+"incorrect_answers": [
+"Vimeo",
+"Dailymotion",
+"Netflix"
+]
+},
+{
+"category": "Auteurs/Littérature",
+"difficulty": "easy",
+"question": "Qui a écrit 'Le Petit Prince' ?",
+"correct_answer": "Antoine de Saint-Exupéry",
+"incorrect_answers": [
+"Marcel Proust",
+"Victor Hugo",
+"Jean de La Fontaine"
+]
+},
+{
+"category": "Auteurs/Littérature",
+"difficulty": "easy",
+"question": "Quel écrivain français a écrit 'Les Misérables' ?",
+"correct_answer": "Victor Hugo",
+"incorrect_answers": [
+"Emile Zola",
+"Honoré de Balzac",
+"Gustave Flaubert"
+]
+},
+{
+"category": "Auteurs/Littérature",
+"difficulty": "medium",
+"question": "Quel auteur a écrit 'Le Rouge et le Noir' ?",
+"correct_answer": "Stendhal",
+"incorrect_answers": [
+"Honoré de Balzac",
+"Victor Hugo",
+"Alexandre Dumas"
+]
+},
+{
+"category": "Auteurs/Littérature",
+"difficulty": "easy",
+"question": "Quel philosophe français a écrit 'Candide' ?",
+"correct_answer": "Voltaire",
+"incorrect_answers": [
+"Jean-Jacques Rousseau",
+"René Descartes",
+"Albert Camus"
+]
+},
+{
+"category": "Auteurs/Littérature",
+"difficulty": "medium",
+"question": "Quel auteur espagnol a écrit 'Don Quichotte' ?",
+"correct_answer": "Miguel de Cervantes",
+"incorrect_answers": [
+"Gabriel Garcia Marquez",
+"Pablo Neruda",
+"Jorge Luis Borges"
+]
+},
+{
+"category": "Auteurs/Littérature",
+"difficulty": "medium",
+"question": "Quel écrivain britannique a écrit '1984' ?",
+"correct_answer": "George Orwell",
+"incorrect_answers": [
+"Aldous Huxley",
+"Jules Verne",
+"H.G. Wells"
+]
+},
+{
+"category": "Auteurs/Littérature",
+"difficulty": "medium",
+"question": "Qui est l’auteur de 'Crime et Châtiment' ?",
+"correct_answer": "Fiodor Dostoïevski",
+"incorrect_answers": [
+"Léon Tolstoï",
+"Ivan Tourgueniev",
+"Anton Tchekhov"
+]
+},
+{
+"category": "Auteurs/Littérature",
+"difficulty": "medium",
+"question": "Quel auteur français est l’auteur de 'À la recherche du temps perdu' ?",
+"correct_answer": "Marcel Proust",
+"incorrect_answers": [
+"Gustave Flaubert",
+"Émile Zola",
+"François Mauriac"
+]
+},
+{
+"category": "Auteurs/Littérature",
+"difficulty": "easy",
+"question": "Qui a écrit 'Voyage au centre de la Terre' ?",
+"correct_answer": "Jules Verne",
+"incorrect_answers": [
+"H.G. Wells",
+"Robert Louis Stevenson",
+"Arthur Conan Doyle"
+]
+},
+{
+"category": "Auteurs/Littérature",
+"difficulty": "easy",
+"question": "Quel poète français a écrit 'Demain, dès l’aube' ?",
+"correct_answer": "Victor Hugo",
+"incorrect_answers": [
+"Charles Baudelaire",
+"Paul Verlaine",
+"Alphonse de Lamartine"
+]
+},
+{
+"category": "Auteurs/Littérature",
+"difficulty": "medium",
+"question": "Quel écrivain français a écrit 'L’Étranger' ?",
+"correct_answer": "Albert Camus",
+"incorrect_answers": [
+"Jean-Paul Sartre",
+"François Mauriac",
+"André Malraux"
+]
+},
+{
+"category": "Auteurs/Littérature",
+"difficulty": "medium",
+"question": "Qui a écrit 'Cent ans de solitude' (One Hundred Years of Solitude) ?",
+"correct_answer": "Gabriel García Márquez",
+"incorrect_answers": [
+"Isabel Allende",
+"Pablo Neruda",
+"Carlos Ruiz Zafón"
+]
+},
+{
+"category": "Auteurs/Littérature",
+"difficulty": "easy",
+"question": "Quel conteur français a écrit 'Le Petit Chaperon rouge' ?",
+"correct_answer": "Charles Perrault",
+"incorrect_answers": [
+"Jean de La Fontaine",
+"Guy de Maupassant",
+"Victor Hugo"
+]
+},
+{
+"category": "Auteurs/Littérature",
+"difficulty": "medium",
+"question": "Qui a écrit le roman 'Germinal' ?",
+"correct_answer": "Émile Zola",
+"incorrect_answers": [
+"Jules Verne",
+"Guy de Maupassant",
+"Honoré de Balzac"
+]
+},
+{
+"category": "Auteurs/Littérature",
+"difficulty": "medium",
+"question": "Quel roman Victor Hugo a-t-il publié en 1831, qui a pour héros Quasimodo ?",
+"correct_answer": "Notre-Dame de Paris",
+"incorrect_answers": [
+"Les Misérables",
+"Le Bossu de Notre-Dame",
+"L’Homme qui rit"
+]
+},
+{
+"category": "Auteurs/Littérature",
+"difficulty": "easy",
+"question": "Quel écrivain français a écrit 'Les Trois Mousquetaires' ?",
+"correct_answer": "Alexandre Dumas",
+"incorrect_answers": [
+"Alphonse Daudet",
+"Stendhal",
+"Honoré de Balzac"
+]
+},
+{
+"category": "Auteurs/Littérature",
+"difficulty": "medium",
+"question": "Qui a écrit 'Orgueil et Préjugés' ?",
+"correct_answer": "Jane Austen",
+"incorrect_answers": [
+"Charlotte Brontë",
+"George Eliot",
+"Mary Shelley"
+]
+},
+{
+"category": "Auteurs/Littérature",
+"difficulty": "medium",
+"question": "Quel auteur américain a écrit 'Le Seigneur des anneaux' ?",
+"correct_answer": "J.R.R. Tolkien",
+"incorrect_answers": [
+"C.S. Lewis",
+"George R.R. Martin",
+"Stephen King"
+]
+},
+{
+"category": "Auteurs/Littérature",
+"difficulty": "medium",
+"question": "Quel auteur russe a écrit 'Guerre et Paix' ?",
+"correct_answer": "Léon Tolstoï",
+"incorrect_answers": [
+"Alexandre Dumas",
+"Victor Hugo",
+"Fiodor Dostoïevski"
+]
+},
+{
+"category": "Auteurs/Littérature",
+"difficulty": "medium",
+"question": "Qui a écrit 'La Métamorphose' ?",
+"correct_answer": "Franz Kafka",
+"incorrect_answers": [
+"James Joyce",
+"Albert Camus",
+"Marcel Proust"
+]
+},
+{
+"category": "Sport",
+"difficulty": "easy",
+"question": "Combien y a-t-il de joueurs dans une équipe de football sur le terrain ?",
+"correct_answer": "11",
+"incorrect_answers": [
+"9",
+"10",
+"12"
+]
+},
+{
+"category": "Sport",
+"difficulty": "easy",
+"question": "Quel pays a remporté la Coupe du Monde de football en 2018 ?",
+"correct_answer": "France",
+"incorrect_answers": [
+"Croatie",
+"Brésil",
+"Allemagne"
+]
+},
+{
+"category": "Sport",
+"difficulty": "medium",
+"question": "En quelle année ont eu lieu les premiers Jeux olympiques modernes ?",
+"correct_answer": "1896",
+"incorrect_answers": [
+"1900",
+"1892",
+"1912"
+]
+},
+{
+"category": "Sport",
+"difficulty": "easy",
+"question": "Combien de joueurs composent une équipe de rugby à XV ?",
+"correct_answer": "15",
+"incorrect_answers": [
+"11",
+"13",
+"7"
+]
+},
+{
+"category": "Sport",
+"difficulty": "medium",
+"question": "Quel pays a remporté le plus de Coupes du monde de rugby à XV ?",
+"correct_answer": "Nouvelle-Zélande",
+"incorrect_answers": [
+"Afrique du Sud",
+"Angleterre",
+"Australie"
+]
+},
+{
+"category": "Sport",
+"difficulty": "easy",
+"question": "Combien de couloirs comporte une piste d’athlétisme standard ?",
+"correct_answer": "8",
+"incorrect_answers": [
+"6",
+"10",
+"9"
+]
+},
+{
+"category": "Sport",
+"difficulty": "medium",
+"question": "Qui a remporté le Tour de France en 2020 ?",
+"correct_answer": "Tadej Pogačar",
+"incorrect_answers": [
+"Primož Roglič",
+"Egan Bernal",
+"Chris Froome"
+]
+},
+{
+"category": "Sport",
+"difficulty": "easy",
+"question": "Combien de médailles d’or Usain Bolt a-t-il remportées aux Jeux olympiques ?",
+"correct_answer": "8",
+"incorrect_answers": [
+"7",
+"6",
+"9"
+]
+},
+{
+"category": "Sport",
+"difficulty": "easy",
+"question": "Quel pays a remporté le Championnat d’Europe de football 2021 ?",
+"correct_answer": "Italie",
+"incorrect_answers": [
+"Angleterre",
+"Espagne",
+"France"
+]
+},
+{
+"category": "Sport",
+"difficulty": "medium",
+"question": "Quel est le record du monde du 100 mètres (hommes) en athlétisme ?",
+"correct_answer": "9,58",
+"incorrect_answers": [
+"9,63",
+"9,72",
+"9,81"
+]
+},
+{
+"category": "Sport",
+"difficulty": "medium",
+"question": "En quelle année Lionel Messi a-t-il remporté son premier Ballon d’or ?",
+"correct_answer": "2009",
+"incorrect_answers": [
+"2006",
+"2010",
+"2008"
+]
+},
+{
+"category": "Sport",
+"difficulty": "easy",
+"question": "Dans quel sport utilise-t-on un ballon de forme ovale et on marque avec des essais ?",
+"correct_answer": "Rugby",
+"incorrect_answers": [
+"Football américain",
+"Handball",
+"Basket-ball"
+]
+},
+{
+"category": "Sport",
+"difficulty": "easy",
+"question": "Combien de points rapporte un essai au rugby à XV ?",
+"correct_answer": "5",
+"incorrect_answers": [
+"3",
+"7",
+"4"
+]
+},
+{
+"category": "Sport",
+"difficulty": "medium",
+"question": "Quel sport se pratique avec une crosse et une rondelle sur la glace ?",
+"correct_answer": "Hockey sur glace",
+"incorrect_answers": [
+"Curling",
+"Polo",
+"Luge"
+]
+},
+{
+"category": "Sport",
+"difficulty": "easy",
+"question": "Quel sport se joue avec un volant et une raquette ?",
+"correct_answer": "Badminton",
+"incorrect_answers": [
+"Tennis de table",
+"Squash",
+"Tennis"
+]
+},
+{
+"category": "Sport",
+"difficulty": "easy",
+"question": "Quel tournoi de tennis majeur se joue sur gazon ?",
+"correct_answer": "Wimbledon",
+"incorrect_answers": [
+"Roland-Garros",
+"US Open",
+"Open d’Australie"
+]
+},
+{
+"category": "Sport",
+"difficulty": "medium",
+"question": "Quel nageur américain détient le record du plus grand nombre de médailles olympiques ?",
+"correct_answer": "Michael Phelps",
+"incorrect_answers": [
+"Mark Spitz",
+"Ryan Lochte",
+"Ian Thorpe"
+]
+},
+{
+"category": "Sport",
+"difficulty": "easy",
+"question": "Quel joueur de basket-ball est surnommé 'Air' ?",
+"correct_answer": "Michael Jordan",
+"incorrect_answers": [
+"LeBron James",
+"Kobe Bryant",
+"Magic Johnson"
+]
+},
+{
+"category": "Sport",
+"difficulty": "easy",
+"question": "Quel sport se joue avec une balle dans un panier et un panier au-dessus du sol ?",
+"correct_answer": "Basket-ball",
+"incorrect_answers": [
+"Volley-ball",
+"Handball",
+"Water-polo"
+]
+},
+{
+"category": "Sport",
+"difficulty": "medium",
+"question": "Dans quel sport utilise-t-on l’expression 'hole in one' ?",
+"correct_answer": "Golf",
+"incorrect_answers": [
+"Tennis",
+"Cyclisme",
+"Football"
+]
+},
+{
+"category": "Cinéma/Télévision",
+"difficulty": "medium",
+"question": "Quel film de Christopher Nolan met en scène des voyages dans les rêves imbriqués ?",
+"correct_answer": "Inception",
+"incorrect_answers": [
+"Interstellar",
+"Memento",
+"Tenet"
+]
+},
+{
+"category": "Cinéma/Télévision",
+"difficulty": "hard",
+"question": "Quel célèbre acteur a donné son nom à un pompier du film 'L’Arme fatale' interprété par Mel Gibson ?",
+"correct_answer": "Gary Busey",
+"incorrect_answers": [
+"Danny Glover",
+"Joe Pesci",
+"Chris Rock"
+]
+},
+{
+"category": "Cinéma/Télévision",
+"difficulty": "easy",
+"question": "Quel réalisateur a dirigé la trilogie 'Le Seigneur des anneaux' ?",
+"correct_answer": "Peter Jackson",
+"incorrect_answers": [
+"Steven Spielberg",
+"James Cameron",
+"Joss Whedon"
+]
+},
+{
+"category": "Cinéma/Télévision",
+"difficulty": "medium",
+"question": "Quel film avec Audrey Tautou a été réalisé par Jean-Pierre Jeunet en 2001 ?",
+"correct_answer": "Le Fabuleux Destin d’Amélie Poulain",
+"incorrect_answers": [
+"Delicatessen",
+"La Cité des enfants perdus",
+"Un long dimanche de fiançailles"
+]
+},
+{
+"category": "Cinéma/Télévision",
+"difficulty": "medium",
+"question": "Quel film français de 1995 raconte la vie d’une bande de jeunes à Paris et est réalisé par Mathieu Kassovitz ?",
+"correct_answer": "La Haine",
+"incorrect_answers": [
+"Léon",
+"Le Fabuleux Destin d’Amélie Poulain",
+"Les Visiteurs"
+]
+},
+{
+"category": "Cinéma/Télévision",
+"difficulty": "easy",
+"question": "Dans quel film Audrey Hepburn incarne une princesse en visite à Rome ?",
+"correct_answer": "Vacances romaines",
+"incorrect_answers": [
+"Charade",
+"Sabrina",
+"My Fair Lady"
+]
+},
+{
+"category": "Cinéma/Télévision",
+"difficulty": "easy",
+"question": "Quel acteur américain a joué le rôle du voleur dans 'Ocean’s Eleven' (2001) ?",
+"correct_answer": "George Clooney",
+"incorrect_answers": [
+"Brad Pitt",
+"Johnny Depp",
+"Matt Damon"
+]
+},
+{
+"category": "Cinéma/Télévision",
+"difficulty": "medium",
+"question": "Quel film raconte l’histoire d’Elliot et d’un extra-terrestre nommé E.T. ?",
+"correct_answer": "E.T. l’extra-terrestre",
+"incorrect_answers": [
+"Rencontres du troisième type",
+"Explorers",
+"Close Encounters"
+]
+},
+{
+"category": "Cinéma/Télévision",
+"difficulty": "easy",
+"question": "Quel film d’animation raconte l’histoire d’un jouet cowboy nommé Woody ?",
+"correct_answer": "Toy Story",
+"incorrect_answers": [
+"Jouets en cavale",
+"Bonnie & Compagnie",
+"Rex le cowboy"
+]
+},
+{
+"category": "Cinéma/Télévision",
+"difficulty": "medium",
+"question": "Dans quel film de 1980 a-t-on entendu la réplique : « Je suis ton père » ?",
+"correct_answer": "Star Wars, Épisode V (L’Empire contre-attaque)",
+"incorrect_answers": [
+"Star Wars, Épisode IV",
+"Star Wars, Épisode VI",
+"Indiana Jones et le Temple maudit"
+]
+},
+{
+"category": "Cinéma/Télévision",
+"difficulty": "medium",
+"question": "Quel acteur incarne le détective Sherlock Holmes dans la série télévisée 'Sherlock' ?",
+"correct_answer": "Benedict Cumberbatch",
+"incorrect_answers": [
+"Robert Downey Jr.",
+"Martin Freeman",
+"Rupert Grint"
+]
+},
+{
+"category": "Cinéma/Télévision",
+"difficulty": "easy",
+"question": "Quel film de James Cameron raconte l’histoire d’un personnage nommé Jack Dawson ?",
+"correct_answer": "Titanic",
+"incorrect_answers": [
+"Avatar",
+"Aliens",
+"Le Seigneur des anneaux"
+]
+},
+{
+"category": "Cinéma/Télévision",
+"difficulty": "hard",
+"question": "Quel réalisateur français est connu pour un film de 1946 intitulé 'Les Portes de la nuit' ?",
+"correct_answer": "Marcel Carné",
+"incorrect_answers": [
+"Jean Cocteau",
+"François Truffaut",
+"Claude Lelouch"
+]
+},
+{
+"category": "Cinéma/Télévision",
+"difficulty": "medium",
+"question": "Quel film de science-fiction de 1968 réalisé par Stanley Kubrick a pour thème l’intelligence artificielle ?",
+"correct_answer": "2001, l’Odyssée de l’espace",
+"incorrect_answers": [
+"Solaris",
+"Alien, le huitième passager",
+"Gravity"
+]
+},
+{
+"category": "Cinéma/Télévision",
+"difficulty": "easy",
+"question": "Quel film documentaire suit Michael Jackson lors de ses répétitions avant une tournée annulée ?",
+"correct_answer": "Michael Jackson’s This Is It",
+"incorrect_answers": [
+"Moonwalkers",
+"Bad 25",
+"Dangerous"
+]
+},
+{
+"category": "Cinéma/Télévision",
+"difficulty": "easy",
+"question": "Quel est le titre du premier opus de la saga 'Matrix' sorti en 1999 ?",
+"correct_answer": "Matrix",
+"incorrect_answers": [
+"Matrix Reloaded",
+"Matrix Revolutions",
+"Trinity"
+]
+},
+{
+"category": "Cinéma/Télévision",
+"difficulty": "easy",
+"question": "Qui interprète le pirate Jack Sparrow dans la série de films 'Pirates des Caraïbes' ?",
+"correct_answer": "Johnny Depp",
+"incorrect_answers": [
+"Orlando Bloom",
+"Leonardo DiCaprio",
+"Brad Pitt"
+]
+},
+{
+"category": "Cinéma/Télévision",
+"difficulty": "easy",
+"question": "Quel est le titre original du film italien 'La Dolce Vita' sorti en 1960 ?",
+"correct_answer": "La Dolce Vita",
+"incorrect_answers": [
+"La Belle Vie",
+"The Sweet Life",
+"Dolce Far Niente"
+]
+},
+{
+"category": "Cinéma/Télévision",
+"difficulty": "medium",
+"question": "Quel personnage apparaît dans 'Toy Story' et se présente sous la forme d’un dinosaure vert ?",
+"correct_answer": "Rex",
+"incorrect_answers": [
+"Hank",
+"T-Rex",
+"Dino"
+]
+},
+{
+"category": "Cinéma/Télévision",
+"difficulty": "medium",
+"question": "Quel célèbre réalisateur italien a signé le film '8½' sorti en 1963 ?",
+"correct_answer": "Federico Fellini",
+"incorrect_answers": [
+"Bernardo Bertolucci",
+"Michelangelo Antonioni",
+"Luchino Visconti"
+]
+},
+{
+"category": "Musique",
+"difficulty": "easy",
+"question": "Quel chanteur français a interprété 'La Vie en Rose' ?",
+"correct_answer": "Édith Piaf",
+"incorrect_answers": [
+"Julien Clerc",
+"Charles Aznavour",
+"Serge Gainsbourg"
+]
+},
+{
+"category": "Musique",
+"difficulty": "easy",
+"question": "Quel groupe a interprété la chanson 'Hotel California' ?",
+"correct_answer": "Eagles",
+"incorrect_answers": [
+"The Beatles",
+"Queen",
+"Pink Floyd"
+]
+},
+{
+"category": "Musique",
+"difficulty": "medium",
+"question": "Qui a composé l’hymne national français 'La Marseillaise' ?",
+"correct_answer": "Claude Joseph Rouget de Lisle",
+"incorrect_answers": [
+"Hector Berlioz",
+"Camille Saint-Saëns",
+"Édouard Lalo"
+]
+},
+{
+"category": "Musique",
+"difficulty": "easy",
+"question": "Quel musicien américain est surnommé 'King of Pop' ?",
+"correct_answer": "Michael Jackson",
+"incorrect_answers": [
+"Elvis Presley",
+"Freddie Mercury",
+"Prince"
+]
+},
+{
+"category": "Musique",
+"difficulty": "easy",
+"question": "Quel groupe pop suédois a chanté 'Dancing Queen' ?",
+"correct_answer": "ABBA",
+"incorrect_answers": [
+"Ace of Base",
+"Roxette",
+"Europe"
+]
+},
+{
+"category": "Musique",
+"difficulty": "medium",
+"question": "Qui a composé la musique du film 'Star Wars' ?",
+"correct_answer": "John Williams",
+"incorrect_answers": [
+"Hans Zimmer",
+"Danny Elfman",
+"Howard Shore"
+]
+},
+{
+"category": "Musique",
+"difficulty": "easy",
+"question": "Qui est le chanteur principal des Rolling Stones ?",
+"correct_answer": "Mick Jagger",
+"incorrect_answers": [
+"Freddie Mercury",
+"Axl Rose",
+"Steven Tyler"
+]
+},
+{
+"category": "Musique",
+"difficulty": "easy",
+"question": "Quel compositeur a écrit 'Les Quatre Saisons' ?",
+"correct_answer": "Antonio Vivaldi",
+"incorrect_answers": [
+"Johann Sebastian Bach",
+"Ludwig van Beethoven",
+"Wolfgang Amadeus Mozart"
+]
+},
+{
+"category": "Musique",
+"difficulty": "easy",
+"question": "Quel groupe a chanté 'Let It Be' en 1970 ?",
+"correct_answer": "The Beatles",
+"incorrect_answers": [
+"The Rolling Stones",
+"Queen",
+"The Beach Boys"
+]
+},
+{
+"category": "Musique",
+"difficulty": "easy",
+"question": "Qui a interprété la chanson 'No Woman, No Cry' ?",
+"correct_answer": "Bob Marley",
+"incorrect_answers": [
+"Jimmy Cliff",
+"Peter Tosh",
+"Burning Spear"
+]
+},
+{
+"category": "Musique",
+"difficulty": "medium",
+"question": "Qui a composé l’opéra 'Carmen' ?",
+"correct_answer": "Georges Bizet",
+"incorrect_answers": [
+"Charles Gounod",
+"Jules Massenet",
+"Camille Saint-Saëns"
+]
+},
+{
+"category": "Musique",
+"difficulty": "medium",
+"question": "Quel chanteur américain est surnommé 'The Boss' ?",
+"correct_answer": "Bruce Springsteen",
+"incorrect_answers": [
+"Jon Bon Jovi",
+"Billy Joel",
+"Mick Jagger"
+]
+},
+{
+"category": "Musique",
+"difficulty": "easy",
+"question": "Quel album de Michael Jackson est le plus vendu au monde ?",
+"correct_answer": "Thriller",
+"incorrect_answers": [
+"Bad",
+"Thriller (Deluxe)",
+"Off the Wall"
+]
+},
+{
+"category": "Musique",
+"difficulty": "easy",
+"question": "Combien de cordes compte une guitare acoustique standard ?",
+"correct_answer": "6",
+"incorrect_answers": [
+"4",
+"8",
+"12"
+]
+},
+{
+"category": "Musique",
+"difficulty": "medium",
+"question": "Quel instrument à vent est l’instrument national de l’Écosse ?",
+"correct_answer": "Cornemuse (bagpipes)",
+"incorrect_answers": [
+"Flûte",
+"Whistle",
+"Alto"
+]
+},
+{
+"category": "Musique",
+"difficulty": "hard",
+"question": "Quel guitariste, chanteur de Nirvana, est considéré comme l’icône du mouvement grunge ?",
+"correct_answer": "Kurt Cobain",
+"incorrect_answers": [
+"Jimi Hendrix",
+"Eddie Vedder",
+"Chris Cornell"
+]
+},
+{
+"category": "Musique",
+"difficulty": "medium",
+"question": "Quel inventeur a créé le saxophone ?",
+"correct_answer": "Adolphe Sax",
+"incorrect_answers": [
+"Johannes Kaps",
+"Antonio Stradivari",
+"Joseph Harmat"
+]
+},
+{
+"category": "Musique",
+"difficulty": "easy",
+"question": "Quel chanteur belge a écrit la chanson 'Ne me quitte pas' ?",
+"correct_answer": "Jacques Brel",
+"incorrect_answers": [
+"Serge Gainsbourg",
+"Charles Aznavour",
+"Jacques Dutronc"
+]
+},
+{
+"category": "Musique",
+"difficulty": "easy",
+"question": "Quel guitariste légendaire a interprété 'Purple Haze' avant de mourir en 1970 ?",
+"correct_answer": "Jimi Hendrix",
+"incorrect_answers": [
+"Eric Clapton",
+"Jimmy Page",
+"Chuck Berry"
+]
+},
+{
+"category": "Musique",
+"difficulty": "easy",
+"question": "Quel instrument de musique possède 88 touches ?",
+"correct_answer": "Le piano",
+"incorrect_answers": [
+"La harpe",
+"Le violon",
+"Le clavecin"
+]
+},
+{
+"category": "Culture Générale",
+"difficulty": "easy",
+"question": "Quelle est la capitale du Canada ?",
+"correct_answer": "Ottawa",
+"incorrect_answers": [
+"Toronto",
+"Vancouver",
+"Montréal"
+]
+},
+{
+"category": "Culture Générale",
+"difficulty": "easy",
+"question": "Qui a dit : 'Je pense, donc je suis' ?",
+"correct_answer": "René Descartes",
+"incorrect_answers": [
+"Jean-Jacques Rousseau",
+"Blaise Pascal",
+"Voltaire"
+]
+},
+{
+"category": "Culture Générale",
+"difficulty": "easy",
+"question": "Quelle est la plus grande île du monde ?",
+"correct_answer": "Groenland",
+"incorrect_answers": [
+"Madagascar",
+"Bornéo",
+"Sumatra"
+]
+},
+{
+"category": "Culture Générale",
+"difficulty": "easy",
+"question": "Quel est le symbole chimique du fer dans le tableau périodique ?",
+"correct_answer": "Fe",
+"incorrect_answers": [
+"Ir",
+"I",
+"Fu"
+]
+},
+{
+"category": "Culture Générale",
+"difficulty": "easy",
+"question": "Quelle est la langue officielle du Brésil ?",
+"correct_answer": "Le portugais",
+"incorrect_answers": [
+"L’espagnol",
+"L’anglais",
+"Le français"
+]
+},
+{
+"category": "Culture Générale",
+"difficulty": "easy",
+"question": "Que célèbre-t-on le 14 juillet en France ?",
+"correct_answer": "La fête nationale (prise de la Bastille)",
+"incorrect_answers": [
+"L’armistice de 1918",
+"La chute du mur de Berlin",
+"Le dernier jour de l’été"
+]
+},
+{
+"category": "Culture Générale",
+"difficulty": "easy",
+"question": "Combien d’étoiles se trouvent sur le drapeau de l’Union européenne ?",
+"correct_answer": "12",
+"incorrect_answers": [
+"10",
+"15",
+"13"
+]
+},
+{
+"category": "Culture Générale",
+"difficulty": "easy",
+"question": "Quel est le plus grand désert chaud sur Terre ?",
+"correct_answer": "Le Sahara",
+"incorrect_answers": [
+"Le désert de Gobi",
+"Le Kalahari",
+"Le désert de Thar"
+]
+},
+{
+"category": "Culture Générale",
+"difficulty": "easy",
+"question": "Quelle est la monnaie officielle de la Suisse ?",
+"correct_answer": "Le franc suisse",
+"incorrect_answers": [
+"L’euro",
+"La lire",
+"Le dollar"
+]
+},
+{
+"category": "Culture Générale",
+"difficulty": "easy",
+"question": "Quelle est la capitale de l’Égypte ?",
+"correct_answer": "Le Caire",
+"incorrect_answers": [
+"Alexandrie",
+"Louxor",
+"Khartoum"
+]
+},
+{
+"category": "Culture Générale",
+"difficulty": "easy",
+"question": "Combien de continents existe-t-il sur Terre ?",
+"correct_answer": "7",
+"incorrect_answers": [
+"6",
+"5",
+"8"
+]
+},
+{
+"category": "Culture Générale",
+"difficulty": "medium",
+"question": "Combien de pays compose l’Union européenne en 2025 ?",
+"correct_answer": "27",
+"incorrect_answers": [
+"25",
+"28",
+"30"
+]
+},
+{
+"category": "Culture Générale",
+"difficulty": "easy",
+"question": "Quel est le plus grand océan sur Terre ?",
+"correct_answer": "Océan Pacifique",
+"incorrect_answers": [
+"Océan Atlantique",
+"Océan Indien",
+"Océan Arctique"
+]
+},
+{
+"category": "Culture Générale",
+"difficulty": "easy",
+"question": "Quel fleuve traverse la ville de Londres ?",
+"correct_answer": "La Tamise",
+"incorrect_answers": [
+"La Seine",
+"Le Danube",
+"Le Rhin"
+]
+},
+{
+"category": "Culture Générale",
+"difficulty": "medium",
+"question": "Quel est l’organe responsable de la photosynthèse chez les plantes vertes ?",
+"correct_answer": "La feuille",
+"incorrect_answers": [
+"La tige",
+"La racine",
+"Le fruit"
+]
+},
+{
+"category": "Culture Générale",
+"difficulty": "medium",
+"question": "Quelle est la période géologique actuelle ?",
+"correct_answer": "L’ère Quaternaire",
+"incorrect_answers": [
+"L’ère Secondaire",
+"L’ère Primaire",
+"L’ère Tertiaire"
+]
+},
+{
+"category": "Culture Générale",
+"difficulty": "easy",
+"question": "Combien d’états composent les États-Unis d’Amérique ?",
+"correct_answer": "50",
+"incorrect_answers": [
+"48",
+"52",
+"45"
+]
+},
+{
+"category": "Culture Générale",
+"difficulty": "medium",
+"question": "Quel est le plus grand pays d’Afrique en superficie ?",
+"correct_answer": "Algérie",
+"incorrect_answers": [
+"Soudan",
+"Libye",
+"République démocratique du Congo"
+]
+},
+{
+"category": "Culture Générale",
+"difficulty": "easy",
+"question": "Quel animal est le symbole national de l’Australie ?",
+"correct_answer": "Le kangourou",
+"incorrect_answers": [
+"Le koala",
+"Le dingo",
+"Le wombat"
+]
+},
+{
+"category": "Culture Générale",
+"difficulty": "medium",
+"question": "Combien de temps la Terre met-elle pour effectuer une révolution complète autour du Soleil ?",
+"correct_answer": "365,25 jours",
+"incorrect_answers": [
+"360 jours",
+"366 jours",
+"364 jours"
+]
+}
 ]
