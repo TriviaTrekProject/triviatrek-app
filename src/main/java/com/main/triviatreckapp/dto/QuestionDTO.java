@@ -17,6 +17,7 @@ public class QuestionDTO {
     private String question;
     private String difficulty;
     private String category;
+    private String categoryId;
     private String correctAnswer;
     private List<String> incorrectAnswers;
     private List<String> options;
@@ -31,6 +32,7 @@ public class QuestionDTO {
                 q.getQuestion(),
                 q.getDifficulty(),
                 q.getCategory(),
+                q.getCategoryId(),
                 q.getCorrectAnswer(),
                 q.getIncorrectAnswers(),
                 generateOptions(q)

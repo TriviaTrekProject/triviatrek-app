@@ -24,6 +24,7 @@ public class Question {
     private String question;
     private String difficulty;
     private String category;
+    private String categoryId;
 
     @Column(name = "correct_answer")
     @JsonProperty("correct_answer")
