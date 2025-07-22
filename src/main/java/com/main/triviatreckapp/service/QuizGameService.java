@@ -60,7 +60,6 @@ public class QuizGameService {
     @Value("${quiz.correct-answer-points:1}")
     private int correctAnswerPoints;
 
-    // Remplacez votre Map<String, Boolean> processingAnswers par :
     private final Map<String, ReentrantLock> gameLocks = new ConcurrentHashMap<>();
     // ❶ Suivi des joueurs déjà passés sur la question courante
     private final Map<String, Set<String>> answeredPlayers = new ConcurrentHashMap<>();
@@ -210,10 +209,10 @@ public class QuizGameService {
             QuizGame saved = gameRepository.save(game);
             messagingTemplate.convertAndSend("/game/" + gameId, toDTO(saved));
 
-
-            // Si tous ont répondu => annuler timer et passer à la q suivante
-            int totalParticipants = game.getParticipants().size();
-            if (answered.size() >= totalParticipants) {
+            if (saved.getParticipants().stream()
+                    .map(p -> p.getId().toString())
+                    .allMatch(answered::contains)
+            ) {
                 // annulation du timer programmé
 
                 if (!scheduledFutures.containsKey(gameId)) {
