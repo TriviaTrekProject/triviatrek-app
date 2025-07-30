@@ -12,6 +12,10 @@ jobs:
   test:
     runs-on: ubuntu-latest
 
+    env:
+      # Le secret GitHub est disponible ici
+      TEST_SECRET_PROPERTIES: ${{ secrets.TEST_SECRET_PROPERTIES }}
+
     steps:
     - uses: actions/checkout@v3
 
