@@ -25,9 +25,8 @@ import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.ArgumentMatchers.anyString;
 import static org.mockito.ArgumentMatchers.eq;
 import static org.mockito.Mockito.*;
-
 @ExtendWith(MockitoExtension.class)
-class RoomServiceTest {
+class RoomServiceTest extends AbstractJwtServiceTest {
 
     @Mock
     private RoomRepository roomRepository;
