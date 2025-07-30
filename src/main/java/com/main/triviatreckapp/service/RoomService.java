@@ -8,7 +8,6 @@ import com.main.triviatreckapp.entities.Participant;
 import com.main.triviatreckapp.entities.Room;
 import com.main.triviatreckapp.repository.ParticipantRepository;
 import com.main.triviatreckapp.repository.RoomRepository;
-import jakarta.servlet.http.Part;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -82,10 +81,8 @@ public class RoomService {
 
     public RoomDTO convertRoomToDTO(Room room) {
         List<ParticipantDTO> participantsDTO = new ArrayList<>();
-        room.getParticipants().forEach(participant -> {
-            participantsDTO.add(new ParticipantDTO(participant.getId(), participant.getUsername(), participant.getDelaiReponse(), null));
-        });
-                ;
+        room.getParticipants().forEach(participant -> participantsDTO.add(new ParticipantDTO(participant.getId(), participant.getUsername(), participant.getDelaiReponse(), null)));
+
         List<MessageDTO> msgs = room.getMessages().stream()
                 .map(m -> new MessageDTO(m.getRoomId(), m.getSender(), m.getContent()))
                 .toList();
