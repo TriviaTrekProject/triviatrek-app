@@ -15,6 +15,9 @@ RUN mvn dependency:go-offline -B
 # Copier le code source
 COPY src ./src
 
+ARG SENTRY_AUTH_TOKEN
+ENV SENTRY_AUTH_TOKEN=$SENTRY_AUTH_TOKEN
+
 # Compiler le projet
 RUN mvn clean package -DskipTests
 

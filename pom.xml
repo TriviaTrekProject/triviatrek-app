@@ -29,6 +29,8 @@
     <properties>
         <java.version>24</java.version>
         <spring-cloud.version>2024.0.1</spring-cloud.version>
+        <!--suppress UnresolvedMavenProperty -->
+        <sentry.auth.token>${env.SENTRY_AUTH_TOKEN}</sentry.auth.token>
     </properties>
     <dependencyManagement>
         <dependencies>
@@ -117,6 +119,7 @@
             <artifactId>jjwt-jackson</artifactId>
             <version>0.11.5</version>
         </dependency>
+
     </dependencies>
 
     <build>
@@ -152,6 +155,28 @@
                 <configuration>
                     <encoding>UTF-8</encoding>
                 </configuration>
+            </plugin>
+            <plugin>
+                <groupId>io.sentry</groupId>
+                <artifactId>sentry-maven-plugin</artifactId>
+                <version>0.10.0</version>
+                <extensions>true</extensions>
+                <configuration>
+                    <debugSentryCli>true</debugSentryCli>
+
+                    <org>marc-dugue</org>
+
+                    <project>java-spring-boot</project>
+
+                    <authToken>${sentry.auth.token}</authToken>
+                </configuration>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>uploadSourceBundle</goal>
+                        </goals>
+                    </execution>
+                </executions>
             </plugin>
         </plugins>
     </build>

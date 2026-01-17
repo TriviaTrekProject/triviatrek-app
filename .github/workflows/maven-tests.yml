@@ -23,6 +23,7 @@ jobs:
       - name: Build and Test with Maven
         env:
           RENDER_DEPLOY_HOOK_BACK: ${{ secrets.RENDER_DEPLOY_HOOK_BACK }}
+          SENTRY_AUTH_TOKEN: ${{ secrets.SENTRY_AUTH_TOKEN }}
         run: mvn -B clean verify
 
       - name: Publish Test Results
