@@ -1,6 +1,4 @@
-# Workflow pour exécuter automatiquement les tests Maven à chaque pull request et push
-# Ce workflow est déclenché sur les pull requests et les pushs vers les branches main et master
-name: Maven Tests
+name: Maven CI/CD
 
 on:
   push:
@@ -9,32 +7,38 @@ on:
     branches: [ main, master ]
 
 jobs:
-  test:
+  build-and-test:
     runs-on: ubuntu-latest
-
-    env:
-      # Le secret GitHub est disponible ici
-      TEST_SECRET_PROPERTIES: ${{ secrets.TEST_SECRET_PROPERTIES }}
-
     steps:
-    - uses: actions/checkout@v3
+      - name: Checkout code
+        uses: actions/checkout@v4
 
-    - name: Set up JDK 24
-      uses: actions/setup-java@v3
-      with:
-        java-version: '24'
-        distribution: 'temurin'
-        cache: maven
+      - name: Set up JDK 24
+        uses: actions/setup-java@v4
+        with:
+          java-version: '24'
+          distribution: 'temurin'
+          cache: maven
 
-    - name: Build with Maven
-      run: mvn -B package --file pom.xml
+      - name: Build and Test with Maven
+        env:
+          RENDER_DEPLOY_HOOK_BACK: ${{ secrets.RENDER_DEPLOY_HOOK_BACK }}
+        run: mvn -B clean verify
 
-    - name: Run tests
-      run: mvn test
+      - name: Publish Test Results
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: test-results
+          path: target/surefire-reports/
 
-    - name: Publish Test Results
-      uses: actions/upload-artifact@v4
-      if: always()
-      with:
-        name: test-results
-        path: target/surefire-reports/
+  # --- ÉTAPE 2 : LE DÉPLOIEMENT (CD) ---
+  deploy:
+    needs: build-and-test
+    runs-on: ubuntu-latest
+    if: github.event_name == 'push' && (github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master')
+    
+    steps:
+      - name: Trigger Render Deploy
+        run: |
+          curl -X POST ${{ secrets.RENDER_DEPLOY_HOOK_BACK }}
